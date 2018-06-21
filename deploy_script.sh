@@ -6,6 +6,9 @@ rm -rf _site
 git clone -b master `git config remote.origin.url` _site
 bundle exec jekyll serve
 cd _site
+cp index_year.html _site/publications/
 git add .
-git commit -m "Scripted build to gh-pages"
+#git commit -m "Fixed the page order"
+git commit -m "Added option for publication sorting"
 git push
+cd ..
