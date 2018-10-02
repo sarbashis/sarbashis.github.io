@@ -1,0 +1,413 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.13.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Sarbashis Das, Ph.D.</title>
+<meta name="description" content="My Personal Website.">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Sarbashis Das, Ph.D.">
+<meta property="og:title" content="Sarbashis Das, Ph.D.">
+<meta property="og:url" content="http://localhost:4000/.old">
+
+
+
+
+
+
+  <meta name="twitter:site" content="@Sarbashis_Das">
+  <meta name="twitter:title" content="Sarbashis Das, Ph.D.">
+  <meta name="twitter:description" content="My Personal Website.">
+  <meta name="twitter:url" content="http://localhost:4000/.old">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/.old">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Sarbashis",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sarbashis Das, Ph.D. Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Sarbashis Das, Ph.D.</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/Research/" >Research</a>
+            </li><li class="masthead__menu-item">
+              <a href="/Publications/" >Publications</a>
+            </li><li class="masthead__menu-item">
+              <a href="/CV/" >CV</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/" >Blog Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/Contact/" >Contact</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/sarbasis2.jpg" alt="Sarbashis Das" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Sarbashis Das</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Computational Biology| Machine Learning | Deep Learning | Bioinformatics| Data Analyst.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Stockholm, Sweden</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+            <li><a href="https://twitter.com/"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+          
+        
+          
+            <li><a href="https://sarbashis.github.com/"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/sarbashis/"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+          
+        
+          
+            <li><a href="https://scholar.google.com/citations?user=MDDoPX0AAAAJ&hl=en"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Google Scholar</a></li>
+          
+        
+          
+            <li><a href="https://www.researchgate.net/profile/Sarbashis_Das"><i class="fab fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+          
+        
+          
+            <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=sarbashis+das%5BAuthor%5D"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Pubmed</a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:dsarbashis@gmail.com">
+            <meta itemprop="email" content="dsarbashis@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <html><head><meta charset="utf-8"><title>Untitled Document.md</title><style></style></head><body id="preview">
+<p>I am a Computational Biologist. Currently I am working as a Senior Researcher in Department of Cell and Molecular Biology,
+Uppsala University. I have done Master’s of Science in Zoology and gain knowledge about Molecular Biology and Cancer Cytogenesis.
+I have a keen interest in computer programming, Then I decided to joing Master of Technology (M.Tech) in Computational and Systems
+Biology which is an interdeciplinary course with Biology, Mathematics and Computer Sciences. After my Master program, I decided
+to joing in Ph.D. program. I joined Ph.D. program in Jawaharlal Nehru University, India under the guidence of Prof. Alok Bhattacharya.
+During my Ph.D., I have developed a suffix tree based algorithm for whole genome comparision to identify single nucleotide variations as well as genome structral variations in Bacteria  and subsequently led to develop a web application for broader usages. After that
+I have also performed analysis of the single nucleotide variations and developed a methods to identify genomic hotspots in bacterial
+genomes. This method was published in Scientific Reports.&lt;br&gt;</p>
+<p><em>postdoc part</em> &lt;br&gt;</p>
+<p>The current era is for Big data analysis using advance Machine Leaning algorithms such as Deep Learning. I have a great interest in Machine Learning and its application healthcare. I am also a linux enthusiastic and do some blogging regarding linux tips. <br>
+
+
+<p>My research interest broadly are into the field of<br>
+    <strong>Hear Failure</strong>, <strong>Deep Learning</strong> and <strong>Microbial Genomics</strong></p>
+
+
+
+</body></html>
+
+
+
+
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/sarbashis"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2018 Sarbashis. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
