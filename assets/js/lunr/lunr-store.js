@@ -13,4 +13,9 @@ var store = [{
         "excerpt":"  Wainberg, M., Merico, D., Delong, A., &amp; Frey, B. J. (2018).   Deep learning in biomedicine. Nature Biotechnology, 36(9), 829–838.","categories": ["DeepLearning"],
         "tags": ["ML"],
         "url": "http://localhost:4000/deeplearning/2018/Deep-Learning-research-articles/",
+        "teaser":null},{
+        "title": "How to setup tensorflow and keras in Ubuntu",
+        "excerpt":"","categories": ["installation"],
+        "tags": ["keras"],
+        "url": "http://localhost:4000/installation/2018/How-to-setup-tensorflow-keras/",
         "teaser":null}]
