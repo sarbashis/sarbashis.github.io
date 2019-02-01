@@ -15,7 +15,17 @@ var store = [{
         "url": "http://localhost:4000/deeplearning/2018/Deep-Learning-research-articles/",
         "teaser":null},{
         "title": "How to setup tensorflow and keras in Ubuntu",
-        "excerpt":"","categories": ["installation"],
+        "excerpt":"Upgrade tensor flow by following command. &gt; pip install --upgrade tensorflow","categories": ["installation"],
         "tags": ["keras"],
         "url": "http://localhost:4000/installation/2018/How-to-setup-tensorflow-keras/",
+        "teaser":null},{
+        "title": "Autoencoder Tutorial",
+        "excerpt":"Topic: AutoEncoder An Autoencoder neural network is a type of unsupervised learning algorithm that applies backpropagation and setting the target values to be equal to the inputs that means; y(i) = x(i) Ref:http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/https://www.deeplearningbook.org/contents/autoencoders.html The model is actually try to learn a function hW,b(X) $\\approx$ X which means that the fuction...","categories": ["installation"],
+        "tags": ["keras"],
+        "url": "http://localhost:4000/installation/2019/AutoEncoder/",
+        "teaser":null},{
+        "title": "Installing LightGBM on MacOS Mojave",
+        "excerpt":"Content 1. Required Dependencies 2. Install dependencies 3. Install LightGBM 4. Configure python API 5. Testing 6. Issues Installing Light Gradient Boosting Machine(lightGBM) on MacOC Mojave Required Dependencies - 1. CMake- 2. GCC or Apple Clang- 3. OpenMP Install dependencies: If you have “brew” then good otherwise install from here()...","categories": ["installation"],
+        "tags": ["ML"],
+        "url": "http://localhost:4000/installation/2019/Install-lightGBM-in-MAC-Mojave/",
         "teaser":null}]
