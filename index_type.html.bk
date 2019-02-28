@@ -9,14 +9,14 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Publications - Sarbashis Das, Ph.D.</title>
+<!-- begin _includes/seo.html --><title>Publications - Sarbashis Das, PhD.</title>
 <meta name="description" content="My Personal Website.">
 
 
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Sarbashis Das, Ph.D.">
+<meta property="og:site_name" content="Sarbashis Das, PhD.">
 <meta property="og:title" content="Publications">
 <meta property="og:url" content="http://localhost:4000/Publications/">
 
@@ -75,7 +75,7 @@
 <!-- end _includes/seo.html -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sarbashis Das, Ph.D. Feed">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sarbashis Das, PhD. Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -122,7 +122,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="/">Sarbashis Das, Ph.D.</a>
+        <a class="site-title" href="/">Sarbashis Das, PhD.</a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/Research/" >Research</a>
             </li><li class="masthead__menu-item">
@@ -130,7 +130,7 @@
             </li><li class="masthead__menu-item">
               <a href="/CV/" >CV</a>
             </li><li class="masthead__menu-item">
-              <a href="/year-archive/" >Blog Posts</a>
+              <a href="" >Blog Posts</a>
             </li><li class="masthead__menu-item">
               <a href="/Contact/" >Contact</a>
             </li></ul>
@@ -200,7 +200,9 @@
           
         
           
-            <li><a href="https://github.com/sarbashis"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+          
+            <li><a href="https://sarbashis.github.com/"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
           
         
           
@@ -302,119 +304,40 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>You can also find my articles on my <a href="https://scholar.google.com/citations?user=MDDoPX0AAAAJ&amp;hl=en">Google Scholar profile</a>.</p>
-
-<p>Sort Publications: <a href="/Publications/index.html">Year</a> <a href="/Publications/index_type.html">Type</a></p>
+        <p>Sort Publications: <a href="/publications/index.html">Year</a> <a href="/publications/index_type.html">Type</a></p>
 <h2 class="bibliography">Journal Articles</h2>
-<h3 class="bibliography">2019</h3>
-<ol class="bibliography"><li>
-    "<span id="Das2019"><b>Das, S.</b>, Frisk, C., Eriksson, M. J., Walentinsson, A., Corbascio, M., Hage, C., … Persson, B. (2019). Transcriptomics of cardiac biopsies reveals differences in patients with or without diagnostic parameters for heart failure with preserved ejection fraction. <i>Scientific Reports</i>, <i>9</i>(1), 3179.</span>" [<a href="/Publications/Das2019.pdf" target="_blank">Pdf</a>]
-
-
-
-</li></ol>
 <h3 class="bibliography">2018</h3>
-<ol class="bibliography"><li>
-    "<span id="Das2018dk"><b>Das, S.</b>, Pettersson, F., Behra, P. R. K., Mallick, A., Cheramie, M., Shirreff, L., … Kirsebom, L. (2018). Extensive genomic diversity among Mycobacterium marinum strains revealed by whole genome sequencing. <i>Scientific Reports</i>, <i>8</i>(1), 315.</span>" [<a href="/Publications/Das2018dk.pdf" target="_blank">Pdf</a>]
-
-
-
-</li>
-<li>
-  <span id="DasjGFu8klq"><b>Das, S.</b>, Pettersson, B. M. F., Behra, P. R. K., Jacobsson, K.-G., Dasgupta, S., Ennis, D. G., &amp; Kirsebom, L. (2018). Extended insight into the Mycobacterium chelonae-abscessus complex through whole genome sequencing of Mycobacterium salmoniphilium outbreak and Mycobacterium salmoniphilium-like strains. <i>Accepted in Scientific Reports</i>.</span>
-
-
-
-</li></ol>
+<ol class="bibliography"><li><span id="Das2018dk">Das, S., Pettersson, F., Behra, P. R. K., Mallick, A., Cheramie, M., Shirreff, L., … Kirsebom, L. (2018). Extensive genomic diversity among Mycobacterium marinum strains revealed by whole genome sequencing. <i>Accepted Nature Scientific Reports</i>, 000.</span></li></ol>
 <h3 class="bibliography">2016</h3>
-<ol class="bibliography"><li>
-    "<span id="Das2016"><b>Das, S.</b>, Pettersson, B. M. F., Behra, P. R. K., Ramesh, M., Dasgupta, S., Bhattacharya, A., &amp; Kirsebom, L. A. (2016). The Mycobacterium phlei genome: expectations and surprises. <i>Genome Biology and Evolution</i>, <i>8</i>(4), 975–985.</span>" [<a href="/Publications/Das2016.pdf" target="_blank">Pdf</a>]
-
-
-
-</li></ol>
+<ol class="bibliography"><li><span id="Das2016">Das, S., Pettersson, B. M. F., Behra, P. R. K., Ramesh, M., Dasgupta, S., Bhattacharya, A., &amp; Kirsebom, L. A. (2016). The Mycobacterium phlei genome: expectations and surprises. <i>Genome Biology and Evolution</i>, <i>8</i>(4), 975–985. https://doi.org/10.1093/gbe/evw049</span></li></ol>
 <h3 class="bibliography">2015</h3>
-<ol class="bibliography"><li>
-    "<span id="Das2015"><b>Das, S.</b>, Pettersson, B. M. F., Behra, P. R. K., Ramesh, M., Dasgupta, S., Bhattacharya, A., &amp; Kirsebom, L. a. (2015). Characterization of Three \textitMycobacterium spp. with Potential Use in Bioremediation by Genome Sequencing and Comparative Genomics. <i>Genome Biology and Evolution</i>, <i>7</i>(7), 1871–1886.</span>" [<a href="/Publications/Das2015.pdf" target="_blank">Pdf</a>]
-
-
-
-</li>
-<li>
-    "<span id="Pettersson2015">Pettersson, B. M. F., <b>Das, S.</b>, Behra, P. R. K., Jordan, H. R., Ramesh, M., Mallick, A., … Kirsebom, L. A. (2015). Comparative Sigma Factor-mRNA Levels in Mycobacterium marinum under Stress Conditions and during Host Infection. <i>PloS One</i>, <i>10</i>(10), e0139823.</span>" [<a href="/Publications/Pettersson2015.pdf" target="_blank">Pdf</a>]
-
-
-
-</li></ol>
+<ol class="bibliography"><li><span id="Das2015">Das, S., Pettersson, B. M. F., Behra, P. R. K., Ramesh, M., Dasgupta, S., Bhattacharya, A., &amp; Kirsebom, L. a. (2015). Characterization of Three \textitMycobacterium spp. with Potential Use in Bioremediation by Genome Sequencing and Comparative Genomics. <i>Genome Biology and Evolution</i>, <i>7</i>(7), 1871–1886. https://doi.org/10.1093/gbe/evv111</span></li>
+<li><span id="Pettersson2015">Pettersson, B. M. F., Das, S., Behra, P. R. K., Jordan, H. R., Ramesh, M., Mallick, A., … Kirsebom, L. A. (2015). Comparative Sigma Factor-mRNA Levels in Mycobacterium marinum under Stress Conditions and during Host Infection. <i>PloS One</i>, <i>10</i>(10), e0139823. https://doi.org/10.1371/journal.pone.0139823</span></li></ol>
 <h3 class="bibliography">2014</h3>
-<ol class="bibliography"><li>
-    "<span id="Pettersson2014">Pettersson, B. M. F., Behra, P. R. K., Manduva, S., <b>Das, S.</b>, Dasgupta, S., Bhattacharya, A., &amp; Kirsebom, L. A. (2014). Draft Genome Sequence of Saccharopolyspora rectivirgula. <i>Genome Announcements</i>, <i>2</i>(1).</span>" [<a href="/Publications/Pettersson2014.pdf" target="_blank">Pdf</a>]
-
-
-
-</li></ol>
+<ol class="bibliography"><li><span id="Pettersson2014">Pettersson, B. M. F., Behra, P. R. K., Manduva, S., Das, S., Dasgupta, S., Bhattacharya, A., &amp; Kirsebom, L. A. (2014). Draft Genome Sequence of Saccharopolyspora rectivirgula. <i>Genome Announcements</i>, <i>2</i>(1). https://doi.org/10.1128/genomeA.01117-13</span></li></ol>
 <h3 class="bibliography">2013</h3>
-<ol class="bibliography"><li>
-    "<span id="Das2013"><b>Das, S.</b>, Roychowdhury, T., Kumar, P., Kumar, A., Kalra, P., Singh, J., … Bhattacharya, A. (2013). Genetic heterogeneity revealed by sequence analysis of Mycobacterium tuberculosis isolates from extra-pulmonary tuberculosis patients. <i>BMC Genomics</i>, <i>14</i>(1), 404.</span>" [<a href="/Publications/Das2013.pdf" target="_blank">Pdf</a>]
-
-
-
-</li>
-<li>
-    "<span id="FredrikPettersson2013">Fredrik Pettersson, B. M., Nitharwal, R. G., <b>Das, S.</b>, Krishna Behra, P. R., Benedik, E., Arasu, U. T., … Kirsebom, L. a. (2013). Identification and expression of stressosomal proteins in Mycobacterium marinum under various growth and stress conditions. <i>FEMS Microbiology Letters</i>.</span>" [<a href="/Publications/FredrikPettersson2013.pdf" target="_blank">Pdf</a>]
-
-
-
-</li></ol>
+<ol class="bibliography"><li><span id="Das2013">Das, S., Roychowdhury, T., Kumar, P., Kumar, A., Kalra, P., Singh, J., … Bhattacharya, A. (2013). Genetic heterogeneity revealed by sequence analysis of Mycobacterium tuberculosis isolates from extra-pulmonary tuberculosis patients. <i>BMC Genomics</i>, <i>14</i>(1), 404. https://doi.org/10.1186/1471-2164-14-404</span></li>
+<li><span id="FredrikPettersson2013">Fredrik Pettersson, B. M., Nitharwal, R. G., Das, S., Krishna Behra, P. R., Benedik, E., Arasu, U. T., … Kirsebom, L. a. (2013). Identification and expression of stressosomal proteins in Mycobacterium marinum under various growth and stress conditions. <i>FEMS Microbiology Letters</i>. https://doi.org/10.1111/1574-6968.12118</span></li></ol>
 <h3 class="bibliography">2012</h3>
-<ol class="bibliography"><li>
-    "<span id="Hon2012">Hon, C.-C., Weber, C., Sismeiro, O., Proux, C., Koutero, M., Deloger, M., … Guillen, N. (2012). Quantification of stochastic noise of splicing and polyadenylation in Entamoeba histolytica. <i>Nucleic Acids Research</i>.</span>" [<a href="/Publications/Hon2012.pdf" target="_blank">Pdf</a>]
-
-
-
-</li>
-<li>
-    "<span id="Das2012"><b>Das, S.</b>, Duggal, P., Roy, R., Myneedu, V. P., Behera, D., Prasad, H. K., &amp; Bhattacharya, A. (2012). Identification of Hot and Cold spots in genome of Mycobacterium tuberculosis using Shewhart Control Charts. <i>Scientific Reports</i>, <i>2</i>, 297.</span>" [<a href="/Publications/Das2012.pdf" target="_blank">Pdf</a>]
-
-
-
-</li></ol>
+<ol class="bibliography"><li><span id="Hon2012">Hon, C.-C., Weber, C., Sismeiro, O., Proux, C., Koutero, M., Deloger, M., … Guillen, N. (2012). Quantification of stochastic noise of splicing and polyadenylation in Entamoeba histolytica. <i>Nucleic Acids Research</i>. https://doi.org/10.1093/nar/gks1271</span></li>
+<li><span id="Das2012">Das, S., Duggal, P., Roy, R., Myneedu, V. P., Behera, D., Prasad, H. K., &amp; Bhattacharya, A. (2012). Identification of Hot and Cold spots in genome of Mycobacterium tuberculosis using Shewhart Control Charts. <i>Scientific Reports</i>, <i>2</i>, 297. https://doi.org/10.1038/srep00297</span></li></ol>
 <h3 class="bibliography">2009</h3>
-<ol class="bibliography"><li>
-    "<span id="Das2009a"><b>Das, S.</b>, Yennamalli, R. M., Vishnoi, A., Gupta, P., &amp; Bhattacharya, A. (2009). Single-nucleotide variations associated with Mycobacterium tuberculosis KwaZulu-Natal strains. <i>Journal of Biosciences</i>, <i>34</i>(3), 397–404.</span>" [<a href="/Publications/Das2009a.pdf" target="_blank">Pdf</a>]
-
-
-
-</li>
-<li>
-    "<span id="Das2009"><b>Das, S.</b>, Vishnoi, A., &amp; Bhattacharya, A. (2009). ABWGAT: anchor-based whole genome analysis tool. <i>Bioinformatics (Oxford, England)</i>, <i>25</i>(24), 3319–20.</span>" [<a href="/Publications/Das2009.pdf" target="_blank">Pdf</a>]
-
-
-
-</li></ol>
+<ol class="bibliography"><li><span id="Das2009a">Das, S., Yennamalli, R. M., Vishnoi, A., Gupta, P., &amp; Bhattacharya, A. (2009). Single-nucleotide variations associated with Mycobacterium tuberculosis KwaZulu-Natal strains. <i>Journal of Biosciences</i>, <i>34</i>(3), 397–404. Retrieved from http://www.ncbi.nlm.nih.gov/pubmed/19805901</span></li>
+<li><span id="Das2009">Das, S., Vishnoi, A., &amp; Bhattacharya, A. (2009). ABWGAT: anchor-based whole genome analysis tool. <i>Bioinformatics (Oxford, England)</i>, <i>25</i>(24), 3319–20. https://doi.org/10.1093/bioinformatics/btp587</span></li></ol>
+<h2 class="bibliography">Unpublished Articles</h2>
+<h3 class="bibliography">2018</h3>
+<ol class="bibliography"><li><span id="Das2018vv">Das, S., Frisk, C., Eriksson, M. J., Corbascio, M., Hage, C., Kumar, C., … Persson, B. (2018). <i>Transcriptomics of heart biopsies reveals differences in patients with stable coronary artery disease with or without diagnostic parameters for heart failure with preserved ejection fraction. </i>. <i>Manuscript submitted</i>.</span></li>
+<li><span id="DasjGFu8klq">Das, S., Pettersson, B. M. F., Behra, P. R. K., Jacobsson, K.-G., Dasgupta, S., Ennis, D. G., &amp; Kirsebom, L. (2018). <i>Comparative genomic analysis Mycobacterium chelonae-Mycobacterium abscessus complex members: differentiation of Mycobacterium salmoniphilium and Mycobacterium salmoniphilium-like as two separate species</i>. <i>Manuscript in Preparation</i>.</span></li></ol>
 <h2 class="bibliography">Under Review</h2>
 <h3 class="bibliography">2018</h3>
-<ol class="bibliography"><li>
-  <span id="BehraRZMie7Hv">Behra, P. R. K., Pettersson, B. M. F., <b>Das, S.</b>, Dasgupta, S., &amp; Kirsebom, L. (2018). <i>Comparative genomics of Mycobacterium mucogenicum and Mycobacterium neoaurum clade members emphasizing tRNA and non-coding RNA</i>. <i>Under Review BMC Evolutionary Biology</i>.</span>
-
-
-
-</li></ol>
+<ol class="bibliography"><li><span id="BehraRZMie7Hv">Behra, P. R. K., Pettersson, B. M. F., Das, S., Dasgupta, S., &amp; Kirsebom, L. (2018). <i>Comparative genomics of Mycobacterium mucogenicum and Mycobacterium neoaurum clade members emphasizing tRNA and non-coding RNA</i>. <i>Under Review BMC Evolutionary Biology</i>.</span></li></ol>
+<h3 class="bibliography">2017</h3>
+<ol class="bibliography"><li><span id="PetterssonIJbS9BdY">Pettersson, F., Das, S., Ramesh, M., Behra, P. R. K., Dasgupta, S., &amp; Kirsebom, L. (2017). <i>Anti-σfactors in Mycobacterium marinum: Expression, control and interaction with cognate σfactors and components of the stressosome pathway</i>. <i>Under Review </i>.</span></li></ol>
 <h2 class="bibliography">Theses</h2>
 <h3 class="bibliography">2012</h3>
-<ol class="bibliography"><li>
-  <span id="SarbaPhD">Sarbashis, D. (2012). <i>Comparative Analysis and Study of Mutations in Bacterial Genomes [PhD Thesis].</i> Jawaharlal Nehru University, India.</span>
-
-
-
-</li></ol>
+<ol class="bibliography"><li><span id="SarbaPhD">Sarbashis, D. (2012). <i>Comparative Analysis and Study of Mutations in Bacterial Genomes [PhD Thesis].</i> Jawaharlal Nehru University, India.</span></li></ol>
 <h3 class="bibliography">2008</h3>
-<ol class="bibliography"><li>
-  <span id="jnu434762"><b>Das, S.</b> (2008). <i>Identification of single nucleotide polymorphisms and inversions in genomic sequences [M.Tech Thesis].</i> New Delhi : Jawaharlal Nehru University, India.</span>
-
-
-
-</li></ol>
+<ol class="bibliography"><li><span id="jnu434762">Das, S. (2008). <i>Identification of single nucleotide polymorphisms and inversions in genomic sequences [M.Tech Thesis].</i> New Delhi : Jawaharlal Nehru University, India.</span></li></ol>
 
         
       </section>
@@ -475,7 +398,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2019 Sarbashis. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2018 Sarbashis. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
