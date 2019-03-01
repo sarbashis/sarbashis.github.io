@@ -25,7 +25,7 @@ var store = [{
         "url": "http://localhost:4000/installation/2019/AutoEncoder/",
         "teaser":null},{
         "title": "Installing LightGBM on MacOS Mojave",
-        "excerpt":"Content 1. Required Dependencies 2. Install dependencies 3. Install LightGBM 4. Configure python API 5. Testing 6. Issues Installing Light Gradient Boosting Machine(lightGBM) on MacOC Mojave Required Dependencies - 1. CMake- 2. GCC or Apple Clang- 3. OpenMP Install dependencies: If you have “brew” then good otherwise install from here()...","categories": ["installation"],
+        "excerpt":"Content 1. Required Dependencies 2. Install dependencies 3. Install LightGBM 4. Configure python API 5. Testing 6. Issues Installing Light Gradient Boosting Machine(lightGBM) on MacOC Mojave Required Dependencies - 1. CMake- 2. GCC or Apple Clang- 3. OpenMPInstall dependencies: If you have “brew” then good otherwise install from here() brew...","categories": ["installation"],
         "tags": ["ML"],
         "url": "http://localhost:4000/installation/2019/Install-lightGBM-in-MAC-Mojave/",
         "teaser":null}]

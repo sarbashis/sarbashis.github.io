@@ -314,6 +314,24 @@
 
       <section class="page__content" itemprop="text">
         
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-cog"></i> Table of Content</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#required-dependencies">Required Dependencies</a></li>
+  <li><a href="#install-dependencies">Install dependencies:</a></li>
+  <li><a href="#install-lightgbm">Install LightGBM</a></li>
+  <li><a href="#configure-python-api">Configure python API</a></li>
+  <li><a href="#testing">Testing</a></li>
+  <li><a href="#issues">Issues</a>
+    <ul>
+      <li><a href="#1-installing-with-gcc-070">1. Installing with GCC 0.7.0</a></li>
+    </ul>
+  </li>
+</ul>
+            </nav>
+          </aside>
+        
         <p><strong>Content</strong></p>
 
 <p><a href="#required-dependencies">1. Required Dependencies</a></p>
@@ -333,7 +351,7 @@
 <h3 id="required-dependencies">Required Dependencies</h3>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 1. CMake
 - 2. GCC or Apple Clang
-- 3. OpenMP 
+- 3. OpenMP
 </code></pre></div></div>
 
 <h3 id="install-dependencies">Install dependencies:</h3>
@@ -347,7 +365,7 @@ brew install libomp
 
 <p>Lets first check the version of the dependencies. The following are my version of cmake and GCC</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmake version 3.13.3  
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cmake version 3.13.3
 gcc version  8.2.0
 </code></pre></div></div>
 
@@ -355,7 +373,7 @@ gcc version  8.2.0
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone --recursive https://github.com/Microsoft/LightGBM
 cd LightGBM
-mkdir build 
+mkdir build
 cd build
 </code></pre></div></div>
 
@@ -384,9 +402,9 @@ cd build
     -- Detecting CXX compiler ABI info - done
     -- Detecting CXX compile features
     -- Detecting CXX compile features - done
-    -- Found OpenMP_C: -fopenmp (found version "4.5") 
-    -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
-    -- Found OpenMP: TRUE (found version "4.5")  
+    -- Found OpenMP_C: -fopenmp (found version "4.5")
+    -- Found OpenMP_CXX: -fopenmp (found version "4.5")
+    -- Found OpenMP: TRUE (found version "4.5")
     -- Configuring done
     -- Generating done
     -- Build files have been written to: /Users/sarbashis/miniconda3/envs/ScitificProject/LightGBM/build
@@ -473,7 +491,7 @@ cd build
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; import lightgbm as lgb
     Traceback (most recent call last):
     File "&lt;stdin&gt;", line 1, in &lt;module&gt;
-    ModuleNotFoundError: No module named 'lightgbm'  
+    ModuleNotFoundError: No module named 'lightgbm'
 </code></pre></div></div>
 
 <p>If you see the error “No module named ‘lightgbm’’”, That means that python environment not configure for the ligthgbm.
@@ -863,6 +881,29 @@ parallel easily.
 
 
 
+    
 
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = "http://sarbashis.github.io/installation/2019/Install-lightGBM-in-MAC-Mojave/"; // <--- use canonical URL
+this.page.identifier = "/installation/2019/Install-lightGBM-in-MAC-Mojave";
+};
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//sarbashisdas.disqus.com/embed.js'; // <--- use Disqus shortname
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+   <script id="dsq-count-scr" src="//sarbashis.disqus.com/count.js" async></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-28T14:10:28+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sarbashis Das, Ph.D.</title><subtitle>My Personal Website.</subtitle><author><name>Sarbashis Das</name><email>dsarbashis@gmail.com</email></author><entry><title type="html">Installing LightGBM on MacOS Mojave</title><link href="http://localhost:4000/installation/2019/Install-lightGBM-in-MAC-Mojave/" rel="alternate" type="text/html" title="Installing LightGBM on MacOS Mojave" /><published>2019-01-31T00:00:00+01:00</published><updated>2019-01-31T00:00:00+01:00</updated><id>http://localhost:4000/installation/2019/Install-lightGBM-in-MAC-Mojave</id><content type="html" xml:base="http://localhost:4000/installation/2019/Install-lightGBM-in-MAC-Mojave/">&lt;p&gt;&lt;strong&gt;Content&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-01T15:24:37+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sarbashis Das, Ph.D.</title><subtitle>My Personal Website.</subtitle><author><name>Sarbashis Das</name><email>dsarbashis@gmail.com</email></author><entry><title type="html">Installing LightGBM on MacOS Mojave</title><link href="http://localhost:4000/installation/2019/Install-lightGBM-in-MAC-Mojave/" rel="alternate" type="text/html" title="Installing LightGBM on MacOS Mojave" /><published>2019-01-31T00:00:00+01:00</published><updated>2019-01-31T00:00:00+01:00</updated><id>http://localhost:4000/installation/2019/Install-lightGBM-in-MAC-Mojave</id><content type="html" xml:base="http://localhost:4000/installation/2019/Install-lightGBM-in-MAC-Mojave/">&lt;p&gt;&lt;strong&gt;Content&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;#required-dependencies&quot;&gt;1. Required Dependencies&lt;/a&gt;&lt;/p&gt;
 
@@ -17,7 +17,7 @@
 &lt;h3 id=&quot;required-dependencies&quot;&gt;Required Dependencies&lt;/h3&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 1. CMake
 - 2. GCC or Apple Clang
-- 3. OpenMP 
+- 3. OpenMP
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;install-dependencies&quot;&gt;Install dependencies:&lt;/h3&gt;
@@ -31,7 +31,7 @@ brew install libomp
 
 &lt;p&gt;Lets first check the version of the dependencies. The following are my version of cmake and GCC&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cmake version 3.13.3  
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cmake version 3.13.3
 gcc version  8.2.0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -39,7 +39,7 @@ gcc version  8.2.0
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone --recursive https://github.com/Microsoft/LightGBM
 cd LightGBM
-mkdir build 
+mkdir build
 cd build
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -68,9 +68,9 @@ cd build
     -- Detecting CXX compiler ABI info - done
     -- Detecting CXX compile features
     -- Detecting CXX compile features - done
-    -- Found OpenMP_C: -fopenmp (found version &quot;4.5&quot;) 
-    -- Found OpenMP_CXX: -fopenmp (found version &quot;4.5&quot;) 
-    -- Found OpenMP: TRUE (found version &quot;4.5&quot;)  
+    -- Found OpenMP_C: -fopenmp (found version &quot;4.5&quot;)
+    -- Found OpenMP_CXX: -fopenmp (found version &quot;4.5&quot;)
+    -- Found OpenMP: TRUE (found version &quot;4.5&quot;)
     -- Configuring done
     -- Generating done
     -- Build files have been written to: /Users/sarbashis/miniconda3/envs/ScitificProject/LightGBM/build
@@ -157,7 +157,7 @@ cd build
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; import lightgbm as lgb
     Traceback (most recent call last):
     File &quot;&amp;lt;stdin&amp;gt;&quot;, line 1, in &amp;lt;module&amp;gt;
-    ModuleNotFoundError: No module named 'lightgbm'  
+    ModuleNotFoundError: No module named 'lightgbm'
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;If you see the error “No module named ‘lightgbm’’”, That means that python environment not configure for the ligthgbm.
