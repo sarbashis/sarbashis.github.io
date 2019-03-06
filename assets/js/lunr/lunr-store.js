@@ -28,4 +28,9 @@ var store = [{
         "excerpt":"Content 1. Required Dependencies 2. Install dependencies 3. Install LightGBM 4. Configure python API 5. Testing 6. Issues Installing Light Gradient Boosting Machine(lightGBM) on MacOC Mojave Required Dependencies - 1. CMake- 2. GCC or Apple Clang- 3. OpenMPInstall dependencies: If you have “brew” then good otherwise install from here() brew...","categories": ["installation"],
         "tags": ["ML"],
         "url": "http://localhost:4000/installation/2019/Install-lightGBM-in-MAC-Mojave/",
+        "teaser":null},{
+        "title": "How to configure tensorboard jupyter inline",
+        "excerpt":"Tensorboard inline Installation: Example Calling Tensorbord Tensorboard inline Tensorboard is a very useful tool to see the training progress of the neural network model which is using tensorflow in the backend. There are manyway you can call the tensorbords. Most common way is to call the tensorboard local server and...","categories": ["installation"],
+        "tags": ["ML"],
+        "url": "http://localhost:4000/installation/2019/How-to-configure-tensorboard-jupyter-inline/",
         "teaser":null}]
