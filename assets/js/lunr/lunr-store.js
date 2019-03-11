@@ -33,4 +33,9 @@ var store = [{
         "excerpt":"Tensorboard inline Installation: Example Calling Tensorbord Tensorboard inline Tensorboard is a very useful tool to see the training progress of the neural network model which is using tensorflow in the backend. There are manyway you can call the tensorbords. Most common way is to call the tensorboard local server and...","categories": ["installation"],
         "tags": ["ML"],
         "url": "http://localhost:4000/installation/2019/How-to-configure-tensorboard-jupyter-inline/",
+        "teaser":null},{
+        "title": "Setting up Machine Learning Environment in Ubuntu/Linux",
+        "excerpt":"This post is for setting up a Machine Learning environment for your Machine Projects in Linux/Ubuntu. Also important to keep in mind that you should keep tract of your environment which help in reproducibility of the project. Here I am showing how easy to set up Machine Learning Environment with...","categories": ["installation"],
+        "tags": ["ML"],
+        "url": "http://localhost:4000/installation/2019/Setting-up-ML-envs-ubuntu/",
         "teaser":null}]

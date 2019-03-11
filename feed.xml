@@ -1,4 +1,127 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-06T10:14:59+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sarbashis Das, Ph.D.</title><subtitle>My Personal Website.</subtitle><author><name>Sarbashis Das</name><email>dsarbashis@gmail.com</email></author><entry><title type="html">How to configure tensorboard jupyter inline</title><link href="http://localhost:4000/installation/2019/How-to-configure-tensorboard-jupyter-inline/" rel="alternate" type="text/html" title="How to configure tensorboard jupyter inline" /><published>2019-03-06T00:00:00+01:00</published><updated>2019-03-06T00:00:00+01:00</updated><id>http://localhost:4000/installation/2019/How-to-configure-tensorboard-jupyter-inline</id><content type="html" xml:base="http://localhost:4000/installation/2019/How-to-configure-tensorboard-jupyter-inline/">&lt;!-- TOC --&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-03-11T16:13:48+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sarbashis Das, Ph.D.</title><subtitle>My Personal Website.</subtitle><author><name>Sarbashis Das</name><email>dsarbashis@gmail.com</email></author><entry><title type="html">Setting up Machine Learning Environment in Ubuntu/Linux</title><link href="http://localhost:4000/installation/2019/Setting-up-ML-envs-ubuntu/" rel="alternate" type="text/html" title="Setting up Machine Learning Environment in Ubuntu/Linux" /><published>2019-03-11T00:00:00+01:00</published><updated>2019-03-11T00:00:00+01:00</updated><id>http://localhost:4000/installation/2019/Setting-up-ML-envs-ubuntu</id><content type="html" xml:base="http://localhost:4000/installation/2019/Setting-up-ML-envs-ubuntu/">&lt;p&gt;This post is for setting up a Machine Learning environment for your Machine Projects in Linux/Ubuntu. Also important to keep in mind that you should keep tract of your environment which help in reproducibility of the project. Here I am showing how easy to set up Machine Learning Environment with anaconda. 
+&lt;!-- TOC --&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#conda-installer&quot;&gt;Conda Installer&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#installing-conda&quot;&gt;Installing Conda&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#create-a-new-virtual-environment-using-conda&quot;&gt;Create a new virtual environment using Conda&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#migration-of-a-conda-environment&quot;&gt;Migration of a conda Environment&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- /TOC --&gt;
+
+&lt;h1 id=&quot;conda-installer&quot;&gt;Conda Installer&lt;/h1&gt;
+&lt;p&gt;Anaconda is an open-source platform for Python/R and machine Learning and available for linux, Windows and Mac OS X.  It is the industry standard for developing, testing, and training on a single machine, enabling individual data scientists.&lt;/p&gt;
+
+&lt;h2 id=&quot;installing-conda&quot;&gt;Installing Conda&lt;/h2&gt;
+&lt;p&gt;To install the conda installer please follow the following command.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Donload Anaconda from the link
+  https://www.anaconda.com/distribution/&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make it executables by using the following command&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;chmod a+x ./Anaconda3-2018.12-Linux-x86_64.sh&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run the command to install conda&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;./Anaconda3-2018.12-Linux-x86_64.sh&lt;/p&gt;
+    &lt;/blockquote&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     In order to continue the installation process, please review the license
+     agreement.
+
+     Please, press ENTER to continue
+
+     Do you accept the license terms? [yes|no]
+     [no] &amp;gt;&amp;gt;&amp;gt; yes
+
+     Anaconda3 will now be installed into this location:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Next activate conda path&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;source .bashrc&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Next step is to update conda. Navigate to the anaconda directory and run the following command&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;conda update conda&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;create-a-new-virtual-environment-using-conda&quot;&gt;Create a new virtual environment using Conda&lt;/h2&gt;
+&lt;p&gt;Virtual environment is highly recommeded for machine learning projects. Each virtual environment has its own environment and the installed packages. If any package damage or corrupt in one environment will not effect other environment.
+So, Lets create a virtual environment.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Follow the conda command.
+    &lt;blockquote&gt;
+      &lt;p&gt;conda create –name “Enviroment_Name” python=3.7&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Change the Enviroment_Name accordingly&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Activate the environment using
+    &lt;blockquote&gt;
+      &lt;p&gt;conda activate Enviroment_Name
+Once the environment is activated, environment name is added as prefix to the command prompt.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Removing an environment
+    &lt;blockquote&gt;
+      &lt;p&gt;cond remove –name Enviroment_Name –all&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Installing other package for example
+    &lt;blockquote&gt;
+      &lt;p&gt;conda install cmake
+pip install scikit-learn&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;To get a list of install packages
+    &lt;blockquote&gt;
+      &lt;p&gt;conda list&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;migration-of-a-conda-environment&quot;&gt;Migration of a conda Environment&lt;/h2&gt;
+&lt;p&gt;Migrating a conda environment is pretty easy. Lets see how&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Fist we need to export the list of installed packages by using the following command.
+    &lt;blockquote&gt;
+      &lt;p&gt;conda env export &amp;gt; environment.yml&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Next is to create a new environment from the file
+    &lt;blockquote&gt;
+      &lt;p&gt;conda env create -f environment.yml&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;That’s it. Done.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Enjoy working&lt;/p&gt;</content><author><name>Sarbashis Das</name><email>dsarbashis@gmail.com</email></author><category term="ML" /><summary type="html">This post is for setting up a Machine Learning environment for your Machine Projects in Linux/Ubuntu. Also important to keep in mind that you should keep tract of your environment which help in reproducibility of the project. Here I am showing how easy to set up Machine Learning Environment with anaconda.</summary></entry><entry><title type="html">How to configure tensorboard jupyter inline</title><link href="http://localhost:4000/installation/2019/How-to-configure-tensorboard-jupyter-inline/" rel="alternate" type="text/html" title="How to configure tensorboard jupyter inline" /><published>2019-03-06T00:00:00+01:00</published><updated>2019-03-06T00:00:00+01:00</updated><id>http://localhost:4000/installation/2019/How-to-configure-tensorboard-jupyter-inline</id><content type="html" xml:base="http://localhost:4000/installation/2019/How-to-configure-tensorboard-jupyter-inline/">&lt;!-- TOC --&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#tensorboard-inline&quot;&gt;Tensorboard inline&lt;/a&gt;
