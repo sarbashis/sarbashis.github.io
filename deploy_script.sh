@@ -14,5 +14,5 @@ echo deploy_script.sh >> .gitignore
 #git commit -m "Fixed the page order"
 #echo "Enter Comment"
 #read comment
-git commit -m "Fixing comment box"
+git commit -m "Fixing comment box again"
 git push
