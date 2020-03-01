@@ -9,28 +9,28 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Setting up Machine Learning Environment in Ubuntu/Linux - Sarbashis Das, Ph.D.</title>
-<meta name="description" content="This post is for setting up a Machine Learning environment for your Machine Projects in Linux/Ubuntu. Also important to keep in mind that you should keep tract of your environment which help in reproducibility of the project. Here I am showing how easy to set up Machine Learning Environment with anaconda. ">
+<!-- begin _includes/seo.html --><title>Git Tutorial - Sarbashis Das, Ph.D.</title>
+<meta name="description" content="Step 1: Create a local git repository">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Sarbashis Das, Ph.D.">
-<meta property="og:title" content="Setting up Machine Learning Environment in Ubuntu/Linux">
-<meta property="og:url" content="http://localhost:4000/installation/2019/Setting-up-ML-envs-ubuntu/">
+<meta property="og:title" content="Git Tutorial">
+<meta property="og:url" content="http://localhost:4000/classfication/2020/git-tutorial/">
 
 
-  <meta property="og:description" content="This post is for setting up a Machine Learning environment for your Machine Projects in Linux/Ubuntu. Also important to keep in mind that you should keep tract of your environment which help in reproducibility of the project. Here I am showing how easy to set up Machine Learning Environment with anaconda. ">
+  <meta property="og:description" content="Step 1: Create a local git repository">
 
 
 
 
 
   <meta name="twitter:site" content="@Sarbashis_Das">
-  <meta name="twitter:title" content="Setting up Machine Learning Environment in Ubuntu/Linux">
-  <meta name="twitter:description" content="This post is for setting up a Machine Learning environment for your Machine Projects in Linux/Ubuntu. Also important to keep in mind that you should keep tract of your environment which help in reproducibility of the project. Here I am showing how easy to set up Machine Learning Environment with anaconda. ">
-  <meta name="twitter:url" content="http://localhost:4000/installation/2019/Setting-up-ML-envs-ubuntu/">
+  <meta name="twitter:title" content="Git Tutorial">
+  <meta name="twitter:description" content="Step 1: Create a local git repository">
+  <meta name="twitter:url" content="http://localhost:4000/classfication/2020/git-tutorial/">
 
   
     <meta name="twitter:card" content="summary">
@@ -41,7 +41,7 @@
 
 
 
-  <meta property="article:published_time" content="2019-03-11T00:00:00+01:00">
+  <meta property="article:published_time" content="2020-02-06T00:00:00+01:00">
 
 
 
@@ -52,7 +52,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/installation/2019/Setting-up-ML-envs-ubuntu/">
+<link rel="canonical" href="http://localhost:4000/classfication/2020/git-tutorial/">
 
 
 
@@ -290,15 +290,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Setting up Machine Learning Environment in Ubuntu/Linux">
-    <meta itemprop="description" content="This post is for setting up a Machine Learning environment for your Machine Projects in Linux/Ubuntu. Also important to keep in mind that you should keep tract of your environment which help in reproducibility of the project. Here I am showing how easy to set up Machine Learning Environment with anaconda. ">
-    <meta itemprop="datePublished" content="March 11, 2019">
+    <meta itemprop="headline" content="Git Tutorial">
+    <meta itemprop="description" content="Step 1: Create a local git repository">
+    <meta itemprop="datePublished" content="February 06, 2020">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Setting up Machine Learning Environment in Ubuntu/Linux
+          <h1 id="page-title" class="page__title" itemprop="headline">Git Tutorial
 </h1>
           
             <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
@@ -306,7 +306,7 @@
 
 
 
-  1 minute read
+  2 minute read
 </p>
           
         </header>
@@ -314,130 +314,130 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>This post is for setting up a Machine Learning environment for your Machine Projects in Linux/Ubuntu. Also important to keep in mind that you should keep tract of your environment which help in reproducibility of the project. Here I am showing how easy to set up Machine Learning Environment with anaconda. 
-<!-- TOC --></p>
+        <h1 id="step-1-create-a-local-git-repository">Step 1: Create a local git repository</h1>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git init
+</code></pre></div></div>
+
+<p><img src="/assets/images/git_init.png" alt="git Init" width="1000" /></p>
+
+<h1 id="step-2-add-a-new-file-to-the-repository">Step 2: Add a new file to the repository</h1>
+
+<p>Create a new file using touch</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  touch first.txt
+</code></pre></div></div>
+
+<h1 id="step-3-add-a-file-to-staging-environment">Step 3: Add a file to staging environment</h1>
+
+<p>By doing this you have created a new file but git is not aware of this file. So we need to add them to the staging environment using the following command</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add first.txt
+</code></pre></div></div>
+
+<h1 id="step-4-create-a-commit">Step 4: Create a commit:</h1>
+
+<p>By creating a commit the git track the changes that you have made. The following command is used to commit</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit -m "first commit"
+</code></pre></div></div>
+
+<p>Here “-m” is the message that you want to add to the commit.</p>
+
+<h1 id="step-5-create-a-new-branch">Step 5: Create a new branch:</h1>
+<p>Let create a new branch in this repository or repo</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch &lt;name&gt;
+</code></pre></div></div>
+
+<p>use</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global pager.branch false
+</code></pre></div></div>
+
+<p>for showing the branch in the same place.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch my-first-branch
+git branch -v
+</code></pre></div></div>
 
 <ul>
-  <li><a href="#conda-installer">Conda Installer</a>
-    <ul>
-      <li><a href="#installing-conda">Installing Conda</a></li>
-      <li><a href="#create-a-new-virtual-environment-using-conda">Create a new virtual environment using Conda</a></li>
-      <li><a href="#migration-of-a-conda-environment">Migration of a conda Environment</a></li>
-    </ul>
-  </li>
+  <li>master          c143fc1 Merge branch ‘master’ of https://github.com/sarbashis/Gittutorial
+*
+my-first-branch c143fc1 Merge branch ‘master’ of https://github.com/sarbashis/Gittutorial</li>
 </ul>
 
-<!-- /TOC -->
+<h1 id="step-6-create-a-new-repo-in-github">Step 6: Create a new repo in GitHub</h1>
+<p>Login to GitHub and create a repo. Then use the following command to connect the repo to the local repository</p>
 
-<h1 id="conda-installer">Conda Installer</h1>
-<p>Anaconda is an open-source platform for Python/R and machine Learning and available for linux, Windows and Mac OS X.  It is the industry standard for developing, testing, and training on a single machine, enabling individual data scientists.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin https://github.com/sarbashis/Gittutorial.git
+</code></pre></div></div>
 
-<h2 id="installing-conda">Installing Conda</h2>
-<p>To install the conda installer please follow the following command.</p>
+<p>Check if remote added or not by the following command</p>
 
-<ol>
-  <li>
-    <p>Donload Anaconda from the link
-  https://www.anaconda.com/distribution/</p>
-  </li>
-  <li>
-    <p>Make it executables by using the following command</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  git remote -v Next push the existing master to the remote repo by using
 
-    <blockquote>
-      <p>chmod a+x ./Anaconda3-2018.12-Linux-x86_64.sh</p>
-    </blockquote>
-  </li>
-  <li>
-    <p>Run the command to install conda</p>
+git push -u origin master
+</code></pre></div></div>
 
-    <blockquote>
-      <p>./Anaconda3-2018.12-Linux-x86_64.sh</p>
-    </blockquote>
+<p>if you get error message like below then use the command
+<strong>fatal: refusing to merge unrelated histories</strong></p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     In order to continue the installation process, please review the license
-     agreement.
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull origin master --allow-unrelated-histories
+</code></pre></div></div>
 
-     Please, press ENTER to continue
+<h1 id="step-7-push-the-local-changes-in-the-remote">Step 7: Push the local changes in the remote</h1>
 
-     Do you accept the license terms? [yes|no]
-     [no] &gt;&gt;&gt; yes
+<p>git push –set-upstream origin master</p>
 
-     Anaconda3 will now be installed into this location:
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Next activate conda path</p>
+<h1 id="step-8-create-a-pull-request">Step 8: Create a Pull request</h1>
+<p>Follow the step in GitHub to create a pull request and merge
+after that</p>
 
-    <blockquote>
-      <p>source .bashrc</p>
-    </blockquote>
-  </li>
-  <li>
-    <p>Next step is to update conda. Navigate to the anaconda directory and run the following command</p>
+<p>git pull origin master</p>
 
-    <blockquote>
-      <p>conda update conda</p>
-    </blockquote>
-  </li>
-</ol>
+<h1 id="step-9-git-log">Step 9: Git Log</h1>
 
-<h2 id="create-a-new-virtual-environment-using-conda">Create a new virtual environment using Conda</h2>
-<p>Virtual environment is highly recommeded for machine learning projects. Each virtual environment has its own environment and the installed packages. If any package damage or corrupt in one environment will not effect other environment.
-So, Lets create a virtual environment.</p>
+<p>git log will show the commit histories</p>
 
-<ol>
-  <li>Follow the conda command.
-    <blockquote>
-      <p>conda create –name “Enviroment_Name” python=3.7</p>
-    </blockquote>
-  </li>
-</ol>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log
 
-<p>Change the Enviroment_Name accordingly</p>
+# git log with patches and limit to most recent two
+git log -p -2
 
-<ol>
-  <li>Activate the environment using
-    <blockquote>
-      <p>conda activate Enviroment_Name
-Once the environment is activated, environment name is added as prefix to the command prompt.</p>
-    </blockquote>
-  </li>
-  <li>Removing an environment
-    <blockquote>
-      <p>cond remove –name Enviroment_Name –all</p>
-    </blockquote>
-  </li>
-  <li>Installing other package for example
-    <blockquote>
-      <p>conda install cmake
-pip install scikit-learn</p>
-    </blockquote>
-  </li>
-  <li>To get a list of install packages
-    <blockquote>
-      <p>conda list</p>
-    </blockquote>
-  </li>
-</ol>
+#pretty oneline
+git log --pretty=oneline
+git log --oneline
+git log --oneline --decorate --graph
 
-<h2 id="migration-of-a-conda-environment">Migration of a conda Environment</h2>
-<p>Migrating a conda environment is pretty easy. Lets see how</p>
+#This one is use for release annoucement where commits are grouped by authors
 
-<ol>
-  <li>Fist we need to export the list of installed packages by using the following command.
-    <blockquote>
-      <p>conda env export &gt; environment.yml</p>
-    </blockquote>
-  </li>
-  <li>Next is to create a new environment from the file
-    <blockquote>
-      <p>conda env create -f environment.yml</p>
-    </blockquote>
-  </li>
-  <li>That’s it. Done.</li>
-</ol>
+git shortlog # Advance tips
+</code></pre></div></div>
 
-<p>Enjoy working</p>
+<h2 id="change-most-recent-git-commit-message">Change most recent Git commit message</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit --amend -m "an updated commit message"
+</code></pre></div></div>
+
+<p>Changing committed files
+ The following example demonstrates a common scenario in Git-based development. Let’s say we’ve edited a few files that we would like to commit in a single snapshot, but then we forget to add one of the files the first time around. Fixing the error is simply a matter of staging the other file and committing with the –amend flag:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit --amend --no-edit
+</code></pre></div></div>
+
+<p><em>Cautions</em>: Don’t amend public commits. Be cautious when using –amend on commits shared with other team members. Amending a commit that is shared with another user will potentially require confusing and lengthy merge conflict resolutions.</p>
+
+<p>## Changing older or multiple commits</p>
+
+<p># Rebasing
+ Rebasing is a process of combining or moving a sequence of commits
+ to a new base commit. Rebasing is most useful and easily visualized in the context of feature brach workflow.</p>
+
+<p>Rebasing actualy changing the base of the branch to a new commit and it appear that the brach was derived from the new commit.</p>
+
+<p>So what is the use of rebasing?
+The primary reason of rebasing is to maintain a linear project history. Let assume that after branching out from master, the master progressed since you started working on the branch.</p>
 
         
       </section>
@@ -479,14 +479,14 @@ pip install scikit-learn</p>
     
       
       
-      <a href="/categories/#installation" class="page__taxonomy-item" rel="tag">installation</a>
+      <a href="/categories/#classfication" class="page__taxonomy-item" rel="tag">classfication</a>
     
     </span>
   </p>
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-03-11T00:00:00+01:00">March 11, 2019</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-02-06T00:00:00+01:00">February 06, 2020</time></p>
         
       </footer>
 
@@ -495,25 +495,24 @@ pip install scikit-learn</p>
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=Sarbashis_Das&text=Setting+up+Machine+Learning+Environment+in+Ubuntu%2FLinux%20http%3A%2F%2Flocalhost%3A4000%2Finstallation%2F2019%2FSetting-up-ML-envs-ubuntu%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=Sarbashis_Das&text=Git+Tutorial%20http%3A%2F%2Flocalhost%3A4000%2Fclassfication%2F2020%2Fgit-tutorial%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Finstallation%2F2019%2FSetting-up-ML-envs-ubuntu%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fclassfication%2F2020%2Fgit-tutorial%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A4000%2Finstallation%2F2019%2FSetting-up-ML-envs-ubuntu%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A4000%2Fclassfication%2F2020%2Fgit-tutorial%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Finstallation%2F2019%2FSetting-up-ML-envs-ubuntu%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fclassfication%2F2020%2Fgit-tutorial%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/installation/2019/How-to-configure-tensorboard-jupyter-inline/" class="pagination--pager" title="How to configure tensorboard jupyter inline
+      <a href="/installation/2019/Setting-up-ML-envs-ubuntu/" class="pagination--pager" title="Setting up Machine Learning Environment in Ubuntu/Linux
 ">Previous</a>
     
     
-      <a href="/classfication/2020/git-tutorial/" class="pagination--pager" title="Git Tutorial
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
@@ -537,7 +536,7 @@ pip install scikit-learn</p>
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/classfication/2020/git-tutorial/" rel="permalink">Git Tutorial
+        <a href="/installation/2019/Setting-up-ML-envs-ubuntu/" rel="permalink">Setting up Machine Learning Environment in Ubuntu/Linux
 </a>
       
     </h2>
@@ -547,12 +546,10 @@ pip install scikit-learn</p>
 
 
 
-  2 minute read
+  1 minute read
 </p>
     
-    <p class="archive__item-excerpt" itemprop="description">Step 1: Create a local git repository
-
-</p>
+    <p class="archive__item-excerpt" itemprop="description">This post is for setting up a Machine Learning environment for your Machine Projects in Linux/Ubuntu. Also important to keep in mind that you should keep tra...</p>
   </article>
 </div>
         
@@ -707,8 +704,8 @@ An Autoencoder neural network is a type of unsupervised learning algorithm that 
 
 
 var disqus_config = function () {
-this.page.url = "https://sarbashis.github.io/installation/2019/Setting-up-ML-envs-ubuntu/" ;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = /installation/2019/Setting-up-ML-envs-ubuntu; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = "https://sarbashis.github.io/classfication/2020/git-tutorial/" ;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = /classfication/2020/git-tutorial; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE

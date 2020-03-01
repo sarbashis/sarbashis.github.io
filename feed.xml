@@ -1,4 +1,127 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-01T18:34:45+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sarbashis Das, Ph.D.</title><subtitle>My Personal Website.</subtitle><author><name>Sarbashis Das</name><email>dsarbashis@gmail.com</email></author><entry><title type="html">Setting up Machine Learning Environment in Ubuntu/Linux</title><link href="http://localhost:4000/installation/2019/Setting-up-ML-envs-ubuntu/" rel="alternate" type="text/html" title="Setting up Machine Learning Environment in Ubuntu/Linux" /><published>2019-03-11T00:00:00+01:00</published><updated>2019-03-11T00:00:00+01:00</updated><id>http://localhost:4000/installation/2019/Setting-up-ML-envs-ubuntu</id><content type="html" xml:base="http://localhost:4000/installation/2019/Setting-up-ML-envs-ubuntu/">&lt;p&gt;This post is for setting up a Machine Learning environment for your Machine Projects in Linux/Ubuntu. Also important to keep in mind that you should keep tract of your environment which help in reproducibility of the project. Here I am showing how easy to set up Machine Learning Environment with anaconda. 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-01T18:36:15+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sarbashis Das, Ph.D.</title><subtitle>My Personal Website.</subtitle><author><name>Sarbashis Das</name><email>dsarbashis@gmail.com</email></author><entry><title type="html">Git Tutorial</title><link href="http://localhost:4000/classfication/2020/git-tutorial/" rel="alternate" type="text/html" title="Git Tutorial" /><published>2020-02-06T00:00:00+01:00</published><updated>2020-02-06T00:00:00+01:00</updated><id>http://localhost:4000/classfication/2020/git-tutorial</id><content type="html" xml:base="http://localhost:4000/classfication/2020/git-tutorial/">&lt;h1 id=&quot;step-1-create-a-local-git-repository&quot;&gt;Step 1: Create a local git repository&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/git_init.png&quot; alt=&quot;git Init&quot; width=&quot;1000&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;step-2-add-a-new-file-to-the-repository&quot;&gt;Step 2: Add a new file to the repository&lt;/h1&gt;
+
+&lt;p&gt;Create a new file using touch&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  touch first.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;step-3-add-a-file-to-staging-environment&quot;&gt;Step 3: Add a file to staging environment&lt;/h1&gt;
+
+&lt;p&gt;By doing this you have created a new file but git is not aware of this file. So we need to add them to the staging environment using the following command&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add first.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;step-4-create-a-commit&quot;&gt;Step 4: Create a commit:&lt;/h1&gt;
+
+&lt;p&gt;By creating a commit the git track the changes that you have made. The following command is used to commit&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit -m &quot;first commit&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Here “-m” is the message that you want to add to the commit.&lt;/p&gt;
+
+&lt;h1 id=&quot;step-5-create-a-new-branch&quot;&gt;Step 5: Create a new branch:&lt;/h1&gt;
+&lt;p&gt;Let create a new branch in this repository or repo&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &amp;lt;name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;use&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config --global pager.branch false
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;for showing the branch in the same place.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch my-first-branch
+git branch -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;master          c143fc1 Merge branch ‘master’ of https://github.com/sarbashis/Gittutorial
+*
+my-first-branch c143fc1 Merge branch ‘master’ of https://github.com/sarbashis/Gittutorial&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;step-6-create-a-new-repo-in-github&quot;&gt;Step 6: Create a new repo in GitHub&lt;/h1&gt;
+&lt;p&gt;Login to GitHub and create a repo. Then use the following command to connect the repo to the local repository&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote add origin https://github.com/sarbashis/Gittutorial.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Check if remote added or not by the following command&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  git remote -v Next push the existing master to the remote repo by using
+
+git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;if you get error message like below then use the command
+&lt;strong&gt;fatal: refusing to merge unrelated histories&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git pull origin master --allow-unrelated-histories
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;step-7-push-the-local-changes-in-the-remote&quot;&gt;Step 7: Push the local changes in the remote&lt;/h1&gt;
+
+&lt;p&gt;git push –set-upstream origin master&lt;/p&gt;
+
+&lt;h1 id=&quot;step-8-create-a-pull-request&quot;&gt;Step 8: Create a Pull request&lt;/h1&gt;
+&lt;p&gt;Follow the step in GitHub to create a pull request and merge
+after that&lt;/p&gt;
+
+&lt;p&gt;git pull origin master&lt;/p&gt;
+
+&lt;h1 id=&quot;step-9-git-log&quot;&gt;Step 9: Git Log&lt;/h1&gt;
+
+&lt;p&gt;git log will show the commit histories&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git log
+
+# git log with patches and limit to most recent two
+git log -p -2
+
+#pretty oneline
+git log --pretty=oneline
+git log --oneline
+git log --oneline --decorate --graph
+
+#This one is use for release annoucement where commits are grouped by authors
+
+git shortlog # Advance tips
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;change-most-recent-git-commit-message&quot;&gt;Change most recent Git commit message&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit --amend -m &quot;an updated commit message&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Changing committed files
+ The following example demonstrates a common scenario in Git-based development. Let’s say we’ve edited a few files that we would like to commit in a single snapshot, but then we forget to add one of the files the first time around. Fixing the error is simply a matter of staging the other file and committing with the –amend flag:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit --amend --no-edit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Cautions&lt;/em&gt;: Don’t amend public commits. Be cautious when using –amend on commits shared with other team members. Amending a commit that is shared with another user will potentially require confusing and lengthy merge conflict resolutions.&lt;/p&gt;
+
+&lt;p&gt;## Changing older or multiple commits&lt;/p&gt;
+
+&lt;p&gt;# Rebasing
+ Rebasing is a process of combining or moving a sequence of commits
+ to a new base commit. Rebasing is most useful and easily visualized in the context of feature brach workflow.&lt;/p&gt;
+
+&lt;p&gt;Rebasing actualy changing the base of the branch to a new commit and it appear that the brach was derived from the new commit.&lt;/p&gt;
+
+&lt;p&gt;So what is the use of rebasing?
+The primary reason of rebasing is to maintain a linear project history. Let assume that after branching out from master, the master progressed since you started working on the branch.&lt;/p&gt;</content><author><name>Sarbashis Das</name><email>dsarbashis@gmail.com</email></author><category term="ML" /><summary type="html">Step 1: Create a local git repository</summary></entry><entry><title type="html">Setting up Machine Learning Environment in Ubuntu/Linux</title><link href="http://localhost:4000/installation/2019/Setting-up-ML-envs-ubuntu/" rel="alternate" type="text/html" title="Setting up Machine Learning Environment in Ubuntu/Linux" /><published>2019-03-11T00:00:00+01:00</published><updated>2019-03-11T00:00:00+01:00</updated><id>http://localhost:4000/installation/2019/Setting-up-ML-envs-ubuntu</id><content type="html" xml:base="http://localhost:4000/installation/2019/Setting-up-ML-envs-ubuntu/">&lt;p&gt;This post is for setting up a Machine Learning environment for your Machine Projects in Linux/Ubuntu. Also important to keep in mind that you should keep tract of your environment which help in reproducibility of the project. Here I am showing how easy to set up Machine Learning Environment with anaconda. 
 &lt;!-- TOC --&gt;&lt;/p&gt;
 
 &lt;ul&gt;
