@@ -40,7 +40,7 @@ var store = [{
         "url": "http://localhost:4000/installation/2019/Setting-up-ML-envs-ubuntu/",
         "teaser":null},{
         "title": "Git Tutorial",
-        "excerpt":"Step 1: Create a local git repository git init Step 2: Add a new file to the repository Create a new file using touch touch first.txtStep 3: Add a file to staging environment By doing this you have created a new file but git is not aware of this file....","categories": ["classfication"],
+        "excerpt":"Step 1: Create a local git repository git init Step 2: Add a new file to the repository Create a new file using touch &gt;touch first.txtStep 3: Add a file to staging environment By doing this you have created a new file but git is not aware of this file....","categories": ["classfication"],
         "tags": ["ML"],
         "url": "http://localhost:4000/classfication/2020/git-tutorial/",
         "teaser":null}]
