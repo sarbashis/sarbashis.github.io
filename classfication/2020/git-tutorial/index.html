@@ -325,21 +325,21 @@
 
 <p>Create a new file using touch</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  touch first.txt
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;touch first.txt
 </code></pre></div></div>
 
 <h1 id="step-3-add-a-file-to-staging-environment">Step 3: Add a file to staging environment</h1>
 
 <p>By doing this you have created a new file but git is not aware of this file. So we need to add them to the staging environment using the following command</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add first.txt
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;git add first.txt
 </code></pre></div></div>
 
 <h1 id="step-4-create-a-commit">Step 4: Create a commit:</h1>
 
 <p>By creating a commit the git track the changes that you have made. The following command is used to commit</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit -m "first commit"
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;git commit -m "first commit"
 </code></pre></div></div>
 
 <p>Here “-m” is the message that you want to add to the commit.</p>
@@ -347,12 +347,12 @@
 <h1 id="step-5-create-a-new-branch">Step 5: Create a new branch:</h1>
 <p>Let create a new branch in this repository or repo</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch &lt;name&gt;
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;git branch &lt;name&gt;
 </code></pre></div></div>
 
 <p>use</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global pager.branch false
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;git config --global pager.branch false
 </code></pre></div></div>
 
 <p>for showing the branch in the same place.</p>
@@ -367,40 +367,42 @@ git branch -v
 <h1 id="step-6-create-a-new-repo-in-github">Step 6: Create a new repo in GitHub</h1>
 <p>Login to GitHub and create a repo. Then use the following command to connect the repo to the local repository</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin https://github.com/sarbashis/Gittutorial.git
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;git remote add origin https://github.com/sarbashis/Gittutorial.git
 </code></pre></div></div>
 
 <p>Check if remote added or not by the following command</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  git remote -v Next push the existing master to the remote repo by using
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &gt;git remote -v Next push the existing master to the remote repo by using
 
-git push -u origin master
+&gt;git push -u origin master
 </code></pre></div></div>
 
 <p>if you get error message like below then use the command
 <strong>fatal: refusing to merge unrelated histories</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull origin master --allow-unrelated-histories
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;git pull origin master --allow-unrelated-histories
 </code></pre></div></div>
 
 <h1 id="step-7-push-the-local-changes-in-the-remote">Step 7: Push the local changes in the remote</h1>
 
-<p>git push –set-upstream origin master</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;git push --set-upstream origin master
+</code></pre></div></div>
 
 <h1 id="step-8-create-a-pull-request">Step 8: Create a Pull request</h1>
 <p>Follow the step in GitHub to create a pull request and merge
 after that</p>
 
-<p>git pull origin master</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;git pull origin master
+</code></pre></div></div>
 
 <h1 id="step-9-git-log">Step 9: Git Log</h1>
 
 <p>git log will show the commit histories</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;git log
 
 # git log with patches and limit to most recent two
-git log -p -2
+&gt; git log -p -2
 
 #pretty oneline
 git log --pretty=oneline
@@ -409,18 +411,18 @@ git log --oneline --decorate --graph
 
 #This one is use for release annoucement where commits are grouped by authors
 
-git shortlog # Advance tips
+&gt; git shortlog # Advance tips
 </code></pre></div></div>
 
 <h2 id="change-most-recent-git-commit-message">Change most recent Git commit message</h2>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit --amend -m "an updated commit message"
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;git commit --amend -m "an updated commit message"
 </code></pre></div></div>
 
 <p>Changing committed files
  The following example demonstrates a common scenario in Git-based development. Let’s say we’ve edited a few files that we would like to commit in a single snapshot, but then we forget to add one of the files the first time around. Fixing the error is simply a matter of staging the other file and committing with the –amend flag:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit --amend --no-edit
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;git commit --amend --no-edit
 </code></pre></div></div>
 
 <p><em>Cautions</em>: Don’t amend public commits. Be cautious when using –amend on commits shared with other team members. Amending a commit that is shared with another user will potentially require confusing and lengthy merge conflict resolutions.</p>
