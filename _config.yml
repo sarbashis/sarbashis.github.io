@@ -26,9 +26,11 @@ github_username:  sarbashis
 
 # Build settings
 markdown: kramdown
-theme: minima
+#theme: minima
+theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 scholar:
   style: apa
