@@ -1,0 +1,1039 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-07T09:50:44+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Sarbashis Das, PhD.</title><subtitle>My Personal Website.</subtitle><author><name>Sarbashis Das</name><email>dsarbashis@gmail.com</email></author><entry><title type="html">Git Tutorial</title><link href="http://localhost:4000/classfication/2020/git-tutorial/" rel="alternate" type="text/html" title="Git Tutorial" /><published>2020-02-06T00:00:00+01:00</published><updated>2020-02-06T00:00:00+01:00</updated><id>http://localhost:4000/classfication/2020/git-tutorial</id><content type="html" xml:base="http://localhost:4000/classfication/2020/git-tutorial/">&lt;h1 id=&quot;step-1-create-a-local-git-repository&quot;&gt;Step 1: Create a local git repository&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/git_init.png&quot; alt=&quot;git Init&quot; width=&quot;1000&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;step-2-add-a-new-file-to-the-repository&quot;&gt;Step 2: Add a new file to the repository&lt;/h1&gt;
+
+&lt;p&gt;Create a new file using touch&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;touch first.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;step-3-add-a-file-to-staging-environment&quot;&gt;Step 3: Add a file to staging environment&lt;/h1&gt;
+
+&lt;p&gt;By doing this you have created a new file but git is not aware of this file. So we need to add them to the staging environment using the following command&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;git add first.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;step-4-create-a-commit&quot;&gt;Step 4: Create a commit:&lt;/h1&gt;
+
+&lt;p&gt;By creating a commit the git track the changes that you have made. The following command is used to commit&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;git commit -m &quot;first commit&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Here “-m” is the message that you want to add to the commit.&lt;/p&gt;
+
+&lt;h1 id=&quot;step-5-create-a-new-branch&quot;&gt;Step 5: Create a new branch:&lt;/h1&gt;
+&lt;p&gt;Let create a new branch in this repository or repo&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;git branch &amp;lt;name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;use&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;git config --global pager.branch false
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;for showing the branch in the same place.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch my-first-branch
+git branch -v
+
+* master          c143fc1 Merge branch 'master' of https://github.com/sarbashis/Gittutorial
+* my-first-branch c143fc1 Merge branch 'master' of https://github.com/sarbashis/Gittutorial
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;step-6-create-a-new-repo-in-github&quot;&gt;Step 6: Create a new repo in GitHub&lt;/h1&gt;
+&lt;p&gt;Login to GitHub and create a repo. Then use the following command to connect the repo to the local repository&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;git remote add origin https://github.com/sarbashis/Gittutorial.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Check if remote added or not by the following command&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &amp;gt;git remote -v Next push the existing master to the remote repo by using
+
+&amp;gt;git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;if you get error message like below then use the command
+&lt;strong&gt;fatal: refusing to merge unrelated histories&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;git pull origin master --allow-unrelated-histories
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;step-7-push-the-local-changes-in-the-remote&quot;&gt;Step 7: Push the local changes in the remote&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;git push --set-upstream origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;step-8-create-a-pull-request&quot;&gt;Step 8: Create a Pull request&lt;/h1&gt;
+&lt;p&gt;Follow the step in GitHub to create a pull request and merge
+after that&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;git pull origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;step-9-git-log&quot;&gt;Step 9: Git Log&lt;/h1&gt;
+
+&lt;p&gt;git log will show the commit histories&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;git log
+
+# git log with patches and limit to most recent two
+&amp;gt; git log -p -2
+
+#pretty oneline
+git log --pretty=oneline
+git log --oneline
+git log --oneline --decorate --graph
+
+#This one is use for release annoucement where commits are grouped by authors
+
+&amp;gt; git shortlog # Advance tips
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;change-most-recent-git-commit-message&quot;&gt;Change most recent Git commit message&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;git commit --amend -m &quot;an updated commit message&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Changing committed files
+ The following example demonstrates a common scenario in Git-based development. Let’s say we’ve edited a few files that we would like to commit in a single snapshot, but then we forget to add one of the files the first time around. Fixing the error is simply a matter of staging the other file and committing with the –amend flag:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;git commit --amend --no-edit
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Cautions&lt;/em&gt;: Don’t amend public commits. Be cautious when using –amend on commits shared with other team members. Amending a commit that is shared with another user will potentially require confusing and lengthy merge conflict resolutions.&lt;/p&gt;
+
+&lt;p&gt;## Changing older or multiple commits&lt;/p&gt;
+
+&lt;p&gt;# Rebasing
+ Rebasing is a process of combining or moving a sequence of commits
+ to a new base commit. Rebasing is most useful and easily visualized in the context of feature brach workflow.&lt;/p&gt;
+
+&lt;p&gt;Rebasing actualy changing the base of the branch to a new commit and it appear that the brach was derived from the new commit.&lt;/p&gt;
+
+&lt;p&gt;So what is the use of rebasing?
+The primary reason of rebasing is to maintain a linear project history. Let assume that after branching out from master, the master progressed since you started working on the branch.&lt;/p&gt;</content><author><name>Sarbashis Das</name><email>dsarbashis@gmail.com</email></author><category term="ML" /><summary type="html">Step 1: Create a local git repository</summary></entry><entry><title type="html">Setting up Machine Learning Environment in Ubuntu/Linux</title><link href="http://localhost:4000/installation/2019/Setting-up-ML-envs-ubuntu/" rel="alternate" type="text/html" title="Setting up Machine Learning Environment in Ubuntu/Linux" /><published>2019-03-11T00:00:00+01:00</published><updated>2019-03-11T00:00:00+01:00</updated><id>http://localhost:4000/installation/2019/Setting-up-ML-envs-ubuntu</id><content type="html" xml:base="http://localhost:4000/installation/2019/Setting-up-ML-envs-ubuntu/">&lt;p&gt;This post is for setting up a Machine Learning environment for your Machine Projects in Linux/Ubuntu. Also important to keep in mind that you should keep tract of your environment which help in reproducibility of the project. Here I am showing how easy to set up Machine Learning Environment with anaconda. 
+&lt;!-- TOC --&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#conda-installer&quot;&gt;Conda Installer&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#installing-conda&quot;&gt;Installing Conda&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#create-a-new-virtual-environment-using-conda&quot;&gt;Create a new virtual environment using Conda&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#migration-of-a-conda-environment&quot;&gt;Migration of a conda Environment&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- /TOC --&gt;
+
+&lt;h1 id=&quot;conda-installer&quot;&gt;Conda Installer&lt;/h1&gt;
+&lt;p&gt;Anaconda is an open-source platform for Python/R and machine Learning and available for linux, Windows and Mac OS X.  It is the industry standard for developing, testing, and training on a single machine, enabling individual data scientists.&lt;/p&gt;
+
+&lt;h2 id=&quot;installing-conda&quot;&gt;Installing Conda&lt;/h2&gt;
+&lt;p&gt;To install the conda installer please follow the following command.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Donload Anaconda from the link
+  https://www.anaconda.com/distribution/&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make it executables by using the following command&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;chmod a+x ./Anaconda3-2018.12-Linux-x86_64.sh&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run the command to install conda&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;./Anaconda3-2018.12-Linux-x86_64.sh&lt;/p&gt;
+    &lt;/blockquote&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;     In order to continue the installation process, please review the license
+     agreement.
+
+     Please, press ENTER to continue
+
+     Do you accept the license terms? [yes|no]
+     [no] &amp;gt;&amp;gt;&amp;gt; yes
+
+     Anaconda3 will now be installed into this location:
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Next activate conda path&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;source .bashrc&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Next step is to update conda. Navigate to the anaconda directory and run the following command&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;conda update conda&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;create-a-new-virtual-environment-using-conda&quot;&gt;Create a new virtual environment using Conda&lt;/h2&gt;
+&lt;p&gt;Virtual environment is highly recommeded for machine learning projects. Each virtual environment has its own environment and the installed packages. If any package damage or corrupt in one environment will not effect other environment.
+So, Lets create a virtual environment.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Follow the conda command.
+    &lt;blockquote&gt;
+      &lt;p&gt;conda create –name “Enviroment_Name” python=3.7&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Change the Enviroment_Name accordingly&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Activate the environment using
+    &lt;blockquote&gt;
+      &lt;p&gt;conda activate Enviroment_Name
+Once the environment is activated, environment name is added as prefix to the command prompt.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Removing an environment
+    &lt;blockquote&gt;
+      &lt;p&gt;cond remove –name Enviroment_Name –all&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Installing other package for example
+    &lt;blockquote&gt;
+      &lt;p&gt;conda install cmake
+pip install scikit-learn&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;To get a list of install packages
+    &lt;blockquote&gt;
+      &lt;p&gt;conda list&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;migration-of-a-conda-environment&quot;&gt;Migration of a conda Environment&lt;/h2&gt;
+&lt;p&gt;Migrating a conda environment is pretty easy. Lets see how&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Fist we need to export the list of installed packages by using the following command.
+    &lt;blockquote&gt;
+      &lt;p&gt;conda env export &amp;gt; environment.yml&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Next is to create a new environment from the file
+    &lt;blockquote&gt;
+      &lt;p&gt;conda env create -f environment.yml&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;That’s it. Done.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Enjoy working&lt;/p&gt;</content><author><name>Sarbashis Das</name><email>dsarbashis@gmail.com</email></author><category term="ML" /><summary type="html">This post is for setting up a Machine Learning environment for your Machine Projects in Linux/Ubuntu. Also important to keep in mind that you should keep tract of your environment which help in reproducibility of the project. Here I am showing how easy to set up Machine Learning Environment with anaconda.</summary></entry><entry><title type="html">How to configure tensorboard jupyter inline</title><link href="http://localhost:4000/installation/2019/How-to-configure-tensorboard-jupyter-inline/" rel="alternate" type="text/html" title="How to configure tensorboard jupyter inline" /><published>2019-03-06T00:00:00+01:00</published><updated>2019-03-06T00:00:00+01:00</updated><id>http://localhost:4000/installation/2019/How-to-configure-tensorboard-jupyter-inline</id><content type="html" xml:base="http://localhost:4000/installation/2019/How-to-configure-tensorboard-jupyter-inline/">&lt;!-- TOC --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#tensorboard-inline&quot;&gt;Tensorboard inline&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#installation&quot;&gt;Installation:&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#example&quot;&gt;Example&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#calling-tensorbord&quot;&gt;Calling Tensorbord&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- /TOC --&gt;
+
+&lt;h1 id=&quot;tensorboard-inline&quot;&gt;Tensorboard inline&lt;/h1&gt;
+&lt;p&gt;Tensorboard is a very useful tool to see the training progress of the neural network model which is using tensorflow in the backend. There are manyway you can call the tensorbords. Most common way is to call the tensorboard local server and open in the browser. Jupyter notebook also having an extension that will open the tensorboard in a new tab.&lt;/p&gt;
+
+&lt;p&gt;Today I am going to share a new feature of the tensorboard which is still under development is the use the tensorbard with python magic “%” inline. The training visualization will be on the within the jupyter cell and no need open a new tab.&lt;/p&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation:&lt;/h2&gt;
+&lt;p&gt;We need to install the &lt;code class=&quot;highlighter-rouge&quot;&gt;tf-nightly&lt;/code&gt; package using pip or conda&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ./pip install tf-nightly-2.0-preview
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Next is to load the jupyter extension.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load_ext&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tensorboard&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;notebook&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;The tensorboard.notebook extension is already loaded. To reload it, use:
+  %reload_ext tensorboard.notebook
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;example&quot;&gt;Example&lt;/h2&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;datetime&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# using the mnist data&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;mnist&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keras&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datasets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mnist&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mnist&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;255.0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;255.0&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# function to create model&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;create_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keras&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Sequential&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keras&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Flatten&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input_shape&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;28&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;28&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keras&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dense&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;512&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;activation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'relu'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keras&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dropout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keras&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Dense&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;activation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'softmax'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;create_model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;compile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;optimizer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'adam'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loss&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'sparse_categorical_crossentropy'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;metrics&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'accuracy'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;log_dir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Tblogs/fit&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;datetime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;datetime&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;now&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strftime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Y&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;d-&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;H&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;M&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;S&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;tensorboard_callback&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keras&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;callbacks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TensorBoard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log_dir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log_dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;histogram_freq&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;epochs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;validation_data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+          &lt;span class=&quot;n&quot;&gt;callbacks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tensorboard_callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+         &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Train on 60000 samples, validate on 10000 samples
+Epoch 1/10
+60000/60000 [==============================] - 9s 153us/sample - loss: 0.2212 - accuracy: 0.9346 - val_loss: 0.1126 - val_accuracy: 0.9654
+Epoch 2/10
+60000/60000 [==============================] - 8s 140us/sample - loss: 0.0958 - accuracy: 0.9706 - val_loss: 0.0750 - val_accuracy: 0.9754
+Epoch 3/10
+60000/60000 [==============================] - 8s 138us/sample - loss: 0.0700 - accuracy: 0.9785 - val_loss: 0.0788 - val_accuracy: 0.9756
+Epoch 4/10
+60000/60000 [==============================] - 8s 136us/sample - loss: 0.0535 - accuracy: 0.9829 - val_loss: 0.0627 - val_accuracy: 0.9797
+Epoch 5/10
+60000/60000 [==============================] - 8s 139us/sample - loss: 0.0436 - accuracy: 0.9856 - val_loss: 0.0743 - val_accuracy: 0.9787
+Epoch 6/10
+60000/60000 [==============================] - 8s 131us/sample - loss: 0.0358 - accuracy: 0.9880 - val_loss: 0.0632 - val_accuracy: 0.9819
+Epoch 7/10
+60000/60000 [==============================] - 8s 131us/sample - loss: 0.0331 - accuracy: 0.9888 - val_loss: 0.0636 - val_accuracy: 0.9812
+Epoch 8/10
+60000/60000 [==============================] - 8s 139us/sample - loss: 0.0270 - accuracy: 0.9909 - val_loss: 0.0701 - val_accuracy: 0.9823
+Epoch 9/10
+60000/60000 [==============================] - 8s 138us/sample - loss: 0.0227 - accuracy: 0.9925 - val_loss: 0.0681 - val_accuracy: 0.9826
+Epoch 10/10
+60000/60000 [==============================] - 9s 144us/sample - loss: 0.0240 - accuracy: 0.9922 - val_loss: 0.0824 - val_accuracy: 0.9804
+
+&amp;lt;tensorflow.python.keras.callbacks.History at 0x13fca6e80&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;calling-tensorbord&quot;&gt;Calling Tensorbord&lt;/h2&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tensorboard&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;logdir&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Tblogs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/tensorboard.png&quot; alt=&quot;Tensorboard&quot; /&gt;&lt;/p&gt;</content><author><name>Sarbashis Das</name><email>dsarbashis@gmail.com</email></author><category term="ML" /><summary type="html"></summary></entry><entry><title type="html">Installing LightGBM on MacOS Mojave</title><link href="http://localhost:4000/installation/2019/Install-lightGBM-in-MAC-Mojave/" rel="alternate" type="text/html" title="Installing LightGBM on MacOS Mojave" /><published>2019-01-31T00:00:00+01:00</published><updated>2019-01-31T00:00:00+01:00</updated><id>http://localhost:4000/installation/2019/Install-lightGBM-in-MAC-Mojave</id><content type="html" xml:base="http://localhost:4000/installation/2019/Install-lightGBM-in-MAC-Mojave/">&lt;p&gt;&lt;strong&gt;Content&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#required-dependencies&quot;&gt;1. Required Dependencies&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#install-dependencies:&quot;&gt;2. Install dependencies&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#install-lightGBM&quot;&gt;3. Install LightGBM&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#configure-python-api&quot;&gt;4. Configure python API&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#testing&quot;&gt;5. Testing&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#issues&quot;&gt;6. Issues&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Installing Light Gradient Boosting Machine(lightGBM) on MacOC Mojave&lt;/p&gt;
+
+&lt;h3 id=&quot;required-dependencies&quot;&gt;Required Dependencies&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 1. CMake
+- 2. GCC or Apple Clang
+- 3. OpenMP
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;install-dependencies&quot;&gt;Install dependencies:&lt;/h3&gt;
+&lt;p&gt;If you have “brew” then good otherwise install from here()&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;brew install cmake
+brew install libomp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;install-lightgbm&quot;&gt;Install LightGBM&lt;/h3&gt;
+
+&lt;p&gt;Lets first check the version of the dependencies. The following are my version of cmake and GCC&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cmake version 3.13.3
+gcc version  8.2.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now Download the LightGBM from the git repo&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone --recursive https://github.com/Microsoft/LightGBM
+cd LightGBM
+mkdir build
+cd build
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Next step is to build&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cmake -DCMAKE_CXX_COMPILER=g++-8 -DCMAKE_C_COMPILER=gcc-8 ..
+    -- The C compiler identification is GNU 8.2.0
+    -- The CXX compiler identification is GNU 8.2.0
+    -- Checking whether C compiler has -isysroot
+    -- Checking whether C compiler has -isysroot - yes
+    -- Checking whether C compiler supports OSX deployment target flag
+    -- Checking whether C compiler supports OSX deployment target flag - yes
+    -- Check for working C compiler: /usr/local/bin/gcc-8
+    -- Check for working C compiler: /usr/local/bin/gcc-8 -- works
+    -- Detecting C compiler ABI info
+    -- Detecting C compiler ABI info - done
+    -- Detecting C compile features
+    -- Detecting C compile features - done
+    -- Checking whether CXX compiler has -isysroot
+    -- Checking whether CXX compiler has -isysroot - yes
+    -- Checking whether CXX compiler supports OSX deployment target flag
+    -- Checking whether CXX compiler supports OSX deployment target flag - yes
+    -- Check for working CXX compiler: /usr/local/bin/g++-8
+    -- Check for working CXX compiler: /usr/local/bin/g++-8 -- works
+    -- Detecting CXX compiler ABI info
+    -- Detecting CXX compiler ABI info - done
+    -- Detecting CXX compile features
+    -- Detecting CXX compile features - done
+    -- Found OpenMP_C: -fopenmp (found version &quot;4.5&quot;)
+    -- Found OpenMP_CXX: -fopenmp (found version &quot;4.5&quot;)
+    -- Found OpenMP: TRUE (found version &quot;4.5&quot;)
+    -- Configuring done
+    -- Generating done
+    -- Build files have been written to: /Users/sarbashis/miniconda3/envs/ScitificProject/LightGBM/build
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After successful building, compile the programs with “make” command&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;make -j
+    Scanning dependencies of target lightgbm
+    Scanning dependencies of target _lightgbm
+    [  3%] Building CXX object CMakeFiles/_lightgbm.dir/src/c_api.cpp.o
+    [  3%] Building CXX object CMakeFiles/_lightgbm.dir/src/lightgbm_R.cpp.o
+    [  4%] Building CXX object CMakeFiles/lightgbm.dir/src/main.cpp.o
+    [  7%] Building CXX object CMakeFiles/_lightgbm.dir/src/application/application.cpp.o
+    [  9%] Building CXX object CMakeFiles/_lightgbm.dir/src/boosting/gbdt.cpp.o
+    [ 11%] Building CXX object CMakeFiles/lightgbm.dir/src/boosting/gbdt.cpp.o
+    [ 11%] Building CXX object CMakeFiles/lightgbm.dir/src/application/application.cpp.o
+    [ 12%] Building CXX object CMakeFiles/_lightgbm.dir/src/boosting/boosting.cpp.o
+    [ 14%] Building CXX object CMakeFiles/lightgbm.dir/src/metric/dcg_calculator.cpp.o
+    [ 15%] Building CXX object CMakeFiles/lightgbm.dir/src/boosting/boosting.cpp.o
+    [ 20%] Building CXX object CMakeFiles/lightgbm.dir/src/boosting/gbdt_model_text.cpp.o
+    [ 22%] Building CXX object CMakeFiles/_lightgbm.dir/src/boosting/gbdt_model_text.cpp.o
+    [ 23%] Building CXX object CMakeFiles/_lightgbm.dir/src/boosting/gbdt_prediction.cpp.o
+    [ 25%] Building CXX object CMakeFiles/lightgbm.dir/src/boosting/gbdt_prediction.cpp.o
+    [ 30%] Building CXX object CMakeFiles/lightgbm.dir/src/io/config.cpp.o
+    [ 31%] Building CXX object CMakeFiles/_lightgbm.dir/src/io/parser.cpp.o
+    [ 34%] Building CXX object CMakeFiles/_lightgbm.dir/src/io/config_auto.cpp.o
+    [ 34%] Building CXX object CMakeFiles/_lightgbm.dir/src/boosting/prediction_early_stop.cpp.o
+    [ 34%] Building CXX object CMakeFiles/lightgbm.dir/src/io/config_auto.cpp.o
+    [ 34%] Building CXX object CMakeFiles/lightgbm.dir/src/io/json11.cpp.o
+    [ 36%] Building CXX object CMakeFiles/_lightgbm.dir/src/io/metadata.cpp.o
+    [ 38%] Building CXX object CMakeFiles/_lightgbm.dir/src/io/bin.cpp.o
+    [ 39%] Building CXX object CMakeFiles/lightgbm.dir/src/boosting/prediction_early_stop.cpp.o
+    [ 41%] Building CXX object CMakeFiles/lig[ 73%] Building CXX object CMakeFiles/_lightgbm.dir/src/network/network.cpp.o
+    [ 76%] Building CXX object CMakeFiles/_lightgbm.dir/src/treelearner/data_parallel_tree_learner.cpp.o
+    [ 76%] Building CXX object CMakeFiles/_lightgbm.dir/src/objective/objective_function.cpp.o
+    [ 77%] Building CXX object CMakeFiles/_lightgbm.dir/src/treelearner/gpu_tree_learner.cpp.o
+    [ 53%] Building CXX object CMakeFiles/_lightgbm.dir/src/io/config.cpp.o
+    [ 57%] Building CXX object CMakeFiles/_lightgbm.dir/src/io/file_io.cpp.o
+    [ 58%] Building CXX object CMakeFiles/_lightgbm.dir/src/metric/metric.cpp.o
+    [ 60%] Building CXX object CMakeFiles/lightgbm.dir/src/network/linker_topo.cpp.o
+    [ 61%] Building CXX object CMakeFiles/lightgbm.dir/src/metric/metric.cpp.o
+    [ 44%] Building CXX object CMakeFiles/lightgbm.dir/src/io/bin.cpp.o
+    [ 52%] Building CXX object CMakeFiles/lightgbm.dir/src/io/dataset.cpp.o
+    [ 57%] Building CXX object CMak[ 79%] Building CXX object CMakeFiles/_lightgbm.dir/src/treelearner/voting_parallel_tree_learner.cpp.o
+    eFiles/lightgbm.dir/src/io/file_io.cpp.o
+    [ 63%] Building CXX object CMakeFiles/lightgbm.dir/src/io/dataset_loader.cpp.o
+    [ 65%] Building CXX object CMakeFiles/lightgbm.dir/src/network/linkers_mpi.cpp.o
+    [ 66%] Building CXX object CMakeFiles/_lightgbm.dir/src/network/linker_topo.cpp.o
+    [ 68%] Building CXX object CMakeFiles/lightgbm.dir/src/network/linkers_socket.cpp.o
+    [ 69%] Building CXX object CMakeFiles/_lightgbm.dir/src/metric/dcg_calculator.cpp.o
+    [ 71%] Building CXX object CMakeFiles/_lightgbm.dir/src/io/tree.cpp.o
+    htgbm.dir/src/io/metadata.cpp.o
+    [ 47%] Building CXX object CMakeFiles/_lightgbm.dir/src/io/dataset_loader.cpp.o
+    [ 49%] Building CXX object CMakeFiles/_lightgbm.dir/src/io/dataset.cpp.o
+    [ 50%] Building CXX object CMakeFiles/_lightgbm.dir/src/io/json11.cpp.o
+    [ 77%] Building CXX object CMakeFiles/lightgbm.dir/src/io/tree.cpp.o
+    [ 77%] Building CXX object CMakeFiles/lightgbm.dir/src/io/parser.cpp.o
+    [ 42%] Building CXX object CMakeFiles/_lightgbm.dir/src/network/linkers_mpi.cpp.o
+    [ 46%] Building CXX object CMakeFiles/_lightgbm.dir/src/network/linkers_socket.cpp.o
+    [ 82%] Building CXX object CMakeFiles/_lightgbm.dir/src/treelearner/feature_parallel_tree_learner.cpp.o
+    [ 82%] Building CXX object CMakeFiles/lightgbm.dir/src/network/network.cpp.o
+    [ 84%] Building CXX object CMakeFiles/_lightgbm.dir/src/treelearner/tree_learner.cpp.o
+    [ 85%] Building CXX object CMakeFiles/_lightgbm.dir/src/treelearner/serial_tree_learner.cpp.o
+    [ 87%] Building CXX object CMakeFiles/lightgbm.dir/src/treelearner/data_parallel_tree_learner.cpp.o
+    [ 90%] Building CXX object CMakeFiles/lightgbm.dir/src/treelearner/feature_parallel_tree_learner.cpp.o
+    [ 90%] Building CXX object CMakeFiles/lightgbm.dir/src/treelearner/tree_learner.cpp.o
+    [ 92%] Building CXX object CMakeFiles/lightgbm.dir/src/treelearner/voting_parallel_tree_learner.cpp.o
+    [ 93%] Building CXX object CMakeFiles/lightgbm.dir/src/treelearner/serial_tree_learner.cpp.o
+    [ 95%] Building CXX object CMakeFiles/lightgbm.dir/src/treelearner/gpu_tree_learner.cpp.o
+    [ 96%] Building CXX object CMakeFiles/lightgbm.dir/src/objective/objective_function.cpp.o
+    [100%] Linking CXX executable ../lightgbm
+    [100%] Linking CXX shared library ../lib_lightgbm.so
+    [100%] Built target lightgbm
+    [100%] Built target _lightgbm
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you reached upto this then, Congratulation!!! LightGBM is now installed in your mac.&lt;/p&gt;
+
+&lt;h3 id=&quot;configure-python-api&quot;&gt;Configure python API&lt;/h3&gt;
+
+&lt;p&gt;Next run the following command&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; import lightgbm as lgb
+    Traceback (most recent call last):
+    File &quot;&amp;lt;stdin&amp;gt;&quot;, line 1, in &amp;lt;module&amp;gt;
+    ModuleNotFoundError: No module named 'lightgbm'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you see the error “No module named ‘lightgbm’’”, That means that python environment not configure for the ligthgbm.
+Then you need to do the following command from LightGBM root folder.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd python-package/
+python setup.py install
+    running install
+    INFO:LightGBM:Starting to compile the library.
+    INFO:LightGBM:Starting to compile with CMake.
+    running build
+    running build_py
+    creating build
+    creating build/lib
+    creating build/lib/lightgbm
+    copying lightgbm/callback.py -&amp;gt; build/lib/lightgbm
+    copying lightgbm/compat.py -&amp;gt; build/lib/lightgbm
+    copying lightgbm/plotting.py -&amp;gt; build/lib/lightgbm
+    copying lightgbm/__init__.py -&amp;gt; build/lib/lightgbm
+    copying lightgbm/engine.py -&amp;gt; build/lib/lightgbm
+    copying lightgbm/basic.py -&amp;gt; build/lib/lightgbm
+    copying lightgbm/libpath.py -&amp;gt; build/lib/lightgbm
+    copying lightgbm/sklearn.py -&amp;gt; build/lib/lightgbm
+    running egg_info
+    creating lightgbm.egg-info
+    writing lightgbm.egg-info/PKG-INFO
+    writing dependency_links to lightgbm.egg-info/dependency_links.txt
+    writing requirements to lightgbm.egg-info/requires.txt
+    writing top-level names to lightgbm.egg-info/top_level.txt
+    writing manifest file 'lightgbm.egg-info/SOURCES.txt'
+    reading manifest file 'lightgbm.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    no previously-included directories found matching 'build'
+    warning: no files found matching '*.txt'
+    warning: no files found matching '*.so' under directory 'lightgbm'
+    warning: no files found matching '*.dll' under directory 'compile/Release'
+    warning: no files found matching '*' under directory 'compile/compute'
+    warning: no files found matching '*.dll' under directory 'compile/windows/x64/DLL'
+    warning: no previously-included files matching '*.py[co]' found anywhere in distribution
+    writing manifest file 'lightgbm.egg-info/SOURCES.txt'
+    copying lightgbm/VERSION.txt -&amp;gt; build/lib/lightgbm
+    running install_lib
+    creating /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm
+    copying build/lib/lightgbm/callback.py -&amp;gt; /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm
+    copying build/lib/lightgbm/compat.py -&amp;gt; /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm
+    copying build/lib/lightgbm/plotting.py -&amp;gt; /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm
+    copying build/lib/lightgbm/__init__.py -&amp;gt; /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm
+    copying build/lib/lightgbm/engine.py -&amp;gt; /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm
+    copying build/lib/lightgbm/basic.py -&amp;gt; /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm
+    copying build/lib/lightgbm/libpath.py -&amp;gt; /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm
+    copying build/lib/lightgbm/sklearn.py -&amp;gt; /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm
+    copying build/lib/lightgbm/VERSION.txt -&amp;gt; /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm
+    INFO:LightGBM:Installing lib_lightgbm from: ['../lib_lightgbm.so', 'compile/lib_lightgbm.so']
+    copying ../lib_lightgbm.so -&amp;gt; /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm
+    byte-compiling /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm/callback.py to callback.cpython-36.pyc
+    byte-compiling /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm/compat.py to compat.cpython-36.pyc
+    byte-compiling /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm/plotting.py to plotting.cpython-36.pyc
+    byte-compiling /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm/__init__.py to __init__.cpython-36.pyc
+    byte-compiling /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm/engine.py to engine.cpython-36.pyc
+    byte-compiling /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm/basic.py to basic.cpython-36.pyc
+    byte-compiling /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm/libpath.py to libpath.cpython-36.pyc
+    byte-compiling /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm/sklearn.py to sklearn.cpython-36.pyc
+    running install_egg_info
+    Copying lightgbm.egg-info to /Users/sarbashis/miniconda3/envs/ScitificProject/lib/python3.6/site-packages/lightgbm-2.2.3-py3.6.egg-info
+    running install_scripts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;testing&quot;&gt;Testing&lt;/h3&gt;
+&lt;p&gt;Lets test it now. You can see python detect lightGBM with a warning message.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; import lightgbm
+    /Users/sarbashis/miniconda3/envs/ScitificProject/LightGBM/python-package/lightgbm/__init__.py:46: UserWarning: Starting from version 2.2.1, the library file in distribution wheels for macOS is built by the Apple Clang (Xcode_8.3.3) compiler.
+    This means that in case of installing LightGBM from PyPI via the ``pip install lightgbm`` command, you don't need to install the gcc compiler anymore.
+    Instead of that, you need to install the OpenMP library, which is required for running LightGBM on the system with the Apple Clang compiler.
+    You can install the OpenMP library by the following command: ``brew install libomp``.
+    &quot;You can install the OpenMP library by the following command: ``brew install libomp``.&quot;, UserWarning)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now its ready to used. Happy computing.&lt;/p&gt;
+
+&lt;h3 id=&quot;issues&quot;&gt;Issues&lt;/h3&gt;
+&lt;p&gt;It’s rarely happened that you tried to install a package and it installed smoothly.
+Below are the issues I face to install and the solution I tried. I believe this can help&lt;/p&gt;
+
+&lt;h4 id=&quot;1-installing-with-gcc-070&quot;&gt;&lt;strong&gt;1. Installing with GCC 0.7.0&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;I tried to install initially with GCC 0.7.0 but got lots of error during “make -j” command&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    make[2]: *** [CMakeFiles/lightgbm.dir/src/io/metadata.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/_lightgbm.dir/src/io/tree.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/_lightgbm.dir/src/io/parser.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/lightgbm.dir/src/application/application.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/_lightgbm.dir/src/treelearner/data_parallel_tree_learner.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/lightgbm.dir/src/treelearner/tree_learner.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/_lightgbm.dir/src/boosting/gbdt_prediction.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/_lightgbm.dir/src/io/dataset_loader.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/_lightgbm.dir/src/boosting/boosting.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/lightgbm.dir/src/boosting/gbdt_prediction.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/lightgbm.dir/src/boosting/boosting.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/lightgbm.dir/src/io/tree.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/_lightgbm.dir/src/io/dataset.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/_lightgbm.dir/src/application/application.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/_lightgbm.dir/src/objective/objective_function.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/_lightgbm.dir/src/boosting/gbdt_model_text.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/lightgbm.dir/src/io/dataset.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/_lightgbm.dir/src/boosting/gbdt.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/lightgbm.dir/src/treelearner/data_parallel_tree_learner.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/_lightgbm.dir/src/treelearner/tree_learner.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/lightgbm.dir/src/treelearner/feature_parallel_tree_learner.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/_lightgbm.dir/src/c_api.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/lightgbm.dir/src/io/dataset_loader.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/lightgbm.dir/src/treelearner/voting_parallel_tree_learner.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/lightgbm.dir/src/boosting/gbdt.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/_lightgbm.dir/src/treelearner/voting_parallel_tree_learner.cpp.o] Error 1
+    make[2]: *** [CMakeFiles/_lightgbm.dir/src/treelearner/serial_tree_learner.cpp.o] Error 1
+    make[1]: *** [CMakeFiles/_lightgbm.dir/all] Error 2
+    make[1]: *** Waiting for unfinished jobs....
+    make[2]: *** [CMakeFiles/lightgbm.dir/src/treelearner/serial_tree_learner.cpp.o] Error 1
+    make[1]: *** [CMakeFiles/lightgbm.dir/all] Error 2
+    make: *** [all] Error 2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Solution:&lt;/strong&gt; Update gcc. I updated GCC using brew which require to have X-code updated. So using Apple Store, I updated X-code and them the folllowing command,&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    brew upgrade gcc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;X-code and GCC are both large packages, so it takes 2-3 hours to install depending on you internet and computer speed.&lt;/p&gt;
+
+&lt;p&gt;There are two issue I faced. Hope This is helpful.&lt;/p&gt;</content><author><name>Sarbashis Das</name><email>dsarbashis@gmail.com</email></author><category term="ML" /><summary type="html">Content</summary></entry><entry><title type="html">Autoencoder Tutorial</title><link href="http://localhost:4000/installation/2019/AutoEncoder/" rel="alternate" type="text/html" title="Autoencoder Tutorial" /><published>2019-01-17T00:00:00+01:00</published><updated>2019-01-17T00:00:00+01:00</updated><id>http://localhost:4000/installation/2019/AutoEncoder</id><content type="html" xml:base="http://localhost:4000/installation/2019/AutoEncoder/">&lt;h2 id=&quot;topic-autoencoder&quot;&gt;Topic: AutoEncoder&lt;/h2&gt;
+&lt;p&gt;An Autoencoder &lt;strong&gt;neural network&lt;/strong&gt; is a type of unsupervised learning algorithm that applies backpropagation and setting the target values to be equal to the inputs that means;
+ y&lt;sup&gt;(i)&lt;/sup&gt; = x&lt;sup&gt;(i)&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Ref:http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/
+https://www.deeplearningbook.org/contents/autoencoders.html&lt;/p&gt;
+
+&lt;p&gt;The model is actually try to learn a function &lt;em&gt;h&lt;/em&gt;&lt;sub&gt;W,b&lt;/sub&gt;(X) $\approx$ X which means that the fuction is trying to learn an approximatly identity function. The model is a neural network with 3 layers. The input layer size is the size of X and output layer also have same size while the hidden layer are of varing size. The number of neurons in the hidden layer may be less or more than the input layer. Lets assume the number of neuron in the hidden layer is 50 and the output layer is 100. So the function is force to learn compressed representation of the input data. If the input features were each independent of one another, this compression and subsequent reconstructioin would be very difficult task. However if there is some sort of structure exist for example correlation between the features then this stucture can be learned and leverage when forcing the input the network’s bottleneck.&lt;/p&gt;
+
+&lt;p&gt;There are many application of autoencoder such as:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Dimension reduction
+- Extract hidden pattern (information) in the data
+- Recomendation system for the missing values
+- Data denoising.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We are going to do a hands on exercise for better understanding.&lt;/p&gt;
+
+&lt;p&gt;There are different types of &lt;strong&gt;autoencoder&lt;/strong&gt;:
+     - Undercomplete autoencoder
+     - Sparse autoencoder
+     - Denoising autoencoder
+     - Contractive autoencoder&lt;/p&gt;
+
+&lt;p&gt;### Undercomplete autoencoder
+ ### Complete autoencoder&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Building an autoencoder&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# loading important libraries&lt;/span&gt;
+
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;keras.layers&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Dense&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;keras.models&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Model&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;keras&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;regularizers&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;keras.callbacks&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TensorBoard&lt;/span&gt;
+
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Using TensorFlow backend.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# encoding dimenison&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;encoding_dim&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;input_img&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;784&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,))&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# encoded is the encoding representation of the input&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;encoded&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Dense&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encoding_dim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;activation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;relu&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input_img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# decoded is the decoding representation of the encoded image&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;decoded&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Dense&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;784&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;activation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;sigmoid&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encoded&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# This model map an input to its reconstruction&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;autoencoder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input_img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decoded&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# only encoded repsentation&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;encoded&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;input_img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encoded&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Next is the decoded model&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;encoded_input&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encoding_dim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;decoder_layer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;autoencoder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;layers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;decoder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encoded_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decoder_layer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encoded_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Compile the model&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;autoencoder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;compile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loss&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;binary_crossentropy&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;optimizer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;adadelta&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Let’s prepare our datasets&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;keras.datasets&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mnist&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mnist&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;load_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(60000, 28, 28)
+(10000, 28, 28)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Normalized the values between 0 to 1 &lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;astype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'float32'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;255.&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;astype&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'float32'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;255.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(60000, 28, 28)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# flatten the shape&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reshape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:]))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reshape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:]))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;prod&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;784
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(60000, 784)
+(10000, 784)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# training &lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;autoencoder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;epochs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;batch_size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;256&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shuffle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;validation_data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;callbacks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TensorBoard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log_dir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'autoencoderLog'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Train on 60000 samples, validate on 10000 samples
+Epoch 1/100
+60000/60000 [==============================] - 2s 37us/step - loss: 0.3702 - val_loss: 0.2719
+Epoch 2/100
+60000/60000 [==============================] - 2s 33us/step - loss: 0.2648 - val_loss: 0.2543
+Epoch 3/100
+60000/60000 [==============================] - 2s 32us/step - loss: 0.2438 - val_loss: 0.2312
+Epoch 4/100
+60000/60000 [==============================] - 2s 32us/step - loss: 0.2230 - val_loss: 0.2130
+Epoch 5/100
+60000/60000 [==============================] - 2s 32us/step - loss: 0.2081 - val_loss: 0.2006
+Epoch 6/100
+60000/60000 [==============================] - 2s 32us/step - loss: 0.1973 - val_loss: 0.1912
+Epoch 7/100
+60000/60000 [==============================] - 2s 33us/step - loss: 0.1886 - val_loss: 0.1835
+Epoch 8/100
+60000/60000 [==============================] - 2s 33us/step - loss: 0.1816 - val_loss: 0.1771
+Epoch 9/100
+60000/60000 [==============================] - 2s 34us/step - loss: 0.1756 - val_loss: 0.1715
+Epoch 10/100
+60000/60000 [==============================] - 3s 46us/step - loss: 0.1704 - val_loss: 0.1667
+Epoch 11/100
+60000/60000 [==============================] - 2s 33us/step - loss: 0.1658 - val_loss: 0.1623
+Epoch 12/100
+60000/60000 [==============================] - 2s 35us/step - loss: 0.1616 - val_loss: 0.1582
+Epoch 13/100
+60000/60000 [==============================] - 2s 36us/step - loss: 0.1579 - val_loss: 0.1548
+Epoch 14/100
+60000/60000 [==============================] - 2s 32us/step - loss: 0.1544 - val_loss: 0.1514
+Epoch 15/100
+60000/60000 [==============================] - 2s 34us/step - loss: 0.1512 - val_loss: 0.1482
+Epoch 16/100
+60000/60000 [==============================] - 2s 32us/step - loss: 0.1482 - val_loss: 0.1453
+Epoch 17/100
+60000/60000 [==============================] - 2s 32us/step - loss: 0.1455 - val_loss: 0.1426
+Epoch 18/100
+60000/60000 [==============================] - 2s 32us/step - loss: 0.1429 - val_loss: 0.1401
+Epoch 19/100
+60000/60000 [==============================] - 2s 32us/step - loss: 0.1404 - val_loss: 0.1378
+Epoch 20/100
+60000/60000 [==============================] - 2s 34us/step - loss: 0.1381 - val_loss: 0.1355
+Epoch 21/100
+60000/60000 [==============================] - 2s 34us/step - loss: 0.1360 - val_loss: 0.1333
+Epoch 22/100
+60000/60000 [==============================] - 2s 32us/step - loss: 0.1339 - val_loss: 0.1313
+Epoch 23/100
+60000/60000 [==============================] - 2s 33us/step - loss: 0.1319 - val_loss: 0.1294
+Epoch 24/100
+60000/60000 [==============================] - 2s 32us/step - loss: 0.1300 - val_loss: 0.1275
+Epoch 25/100
+60000/60000 [==============================] - 2s 34us/step - loss: 0.1282 - val_loss: 0.1258
+Epoch 26/100
+60000/60000 [==============================] - 2s 34us/step - loss: 0.1265 - val_loss: 0.1241
+Epoch 27/100
+60000/60000 [==============================] - 3s 49us/step - loss: 0.1249 - val_loss: 0.1225
+Epoch 28/100
+60000/60000 [==============================] - 2s 35us/step - loss: 0.1234 - val_loss: 0.1211
+Epoch 29/100
+60000/60000 [==============================] - 2s 33us/step - loss: 0.1219 - val_loss: 0.1196
+Epoch 30/100
+60000/60000 [==============================] - 2s 34us/step - loss: 0.1206 - val_loss: 0.1183
+Epoch 31/100
+60000/60000 [==============================] - 2s 34us/step - loss: 0.1193 - val_loss: 0.1171
+Epoch 32/100
+60000/60000 [==============================] - 2s 33us/step - loss: 0.1182 - val_loss: 0.1160
+Epoch 33/100
+60000/60000 [==============================] - 2s 33us/step - loss: 0.1171 - val_loss: 0.1150
+Epoch 34/100
+60000/60000 [==============================] - 2s 31us/step - loss: 0.1161 - val_loss: 0.1141
+Epoch 35/100
+60000/60000 [==============================] - 2s 30us/step - loss: 0.1152 - val_loss: 0.1132
+Epoch 36/100
+60000/60000 [==============================] - 2s 31us/step - loss: 0.1144 - val_loss: 0.1123
+Epoch 37/100
+60000/60000 [==============================] - 2s 31us/step - loss: 0.1136 - val_loss: 0.1116
+Epoch 38/100
+60000/60000 [==============================] - 2s 31us/step - loss: 0.1129 - val_loss: 0.1109
+Epoch 39/100
+60000/60000 [==============================] - 2s 30us/step - loss: 0.1122 - val_loss: 0.1103
+Epoch 40/100
+60000/60000 [==============================] - 2s 30us/step - loss: 0.1116 - val_loss: 0.1097
+Epoch 41/100
+60000/60000 [==============================] - 2s 31us/step - loss: 0.1110 - val_loss: 0.1091
+Epoch 42/100
+60000/60000 [==============================] - 2s 31us/step - loss: 0.1105 - val_loss: 0.1086
+Epoch 43/100
+60000/60000 [==============================] - 3s 42us/step - loss: 0.1100 - val_loss: 0.1082
+Epoch 44/100
+60000/60000 [==============================] - 2s 33us/step - loss: 0.1096 - val_loss: 0.1077
+Epoch 45/100
+60000/60000 [==============================] - 2s 33us/step - loss: 0.1092 - val_loss: 0.1073
+Epoch 46/100
+60000/60000 [==============================] - 2s 41us/step - loss: 0.1088 - val_loss: 0.1069
+Epoch 47/100
+60000/60000 [==============================] - 3s 48us/step - loss: 0.1084 - val_loss: 0.1066
+Epoch 48/100
+60000/60000 [==============================] - 3s 57us/step - loss: 0.1080 - val_loss: 0.1062
+Epoch 49/100
+60000/60000 [==============================] - 3s 45us/step - loss: 0.1077 - val_loss: 0.1059
+Epoch 50/100
+60000/60000 [==============================] - 2s 41us/step - loss: 0.1074 - val_loss: 0.1056
+Epoch 51/100
+60000/60000 [==============================] - 2s 38us/step - loss: 0.1071 - val_loss: 0.1053
+Epoch 52/100
+60000/60000 [==============================] - 2s 41us/step - loss: 0.1068 - val_loss: 0.1050
+Epoch 53/100
+60000/60000 [==============================] - 2s 37us/step - loss: 0.1065 - val_loss: 0.1047
+Epoch 54/100
+60000/60000 [==============================] - 2s 36us/step - loss: 0.1063 - val_loss: 0.1045
+Epoch 55/100
+60000/60000 [==============================] - 2s 39us/step - loss: 0.1060 - val_loss: 0.1043
+Epoch 56/100
+60000/60000 [==============================] - 3s 46us/step - loss: 0.1058 - val_loss: 0.1041
+Epoch 57/100
+60000/60000 [==============================] - 3s 52us/step - loss: 0.1056 - val_loss: 0.1038
+Epoch 58/100
+60000/60000 [==============================] - 3s 48us/step - loss: 0.1054 - val_loss: 0.1036
+Epoch 59/100
+60000/60000 [==============================] - 3s 45us/step - loss: 0.1052 - val_loss: 0.1034
+Epoch 60/100
+60000/60000 [==============================] - 3s 53us/step - loss: 0.1050 - val_loss: 0.1032
+Epoch 61/100
+60000/60000 [==============================] - 2s 33us/step - loss: 0.1048 - val_loss: 0.1030
+Epoch 62/100
+60000/60000 [==============================] - 3s 42us/step - loss: 0.1046 - val_loss: 0.1028
+Epoch 63/100
+60000/60000 [==============================] - 2s 35us/step - loss: 0.1044 - val_loss: 0.1027
+Epoch 64/100
+60000/60000 [==============================] - 2s 41us/step - loss: 0.1042 - val_loss: 0.1025
+Epoch 65/100
+60000/60000 [==============================] - 2s 35us/step - loss: 0.1041 - val_loss: 0.1024
+Epoch 66/100
+60000/60000 [==============================] - 2s 38us/step - loss: 0.1039 - val_loss: 0.1022
+Epoch 67/100
+60000/60000 [==============================] - 2s 36us/step - loss: 0.1038 - val_loss: 0.1020
+Epoch 68/100
+60000/60000 [==============================] - 2s 35us/step - loss: 0.1036 - val_loss: 0.1019
+Epoch 69/100
+60000/60000 [==============================] - 2s 33us/step - loss: 0.1035 - val_loss: 0.1018
+Epoch 70/100
+60000/60000 [==============================] - 2s 34us/step - loss: 0.1033 - val_loss: 0.1017
+Epoch 71/100
+60000/60000 [==============================] - 2s 33us/step - loss: 0.1032 - val_loss: 0.1015
+Epoch 72/100
+60000/60000 [==============================] - 2s 33us/step - loss: 0.1031 - val_loss: 0.1014
+Epoch 73/100
+60000/60000 [==============================] - 2s 35us/step - loss: 0.1030 - val_loss: 0.1013
+Epoch 74/100
+60000/60000 [==============================] - 3s 55us/step - loss: 0.1028 - val_loss: 0.1012
+Epoch 75/100
+60000/60000 [==============================] - 2s 35us/step - loss: 0.1027 - val_loss: 0.1010
+Epoch 76/100
+60000/60000 [==============================] - 3s 45us/step - loss: 0.1026 - val_loss: 0.1009
+Epoch 77/100
+60000/60000 [==============================] - 2s 36us/step - loss: 0.1025 - val_loss: 0.1008
+Epoch 78/100
+60000/60000 [==============================] - 2s 38us/step - loss: 0.1023 - val_loss: 0.1007
+Epoch 79/100
+60000/60000 [==============================] - 2s 37us/step - loss: 0.1022 - val_loss: 0.1006
+Epoch 80/100
+60000/60000 [==============================] - 3s 49us/step - loss: 0.1021 - val_loss: 0.1004
+Epoch 81/100
+60000/60000 [==============================] - 2s 40us/step - loss: 0.1020 - val_loss: 0.1003
+Epoch 82/100
+60000/60000 [==============================] - 3s 52us/step - loss: 0.1019 - val_loss: 0.1002
+Epoch 83/100
+60000/60000 [==============================] - 3s 49us/step - loss: 0.1017 - val_loss: 0.1001
+Epoch 84/100
+60000/60000 [==============================] - 2s 32us/step - loss: 0.1016 - val_loss: 0.1000
+Epoch 85/100
+60000/60000 [==============================] - 3s 48us/step - loss: 0.1015 - val_loss: 0.0999
+Epoch 86/100
+60000/60000 [==============================] - 2s 35us/step - loss: 0.1014 - val_loss: 0.0998
+Epoch 87/100
+60000/60000 [==============================] - 2s 36us/step - loss: 0.1013 - val_loss: 0.0996
+Epoch 88/100
+60000/60000 [==============================] - 2s 41us/step - loss: 0.1012 - val_loss: 0.0995
+Epoch 89/100
+60000/60000 [==============================] - 2s 37us/step - loss: 0.1010 - val_loss: 0.0994
+Epoch 90/100
+60000/60000 [==============================] - 2s 33us/step - loss: 0.1009 - val_loss: 0.0993
+Epoch 91/100
+60000/60000 [==============================] - 2s 37us/step - loss: 0.1008 - val_loss: 0.0992
+Epoch 92/100
+60000/60000 [==============================] - 2s 39us/step - loss: 0.1007 - val_loss: 0.0991
+Epoch 93/100
+60000/60000 [==============================] - 2s 37us/step - loss: 0.1006 - val_loss: 0.0990
+Epoch 94/100
+60000/60000 [==============================] - 2s 33us/step - loss: 0.1005 - val_loss: 0.0989
+Epoch 95/100
+60000/60000 [==============================] - 2s 35us/step - loss: 0.1004 - val_loss: 0.0988
+Epoch 96/100
+60000/60000 [==============================] - 2s 35us/step - loss: 0.1003 - val_loss: 0.0986
+Epoch 97/100
+60000/60000 [==============================] - 2s 33us/step - loss: 0.1002 - val_loss: 0.0985
+Epoch 98/100
+60000/60000 [==============================] - 2s 32us/step - loss: 0.1000 - val_loss: 0.0984
+Epoch 99/100
+60000/60000 [==============================] - 2s 32us/step - loss: 0.0999 - val_loss: 0.0984
+Epoch 100/100
+60000/60000 [==============================] - 2s 33us/step - loss: 0.0998 - val_loss: 0.0982
+
+
+
+
+
+&amp;lt;keras.callbacks.History at 0x134fde208&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;autoencoder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summary&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_3 (InputLayer)         (None, 784)               0         
+_________________________________________________________________
+dense_3 (Dense)              (None, 32)                25120     
+_________________________________________________________________
+dense_4 (Dense)              (None, 784)               25872     
+=================================================================
+Total params: 50,992
+Trainable params: 50,992
+Non-trainable params: 0
+_________________________________________________________________
+None
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;encoded_imgs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;encoded&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;decoded_imgs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;decoder&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;encoded_imgs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Lets plot with matplotlib&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;c&quot;&gt;# original image&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imshow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reshape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;28&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;28&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_xaxis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_visible&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_yaxis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_visible&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    
+    &lt;span class=&quot;c&quot;&gt;# Reconstructed image&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;subplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;imshow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;decoded_imgs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reshape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;28&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;28&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_xaxis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_visible&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_yaxis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_visible&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/output_20_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;</content><author><name>Sarbashis Das</name><email>dsarbashis@gmail.com</email></author><category term="keras" /><summary type="html">Topic: AutoEncoder An Autoencoder neural network is a type of unsupervised learning algorithm that applies backpropagation and setting the target values to be equal to the inputs that means; y(i) = x(i)</summary></entry><entry><title type="html">How to setup tensorflow and keras in Ubuntu</title><link href="http://localhost:4000/installation/2018/How-to-setup-tensorflow-keras/" rel="alternate" type="text/html" title="How to setup tensorflow and keras in Ubuntu" /><published>2018-10-04T00:00:00+02:00</published><updated>2018-10-04T00:00:00+02:00</updated><id>http://localhost:4000/installation/2018/How-to-setup-tensorflow-keras</id><content type="html" xml:base="http://localhost:4000/installation/2018/How-to-setup-tensorflow-keras/">&lt;p&gt;Upgrade tensor flow by following command.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; pip install --upgrade tensorflow
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Sarbashis Das</name><email>dsarbashis@gmail.com</email></author><category term="keras" /><summary type="html">Upgrade tensor flow by following command.</summary></entry><entry><title type="html">Deep Learning Research Articles</title><link href="http://localhost:4000/deeplearning/2018/Deep-Learning-research-articles/" rel="alternate" type="text/html" title="Deep Learning Research Articles" /><published>2018-10-02T00:00:00+02:00</published><updated>2018-10-02T00:00:00+02:00</updated><id>http://localhost:4000/deeplearning/2018/Deep-Learning-research-articles</id><content type="html" xml:base="http://localhost:4000/deeplearning/2018/Deep-Learning-research-articles/">&lt;ul&gt;
+  &lt;li&gt;Wainberg, M., Merico, D., Delong, A., &amp;amp; Frey, B. J. (2018). &lt;br /&gt;
+  &lt;strong&gt;Deep learning in biomedicine&lt;/strong&gt;. &lt;a href=&quot;https://www.nature.com/articles/nbt.4233&quot;&gt;&lt;em&gt;Nature Biotechnology&lt;/em&gt;, 36(9), 829–838.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Sarbashis Das</name><email>dsarbashis@gmail.com</email></author><category term="ML" /><summary type="html">Wainberg, M., Merico, D., Delong, A., &amp;amp; Frey, B. J. (2018). Deep learning in biomedicine. Nature Biotechnology, 36(9), 829–838.</summary></entry><entry><title type="html">How to Setup Parallel in Mac</title><link href="http://localhost:4000/mac/2018/how-to-setup-parallel-in-mac/" rel="alternate" type="text/html" title="How to Setup Parallel in Mac" /><published>2018-09-25T00:00:00+02:00</published><updated>2018-09-25T00:00:00+02:00</updated><id>http://localhost:4000/mac/2018/how-to-setup-parallel-in-mac</id><content type="html" xml:base="http://localhost:4000/mac/2018/how-to-setup-parallel-in-mac/">&lt;p&gt;Parallel is a perl script that allow user to run same job
+parallel easily.&lt;/p&gt;
+
+&lt;h1 id=&quot;installation&quot;&gt;Installation:&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; brew install parallel
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;May be you need to change the permission of the
+   installed directory&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;  sudo chown -R $(whoami) /usr/local/sbin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Sarbashis Das</name><email>dsarbashis@gmail.com</email></author><summary type="html">Parallel is a perl script that allow user to run same job parallel easily.</summary></entry><entry><title type="html">How to Set Personal WebPage in Github</title><link href="http://localhost:4000/github/2018/how-to-setting-personal-website-in-github/" rel="alternate" type="text/html" title="How to Set Personal WebPage in Github" /><published>2018-09-18T00:00:00+02:00</published><updated>2018-09-18T00:00:00+02:00</updated><id>http://localhost:4000/github/2018/how-to-setting-personal-website-in-github</id><content type="html" xml:base="http://localhost:4000/github/2018/how-to-setting-personal-website-in-github/">&lt;p&gt;This posts is going to show how to setup github page using jekyll
+and minima-mistakes theme&lt;/p&gt;</content><author><name>Sarbashis Das</name><email>dsarbashis@gmail.com</email></author><category term="github" /><summary type="html">This posts is going to show how to setup github page using jekyll and minima-mistakes theme</summary></entry></feed>
