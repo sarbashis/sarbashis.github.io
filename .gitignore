@@ -1,10 +1,8 @@
 _site
 .sass-cache
 .jekyll-metadata
-<<<<<<< HEAD
 deploy_script.sh
-=======
 .DS_Store
 .idea/workspace.xml
-.DS_Store
->>>>>>> upgrade-jekyll
+.idea
+.jekyll-cache
