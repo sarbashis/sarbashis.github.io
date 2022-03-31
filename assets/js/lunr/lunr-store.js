@@ -45,7 +45,7 @@ var store = [{
         "url": "https://sarbashis.github.io/classfication/2020/git-tutorial/",
         "teaser":null},{
         "title": "Generate Diagram as Code using Mermaid",
-        "excerpt":"I this tutorial, I am going to show how diagram can be drawn using code. The program I am going to use is called Mermaid Marmaid Basic Let’s learn about some of the basic syntax. For practicing, once can use Mermaid Live Editor A Node (default) graph TD; A--&gt;B; A--&gt;C;...","categories": ["diagram"],
+        "excerpt":"I this tutorial, I am going to show how diagram can be drawn using code. The program I am going to use is called Mermaid Marmaid Basic Let’s learn about some of the basic syntax. For practicing, once can use Mermaid Live Editor A Node (default) flowchart LR idgraph TD;...","categories": ["diagram"],
         "tags": ["markdown"],
         "url": "https://sarbashis.github.io/diagram/2022/Mermaid-diagram/",
         "teaser":null}]
