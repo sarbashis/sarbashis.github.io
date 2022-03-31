@@ -43,4 +43,9 @@ var store = [{
         "excerpt":"Step 1: Create a local git repository git init Step 2: Add a new file to the repository Create a new file using touch &gt;touch first.txtStep 3: Add a file to staging environment By doing this you have created a new file but git is not aware of this file....","categories": ["classfication"],
         "tags": ["ML"],
         "url": "https://sarbashis.github.io/classfication/2020/git-tutorial/",
+        "teaser":null},{
+        "title": "Generate Diagram as Code using Mermaid",
+        "excerpt":"I this tutorial, I am going to show how diagram can be drawn using code. The program I am going to use is called Mermaid Marmaid Basic Let’s learn about some of the basic syntax. For practicing, once can use Mermaid Live Editor A Node (default) graph TD; A--&gt;B; A--&gt;C;...","categories": ["diagram"],
+        "tags": ["markdown"],
+        "url": "https://sarbashis.github.io/diagram/2022/Mermaid-diagram/",
         "teaser":null}]
