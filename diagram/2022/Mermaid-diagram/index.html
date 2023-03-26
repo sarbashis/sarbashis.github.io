@@ -330,6 +330,36 @@ graph TD;
     C--&gt;D;
 </div>
 
+<div class="mermaid">
+flowchart LR
+     id
+</div>
+
+<p>It is possible to create box with text as well.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ```mermaid
+    flowchart LR
+     id[Test inside the box]
+  ```
+</code></pre></div></div>
+<div class="mermaid">
+<script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
+flowchart LR
+     id[Hello! My name is Blue!]
+</div>
+
+<pre><code class="language-mermaid">    flowchart LR
+     A(A) --&gt; B{B};
+     B --&gt; c[C];
+     c --&gt;a(D);
+     a --&gt;b{E};
+     b --&gt;x[F];
+     x --&gt; u(G);
+     u --&gt; y{H};
+     y --&gt; z[I]
+</code></pre>
+
+
         
       </section>
 
