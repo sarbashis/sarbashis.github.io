@@ -26,3 +26,40 @@ graph TD;
     B-->D;
     C-->D;
 </div>
+
+
+<div class="mermaid">
+flowchart LR
+     id
+</div>
+
+It is possible to create box with text as well. 
+
+````
+  ```mermaid
+    flowchart LR
+     id[Test inside the box]
+  ```
+````
+<div class="mermaid">
+<script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
+flowchart LR
+     id[Hello! My name is Blue!]
+</div>
+
+```mermaid
+    flowchart LR
+     A(A) --> B{B};
+     B --> c[C];
+     c -->a(D);
+     a -->b{E};
+     b -->x[F];
+     x --> u(G);
+     u --> y{H};
+     y --> z[I]
+  ```
+
+
+
+     
+     
