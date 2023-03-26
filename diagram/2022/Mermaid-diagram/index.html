@@ -331,7 +331,7 @@ graph TD;
 </div>
 
 <div class="mermaid">
-flowchart LR
+graph LR;
      id
 </div>
 
@@ -342,9 +342,11 @@ flowchart LR
      id[Test inside the box]
   ```
 </code></pre></div></div>
-<div class="mermaid">
+
 <script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
-flowchart LR
+
+<div class="mermaid">
+graph LR;
      id[Hello! My name is Blue!]
 </div>
 
@@ -359,6 +361,21 @@ flowchart LR
      y --&gt; z[I]
 </code></pre>
 
+<script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
+
+<div class="mermaid">
+graph LR;
+     A(A) --&gt; B{B};
+     B --&gt; c[C];
+     c --&gt;a(D);
+     a --&gt;b{E};
+     b --&gt;x[F];
+     x --&gt; u(G);
+     u --&gt; y{H};
+     y --&gt; z[I]
+</div>
+
+<p><strong>Note:</strong> Marmain <code class="language-plaintext highlighter-rouge">flowchart</code> is not redening in the jekyll or gh-pages. You need to use <code class="language-plaintext highlighter-rouge">graph</code></p>
 
         
       </section>
