@@ -29,7 +29,7 @@ graph TD;
 
 
 <div class="mermaid">
-flowchart LR
+graph LR;
      id
 </div>
 
@@ -41,9 +41,10 @@ It is possible to create box with text as well.
      id[Test inside the box]
   ```
 ````
-<div class="mermaid">
+
 <script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
-flowchart LR
+<div class="mermaid">
+graph LR;
      id[Hello! My name is Blue!]
 </div>
 
@@ -59,7 +60,17 @@ flowchart LR
      y --> z[I]
   ```
 
-
-
+<script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
+<div class="mermaid">
+graph LR;
+     A(A) --> B{B};
+     B --> c[C];
+     c -->a(D);
+     a -->b{E};
+     b -->x[F];
+     x --> u(G);
+     u --> y{H};
+     y --> z[I]
+</div>
      
-     
+**Note:** Marmain `flowchart` is not redening in the jekyll or gh-pages. You need to use `graph`     
