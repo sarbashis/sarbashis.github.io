@@ -329,6 +329,9 @@ collections:
   myposts:
     output: true
     permalink: /:collection/:path/
+  
+  drafts:
+    output: true
 
 
 # Defaults
