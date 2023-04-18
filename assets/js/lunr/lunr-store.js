@@ -1,4 +1,14 @@
 var store = [{
+        "title": "Generative Adversarial Network (GAN)",
+        "excerpt":"","categories": ["classfication"],
+        "tags": ["ML"],
+        "url": "https://sarbashis.github.io/drafts/2019-04-09-Generative-adversarial-network/",
+        "teaser":null},{
+        "title": "Test Tutorial",
+        "excerpt":"18th Feb 2018. Let sees how this workThis are my plan to do in the future. I will try to write blog post in the following series. Machine Learning Algorithms Application of Machine Learning AlThere are many thing to learn. I am now trying to use atom as an editor...","categories": ["installation"],
+        "tags": ["keras"],
+        "url": "https://sarbashis.github.io/drafts/a-test-drafts/",
+        "teaser":null},{
         "title": "How to Set Personal WebPage in Github",
         "excerpt":"This posts is going to show how to setup github page using jekylland minima-mistakes theme ","categories": ["github"],
         "tags": ["github"],
@@ -48,4 +58,9 @@ var store = [{
         "excerpt":"I this tutorial, I am going to show how diagram can be drawn using code. The program I am going to use is called Mermaid Marmaid Basic Let’s learn about some of the basic syntax. For practicing, once can use Mermaid Live Editor A Node (default) flowchart LR idgraph TD;...","categories": ["diagram"],
         "tags": ["markdown"],
         "url": "https://sarbashis.github.io/diagram/2022/Mermaid-diagram/",
+        "teaser":null},{
+        "title": "Generative AI",
+        "excerpt":"Generative AI is a rapidly evolving field of artificial intelligence that involves creating new data or content based on existing data. The process involves using machine learning algorithms to generate new, unique data that has similar properties to the original data. In this blog post, we will explore the basics...","categories": ["ML"],
+        "tags": ["genarative-ai"],
+        "url": "https://sarbashis.github.io/ml/2023/generative-ai/",
         "teaser":null}]
