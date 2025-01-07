@@ -46,7 +46,7 @@
 /// @see susy-settings
 /// @see susy-get
 
-
+@use "sass:list";
 
 // Susy
 // ----
@@ -219,7 +219,7 @@ $susy: () !default;
   $return: ();
 
   @for $i from 1 through $count {
-    $return: join($return, $value);
+    $return: list.join($return, $value);
   }
 
   @return $return;

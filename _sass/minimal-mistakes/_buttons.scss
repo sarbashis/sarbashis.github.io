@@ -6,6 +6,7 @@
    Default button
    ========================================================================== */
 
+@use "sass:color";
 .btn {
   /* default */
   display: inline-block;
@@ -57,7 +58,7 @@
       }
 
       &:hover {
-        @include yiq-contrasted(mix(#000, $color, 20%));
+        @include yiq-contrasted(color.mix(#000, $color, 20%));
       }
     }
   }
