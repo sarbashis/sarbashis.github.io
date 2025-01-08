@@ -13,6 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Clean Jekyll Cache and Site
+      run: |
+        rm -rf _site .sass-cache
+        
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
