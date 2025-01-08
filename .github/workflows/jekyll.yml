@@ -35,7 +35,8 @@ jobs:
         ruby:3.3.4 /bin/bash -c "
         gem install jekyll bundler && \
         bundle install && \
-        rm -rf /srv/jekyll/_site /srv/jekyll/.sass-cache && \
+        rm -rf .sass-cache && \
+        rm -rf /srv/jekyll/_site/* &&
         bundle exec jekyll build --future --trace
         "
 
