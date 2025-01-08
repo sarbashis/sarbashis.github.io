@@ -247,9 +247,6 @@ plugins:
   - jekyll-include-cache
 
 
-
-
-
 scholar:
   style: apa
   locale: en
