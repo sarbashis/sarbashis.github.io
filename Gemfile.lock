@@ -172,6 +172,7 @@ DEPENDENCIES
   faraday-retry
   jekyll
   jekyll-feed (~> 0.12)
+  jekyll-sass-converter
   jekyll-scholar
   jemoji
   minima
