@@ -12,10 +12,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
+    - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.3.4
+          bundler-cache: true
+
     - name: Clean Jekyll Cache and Site
       run: |
         rm -rf _site .sass-cache
+
+    - name: Check ruby version
+      run: |
+        ruby -v
         
     - name: Build the site in the jekyll/builder container
       run: |
