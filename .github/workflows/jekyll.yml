@@ -29,14 +29,14 @@ jobs:
 
     - name: Build the site in the jekyll/builder container
       run: |
-      docker run \
-      -v ${{ github.workspace }}:/srv/jekyll \
-      ruby:3.3.4 /bin/bash -c "
-      gem install jekyll bundler && \
-      bundle install && \
-      rm -rf /srv/jekyll/_site /srv/jekyll/.sass-cache && \
-      bundle exec jekyll build --future --trace
-      "
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll \
+        ruby:3.3.4 /bin/bash -c "
+        gem install jekyll bundler && \
+        bundle install && \
+        rm -rf /srv/jekyll/_site /srv/jekyll/.sass-cache && \
+        bundle exec jekyll build --future --trace
+        "
       
     - name: deploy
       uses: peaceiris/actions-gh-pages@v3
