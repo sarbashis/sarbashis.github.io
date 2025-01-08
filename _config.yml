@@ -110,8 +110,8 @@ analytics:
 # Site Author
 author:
   name             : "Sarbashis Das"
-  avatar           : "/assets/images/sarbasis2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Project Manager & Senior Data Scientist| Machine Learning | Deep Learning | Bioinformatics| Data Analyst."
+  avatar           : "/assets/images/MPS_2806.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Pricipal Data Scientist| GenAI Tech Lead | Machine Learning |"
   location         : "Stockholm, Sweden"
   email            : "dsarbashis@gmail.com"
   links:
@@ -330,7 +330,7 @@ collections:
   myposts:
     output: true
     permalink: /:collection/:path/
-  
+
   drafts:
     output: true
 
