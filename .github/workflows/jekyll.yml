@@ -30,14 +30,15 @@ jobs:
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
-        -v ${{ github.workspace }}:/srv/jekyll \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        -w /srv/jekyll \
         ruby:3.3.4 /bin/bash -c "
         gem install jekyll bundler && \
         bundle install && \
         rm -rf /srv/jekyll/_site /srv/jekyll/.sass-cache && \
         bundle exec jekyll build --future --trace
         "
-      
+
     - name: deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
@@ -45,5 +46,5 @@ jobs:
         publish_dir: ./_site
           # if the repo you are deploying to is <username>.github.io, uncomment the line below.
           # if you are including the line below, make sure your source files are NOT in the "main" branch:
-        publish_branch: gh-pages    
-    
+        publish_branch: gh-pages
+
