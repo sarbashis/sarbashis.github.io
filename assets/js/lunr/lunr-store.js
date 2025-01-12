@@ -63,4 +63,9 @@ var store = [{
         "excerpt":"Generative AI is a rapidly evolving field of artificial intelligence that involves creating new data or content based on existing data. The process involves using machine learning algorithms to generate new, unique data that has similar properties to the original data. In this blog post, we will explore the basics...","categories": ["ML"],
         "tags": ["genarative-ai"],
         "url": "https://sarbashis.github.io/ml/2023/generative-ai/",
+        "teaser":null},{
+        "title": "Exploring Cache-Augmented Generation (CAG): A New Frontier in Language Model Enhancement",
+        "excerpt":"In the ever-evolving landscape of language models, Retrieval-Augmented Generation (RAG) has stood out as a formidable approach, enhancing models by integrating external knowledge sources. However, RAG is not without its challenges, including retrieval latency, retrieval errors, and increased system complexity. Enter Cache-Augmented Generation (CAG), a promising alternative that seeks to...","categories": ["GenAI"],
+        "tags": ["RAG","CAG"],
+        "url": "https://sarbashis.github.io/genai/2025/Cache-Augmented-Generation/",
         "teaser":null}]
