@@ -15,7 +15,7 @@ In the ever-evolving landscape of language models, Retrieval-Augmented Generatio
 CAG leverages the extended context windows of modern large language models (LLMs) by preloading all relevant resources into the model’s context and caching its runtime parameters. This innovative approach allows the model to generate responses directly during inference, bypassing the need for real-time retrieval.
 
 
-![CAG](/images/CAG.png)
+![CAG](/assets/images/CAG.png)
 Source: https://arxiv.org/html/2412.15605v1
 
 **The Advantages of CAG**
