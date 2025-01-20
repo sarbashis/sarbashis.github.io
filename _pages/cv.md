@@ -11,9 +11,6 @@ permalink: /CV/
 Experience Summary With over 10 years in AI/ML, I currently serve as a Principal Data Scientist & Technical Lead at Ericsson, Sweden. I have been pivotal in designing the software architecture of di ff erent AI-based Products. My journey reflects a passion for Generative AI and a focus on developing innovative AI/ML products and tools. I lead cross-functional teams, mentor junior data scientists, and drive the adoption of advanced AI technologies at Ericsson.
 
 
-
-## Professional Skills
-
 ## Professional Skills
 
 | **Skill Area**           | **Skills**                                         |
