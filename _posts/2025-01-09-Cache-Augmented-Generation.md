@@ -43,7 +43,7 @@ The limitations of CAG are rapidly being addressed by advancements in LLMs, whic
 In conclusion, Cache-Augmented Generation represents a significant step forward in the quest to enhance language models. By addressing the challenges of RAG and capitalizing on the strengths of modern LLMs, CAG offers a compelling solution for the future of language model enhancement. As technology progresses, we can expect CAG to play an increasingly vital role in the development of sophisticated, efficient, and reliable language models.
 
 
-## Refereces:
+## References:
 1. https://github.com/hhhuang/CAG/tree/main
 2. https://www.youtube.com/watch?v=NaEf_uiFX6o
 
