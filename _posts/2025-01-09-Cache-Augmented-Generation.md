@@ -47,3 +47,6 @@ In conclusion, Cache-Augmented Generation represents a significant step forward 
 1. https://github.com/hhhuang/CAG/tree/main
 2. https://www.youtube.com/watch?v=NaEf_uiFX6o
 
+
+
+Check out my latest blog post where I dive into the recently published paper, *Don't Do RAG: When Cache-Augmented Generation is All You Need for Knowledge Tasks.* I've highlighted the pros and cons of this innovative approach.
