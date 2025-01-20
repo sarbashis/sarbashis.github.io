@@ -11,7 +11,7 @@ permalink: /CV/
 Experience Summary With over 10 years in AI/ML, I currently serve as a Principal Data Scientist & Technical Lead at Ericsson, Sweden. I have been pivotal in designing the software architecture of di ff erent AI-based Products. My journey reflects a passion for Generative AI and a focus on developing innovative AI/ML products and tools. I lead cross-functional teams, mentor junior data scientists, and drive the adoption of advanced AI technologies at Ericsson.
 
 
-## Professional Skills
+### Professional Skills
 
 | **Skill Area**           | **Skills**                                         |
 |---------------------------|---------------------------------------------------|
@@ -42,9 +42,9 @@ Experience Summary With over 10 years in AI/ML, I currently serve as a Principal
 | **Programming** | Python, R | -->
 
 
-## Work Experiences
+### Work Experiences
 
-## 2024 - Present: Principal Data Scientist & Technical Lead - Industrialization of Agentic RAG Assistant
+#### 2024 - Present: Principal Data Scientist & Technical Lead - Industrialization of Agentic RAG Assistant
 
 AI Hub Ericsson, Sweden
 
@@ -57,7 +57,7 @@ Lead Industrialization of the
 
 
 
-## 2020 - 2024: AI Architect & Technical Lead for Ericsson Product Information Assistant AI Hub Ericsson, Sweden
+#### 2020 - 2024: AI Architect & Technical Lead for Ericsson Product Information Assistant AI Hub Ericsson, Sweden
 
 - Focus Areas: Product Development & Project Management Leading a diverse team of 15 professionals, including
 
@@ -67,9 +67,7 @@ Lead Industrialization of the
     - Implemented Agile Methodologies to efficiently plan and manage the development of the Assistant, resulting in 16 successful quarterly releases.
     - Held responsibility for the comprehensive architecture of the Assistant, overseeing 35 microservices.
 
-## 2021 - 2023: Senior Data Scientist
-
-Global AI Accelerator (GAIA) Ericsson, Sweden
+#### 2021 - 2023: Senior Data Scientist, Global AI Accelerator (GAIA) Ericsson, Sweden
 
 - Focus Areas: Generative AI and LLMs
     - Proposed and drove the implementation of Retrieval Augmented Generation (RAG) using vector embedding and Large Language Model (LLM) .
@@ -80,7 +78,7 @@ and answer quality.
 
 <!-- image -->
 
-## Sept, 2022 - March 2023: Leaders Core Curriculum Program (LCC) Ericsson, Sweden
+#### Sept, 2022 - March 2023: Leaders Core Curriculum Program (LCC) Ericsson, Sweden
 
 - The Leaders Core Curriculum (LCC) is Ericsson's foundation-level leadership development program that focuses on developing the core leadership capabilities needed to drive performance. Over the course of this 15-week program: Developed self-awareness.
 
@@ -88,28 +86,24 @@ and answer quality.
     - How to influence and collaborate effectively across organization.
     - Learned different leadership style, understand what drives and motivates a team
 
-## 2019 - 2021: Data Scientist
-
-Global AI Accelerator (GAIA) Ericsson, Sweden
+#### 2019 - 2021: Data Scientist, Global AI Accelerator (GAIA) Ericsson, Sweden
 
 - Focus Areas: Knowledge graph generation Developed pipeline for
 - Developed pipeline for documents and generate Knowledge Graph using open-source tools.
 - Trained ML model for name-entity recognition for Ericsson Product names. -Knowledge Graph
 - Designed SPARQL queries to fetch information from Knowledge Graph
 
-## 2014 - 2019 Researcher/Senior Researcher
-
-SciLifelab, Uppsala University, Sweden
+#### 2014 - 2019 Researcher/Senior Researcher, SciLifelab, Uppsala University, Sweden
 
 - Focus Areas: Understand gene regulation in different types of heart failures using Machine Learning
 - Different Machine Learning approaches like dimension reduction and unsupervised clustering were used to identify 743 dysregulated genes.
 
-# Education
+### Education
 
 - Ph.D. in Computational & System Science
 - M.Tech in Computational & System Science
 
-# Certifications
+### Certifications
 
 - Generative AI and Large Language Model
 - Specialization in Machine Learning Engineering for Production (MLOps)
@@ -121,42 +115,42 @@ SciLifelab, Uppsala University, Sweden
 - Introduction to Data Science in Python, University of Michigan
 
 
-# Awards
+### Awards
 
-## 2024, Ericsson Key Contributor Award
+#### 2024, Ericsson Key Contributor Award
 This recognition reflects potential to drive Ericsson's long-term Strategic priorities
 
-## 2021, Ericsson Impact Award 2021
+#### 2021, Ericsson Impact Award 2021
 The award was given to the people who contribution has a great impact to Ericsson business value
 
-## 2017, Research Grant awarded as a co-applicant
+#### 2017, Research Grant awarded as a co-applicant
 *Title: Dynamics of gene regulatory networks in response to di ff erent stresses in Mycobacteria. Funding Agency: FORMAS.*
 
-## 2016, Research Grant awarded as a co-applicant
+#### 2016, Research Grant awarded as a co-applicant
 Title: Non-coding and regulatory RNAs in Mycobacteria. Funding Agency: Swedish Research Council (VR)
 
-## 2012, Awarded Wennergren Postodoc Fellowship
+#### 2012, Awarded Wennergren Postodoc Fellowship
 Funding Agency: Wennergren Foundations. Grant offered, but gracefully declined due to accepting other Postdoc position
 
-## 2010, Awarded Senior Research Fellowship
+#### 2010, Awarded Senior Research Fellowship
 Funding Agency: Council of Scientific and Industrial Research (CSIR), Government of India.
 
-## 2006, Awarded Scholarship for Master of Technology
+#### 2006, Awarded Scholarship for Master of Technology
 Funding Agency: Department of Biotechnology (DBT), Government of India.
 
-## Highlighted Invited Talks and Conference Presentations
+#### Highlighted Invited Talks and Conference Presentations
 2024, Presented Ericsson Product Information Assistant with Generative AI Ericsson Developer Conference
 
-## 2024, Invited talk , Uppsala University
+#### 2024, Invited talk , Uppsala University
 Generative AI & LLM to Master Program students
 
-## 2023, Presented & Demoed Retrieval Augmented Generation (RAG) Architecture in PIA
+#### 2023, Presented & Demoed Retrieval Augmented Generation (RAG) Architecture in PIA
 Multiple Organization within Ericsson
 
-## 2022, Presented & demoed , Ericsson Developer Conference (Stockholm)
+#### 2022, Presented & demoed , Ericsson Developer Conference (Stockholm)
 Presented Ericsson Product Information Assistant and demoed different functionalities
 
 
-# Interests
+### Interests
 
 Generative AI, Machine Learning, Fine turning, Software development
