@@ -44,6 +44,7 @@ In conclusion, Cache-Augmented Generation represents a significant step forward 
 
 
 ## References:
-1. https://github.com/hhhuang/CAG/tree/main
-2. https://www.youtube.com/watch?v=NaEf_uiFX6o
+1. https://arxiv.org/html/2412.15605v1
+2. https://github.com/hhhuang/CAG/tree/main
+3. https://www.youtube.com/watch?v=NaEf_uiFX6o
 
