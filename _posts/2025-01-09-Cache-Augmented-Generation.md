@@ -34,7 +34,7 @@ While CAG presents numerous advantages, it is not without its limitations:
 
 - **Context Length Constraints**: The performance of LLMs may degrade with very long contexts, posing a challenge for CAG.
 
-Our research delves into the relationship between model performance and context length, offering insights into scenarios where CAG truly excels.
+The author delves into the relationship between model performance and context length, offering insights into scenarios where CAG truly excels.
 
 **The Future of CAG**
 
