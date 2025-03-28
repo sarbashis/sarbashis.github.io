@@ -68,4 +68,9 @@ var store = [{
         "excerpt":"In the ever-evolving landscape of language models, Retrieval-Augmented Generation (RAG) has stood out as a formidable approach, enhancing models by integrating external knowledge sources. However, RAG is not without its challenges, including retrieval latency, retrieval errors, and increased system complexity. Enter Cache-Augmented Generation (CAG), a promising alternative that seeks to...","categories": ["GenAI"],
         "tags": ["RAG","CAG"],
         "url": "https://sarbashis.github.io/genai/2025/Cache-Augmented-Generation/",
+        "teaser":null},{
+        "title": "Exploring DeepSeek R1 model",
+        "excerpt":"Summary DeepSeek R1 is an advanced model architecture designed for natural language processing (NLP) tasks, distinguished by its implementation of a Mixture of Experts (MoE) architecture that enhances computational efficiency and accuracy. Building upon the foundational DeepSeek-V3-Base, DeepSeek R1 strategically activates a subset of specialized experts to optimize processing times...","categories": ["AI"],
+        "tags": ["DeepSeek"],
+        "url": "https://sarbashis.github.io/ai/2025/deepseek-r1/",
         "teaser":null}]
