@@ -101,17 +101,17 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          : UA-126790509-1
-    anonymize_ip         : # true, false (default)
+    anonymize_ip         : false # true, false (default)
 
 
 # Site Author
 author:
   name             : "Sarbashis Das"
-  avatar           : "/assets/images/sarbasis2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Project Manager & Senior Data Scientist| Machine Learning | Deep Learning | Bioinformatics| Data Analyst."
+  avatar           : "/assets/images/MPS_2806.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Pricipal Data Scientist| GenAI Tech Lead | Machine Learning |"
   location         : "Stockholm, Sweden"
   email            : "dsarbashis@gmail.com"
   links:
@@ -226,6 +226,7 @@ kramdown:
 sass:
   sass_dir: _sass
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  quiet_deps: true
 
 
 # Outputting
@@ -244,9 +245,6 @@ plugins:
   - jemoji
   - jekyll-scholar
   - jekyll-include-cache
-
-
-
 
 
 scholar:
@@ -329,6 +327,9 @@ collections:
   myposts:
     output: true
     permalink: /:collection/:path/
+
+  drafts:
+    output: true
 
 
 # Defaults

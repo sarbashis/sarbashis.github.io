@@ -1,79 +1,156 @@
 ---
 layout: single
-title: CV
+title:
 author_profile: true
 permalink: /CV/
 ---
-<a href="/CV/Sarbashis_cv_DataScientist.pdf" target="_blank" class="btn btn--success">Download CV </a>{: .align-right}
 
-### Summary:
-Experienced Data Scientist with a demonstrated history of leading diverse projects in the field of Data Science. Skilled in Python, R, Data Analysis, and Machine Learning. Strong research professional with a Doctor of Philosophy (Ph.D.) focused on Computational Biology. 
+# Sarbashis Das, PhD.
+## Principal Data Scientist & Technical Lead
 
-### Employment:
-* June, 2019 -- Present: __Data Scientist__<br>
-Ericssion AB, Stockholm, Sweden
-
-* June, 2014 -- June, 2019: __Senior Researcher/Researcher__ <br>
-Dept. of Cell and Molecular Biology, Uppsala University, Uppsala, Sweden.|
-
-* Feb, 2013 – July, 2014:  __Post-doctoral Fellow__<br>
-Institute of Molecular Biology, Mainz, Germany.
-
-* July, 2012 – October, 2012: __Guest Researcher__<br>
- Dept. of Cell and Molecular Biology, Uppsala University, Sweden
+Experience Summary With over 10 years in AI/ML, I currently serve as a Principal Data Scientist & Technical Lead at Ericsson, Sweden. I have been pivotal in designing the software architecture of di ff erent AI-based Products. My journey reflects a passion for Generative AI and a focus on developing innovative AI/ML products and tools. I lead cross-functional teams, mentor junior data scientists, and drive the adoption of advanced AI technologies at Ericsson.
 
 
-### Education:
-* __Ph.D.(Computational Biology & Bioinformatics), School of Computational & Integrative Sciences,Jawaharlal Nehru University, India.__
+### Professional Skills
 
-  - __Dissertation:__ *Comparative Analysis and Study of Mutations in Bacterial Genomes* 
-  -  __Supervisor:__ Prof. Alok Bhattacharya
-  -  __Year:__ 2013
-
-* __Master of Technology (M.Tech) in Computational and Systems Biology , School of Computational & Integrative Sciences,Jawaharlal Nehru University, India.__
-  - __Dissertation:__ *Identification of Single Nucleotide Variations and Inversions in Genomic Sequences*
-  - __Supervisor:__ Prof. Alok Bhattacharya
-  - __Year:__ 2008
-
-
-* __Master of Science (M.Sc) (Specialization: Molecular Cytogenetics, Cancer Biology and Biotechnology), University of Burdwan, India.__
-  - __Year:__ 2005
-
-* __Bachelor of Science (B.Sc), University of Burdwan, India.__
-  - __Year:__ 2003
-
-### Certifications:
- 1. __Deep Learning a 5-course specialization__ by deeplearning.ai on Coursera Certificate no: [6LZ2Q78BX8MD]( https://www.coursera.org/account/accomplishments/verify/6LZ2Q78BX8MD)
-
- 2. __Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization__ specialized in Deep Learning course by deeplearning.ai. Grade Achieved: 91.6%. Certifi- cate no: [3HENCRJ76HNE](https://www.coursera.org/account/accomplishments/verify/3HENCRJ76HNE)
-
- 3. __Sequence Models__ specialized in Deep Learning course by deeplearning.ai. Grade Achieved: 96.0%. Certificate no: [D7UZETX7SX9L](https://www.coursera.org/account/accomplishments/verify/D7UZETX7SX9L)
+| **Skill Area**           | **Skills**                                         |
+|---------------------------|---------------------------------------------------|
+| **Data Science Leadership** | Strategic Planning, Cross-functional Team Management, Collaboration, Decision-Making, Mentorship |
+| **Project Management**     | Agile Methodologies, JIRA & Confluence, Risk Management, Resource Allocation, Stakeholder Communication |
+| **Generative AI**          | RAG Techniques, Prompt Engineering, Agentic AI, Model Evaluation, AI Workflow Optimization |
+| **GenAI Frameworks**       | LangChain, RAGAS, LangGraph, Haystack, CREW AI    |
+| **Information Retrieval**  | Semantic Search, Vector Search, Data Preprocessing, Knowledge Graphs, Query Understanding |
+| **Cloud Platforms**        | Azure ML, AWS Bedrock, Vertex AI, Google Cloud AI, Amazon SageMaker |
+| **Visualization**          | Kibana, Grafana, Tableau, Power BI               |
+| **Programming**            | Python, R, SQL, Bash, C                |
 
 
- 4. __Structuring Machine Learning Projects__ specialized in Deep Learning course by deeplearn- ing.ai. Grade Achieved: 92.5%. Certificate no: [2U8B3KWVDE5E](https://www.coursera.org/account/accomplishments/verify/2U8B3KWVDE5E)
+<!-- | **Skill Area** | **Skills** |
+| --- | --- |
+| **Data Science Leadership** | Cross-functional Team, Strategic Planning |
+|  | Collaboration, Decision-Making |
+| **Project Management** | JIRA & Confluence, Risk Management |
+|  | Agile Development, Resource Allocation |
+| **Generative AI** | RAG Techniques, Prompt Engineering |
+|  | Agentic AI, Model Evaluation |
+| **GenAI Framework** | LangChain, Ragas |
+|  | LangGraph, Haystack | crewai
+| **Information Retrieval** | Semantic Search, Information Retrieval |
+|  | Vector Search, Data-Preprocessing |
+| **Cloud Platforms** | Azure-ML, AWS Bedrock | Vertex AI
+| **Visualization** | Kibana, Grafana |
+| **Programming** | Python, R | -->
 
- 5. __Neural Networks and Deep Learning__ specialized in Deep Learning course by deeplearning.ai. Grade Achieved: 97.2%. Certificate no: [J6CCTRE6H37B]( https://www.coursera.org/account/accomplishments/verify/J6CCTRE6H37B)
 
- 6. __Convolutional Neural Networks__ specialized in Deep Learning course by deeplearning.ai. Grade Achieved: 98.4%. Certificate no: [643EV5PHMSMV]( https://www.coursera.org/account/accomplishments/verify/643EV5PHMSMV)
+### Work Experiences
 
- 7.  __MachineLearningA-Z__ Hands-On Python & R In Data Science by Udemy. Certificate no: [UC-BJVU4D7B](http://ude.my/UC-BJVU4D7B)
+#### 2024 - Present: Principal Data Scientist & Technical Lead - Industrialization of Agentic RAG Assistant
 
- 8. __Machine Learning__ course authorized by Stanford University and offered through Coursera. Grade Achieved: 96.1%. Certificate no: [79V42RZZTPQQ]( https://www.coursera.org/account/accomplishments/verify/79V42RZZTPQQ)
+AI Hub Ericsson, Sweden
 
- 9. __Introduction to Data Science in Python.__ course authorized by University of Michigan.
- Certificate no: [DRZVXZNSS2UZ]( https://www.coursera.org/account/accomplishments/verify/DRZVXZNSS2UZ)
+Lead Industrialization of the
+
+- Focus Areas: Generative AI and LLMs
+    - Agentic RAG based Chatbot.
+    - Drive for different AI use-cases.
+    - Designed and implemented the overall architecture of the solution, ensuring scalability, reliability, and efficiency. Drive for dierent AI use-cases.
 
 
-### Achievements
 
-#### Research Grant
-   *  Project grant awarded as a co-applicant. Project titled _Dynamics of gene regulatory networks in response to different stresses in Mycobacteria._ Funding Agency: FORMAS, Sweden. Year: 2017
-   * Project grant awarded as a co-applicant. Project titled _Non-coding and regulatory RNAs in mycobacteria._ Funding Agency: Swedish Recearch Council (VR). Year: 2016
+#### 2020 - 2024: AI Architect & Technical Lead for Ericsson Product Information Assistant AI Hub Ericsson, Sweden
 
-#### Fellowship
+- Focus Areas: Product Development & Project Management Leading a diverse team of 15 professionals, including
 
-* Awarded Wennergren Postodoc fellowship for two year (2013-2015) from the Wen- nergren foundations. (Grant offered, but gracefully declined due to accepting other Postdoc position). Year: 2012
+    - Conducted Proof-of-Concept (POC) for new technologies and led collaboration with teams in different organizations.
+    - Leading a diverse team of 15 professionals, including Data Scientists , Data Engineers , Software Developers , and Domain Experts , to successfully deliver the project.
+    - Collaborate closely with the Operative Product Owner(OPO) and Strategic Product Manager(SPM) to shape the Product Roadmap and facilitate feature development.
+    - Implemented Agile Methodologies to efficiently plan and manage the development of the Assistant, resulting in 16 successful quarterly releases.
+    - Held responsibility for the comprehensive architecture of the Assistant, overseeing 35 microservices.
 
-* Awarded Senior Research Fellowship from Council of Scientific and Industrial Research. Government of India. Year: 2010
+#### 2021 - 2023: Senior Data Scientist, Global AI Accelerator (GAIA) Ericsson, Sweden
 
-* Awarded Scholarship from Department of Biotechnology, Government of India for Master of Technology. Yeart: 2006
+- Focus Areas: Generative AI and LLMs
+    - Proposed and drove the implementation of Retrieval Augmented Generation (RAG) using vector embedding and Large Language Model (LLM) .
+    - Evaluating different vector stores for RAG architecture.
+    – Propose Architectural improvements and Prompt Engineering for system efficiency
+and answer quality.
+
+
+<!-- image -->
+
+#### Sept, 2022 - March 2023: Leaders Core Curriculum Program (LCC) Ericsson, Sweden
+
+- The Leaders Core Curriculum (LCC) is Ericsson's foundation-level leadership development program that focuses on developing the core leadership capabilities needed to drive performance. Over the course of this 15-week program: Developed self-awareness.
+
+    - Developed self-awareness.
+    - How to influence and collaborate effectively across organization.
+    - Learned different leadership style, understand what drives and motivates a team
+
+#### 2019 - 2021: Data Scientist, Global AI Accelerator (GAIA) Ericsson, Sweden
+
+- Focus Areas: Knowledge graph generation Developed pipeline for
+- Developed pipeline for documents and generate Knowledge Graph using open-source tools.
+- Trained ML model for name-entity recognition for Ericsson Product names. -Knowledge Graph
+- Designed SPARQL queries to fetch information from Knowledge Graph
+
+#### 2014 - 2019 Researcher/Senior Researcher, SciLifelab, Uppsala University, Sweden
+
+- Focus Areas: Understand gene regulation in different types of heart failures using Machine Learning
+- Different Machine Learning approaches like dimension reduction and unsupervised clustering were used to identify 743 dysregulated genes.
+
+### Education
+
+- Ph.D. in Computational & System Science
+- M.Tech in Computational & System Science
+
+### Certifications
+
+- Generative AI and Large Language Model
+- Specialization in Machine Learning Engineering for Production (MLOps)
+- Specialization in Deep Learning
+- Architecting with Google Kubernetes Engine: Workloads
+- Architecting with Google Kubernetes Engine: Foundations
+- Machine Learning A-Z TM Hands-On Python & R In Data Science
+- Machine Learning, Stanford University
+- Introduction to Data Science in Python, University of Michigan
+
+
+### Awards
+
+#### 2024, Ericsson Key Contributor Award
+This recognition reflects potential to drive Ericsson's long-term Strategic priorities
+
+#### 2021, Ericsson Impact Award 2021
+The award was given to the people who contribution has a great impact to Ericsson business value
+
+#### 2017, Research Grant awarded as a co-applicant
+*Title: Dynamics of gene regulatory networks in response to di ff erent stresses in Mycobacteria. Funding Agency: FORMAS.*
+
+#### 2016, Research Grant awarded as a co-applicant
+Title: Non-coding and regulatory RNAs in Mycobacteria. Funding Agency: Swedish Research Council (VR)
+
+#### 2012, Awarded Wennergren Postodoc Fellowship
+Funding Agency: Wennergren Foundations. Grant offered, but gracefully declined due to accepting other Postdoc position
+
+#### 2010, Awarded Senior Research Fellowship
+Funding Agency: Council of Scientific and Industrial Research (CSIR), Government of India.
+
+#### 2006, Awarded Scholarship for Master of Technology
+Funding Agency: Department of Biotechnology (DBT), Government of India.
+
+#### Highlighted Invited Talks and Conference Presentations
+2024, Presented Ericsson Product Information Assistant with Generative AI Ericsson Developer Conference
+
+#### 2024, Invited talk , Uppsala University
+Generative AI & LLM to Master Program students
+
+#### 2023, Presented & Demoed Retrieval Augmented Generation (RAG) Architecture in PIA
+Multiple Organization within Ericsson
+
+#### 2022, Presented & demoed , Ericsson Developer Conference (Stockholm)
+Presented Ericsson Product Information Assistant and demoed different functionalities
+
+
+### Interests
+
+Generative AI, Machine Learning, Fine turning, Software development

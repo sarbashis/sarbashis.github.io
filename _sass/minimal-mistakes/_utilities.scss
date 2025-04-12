@@ -7,7 +7,7 @@
    ========================================================================== */
 
 /* http://www.456bereastreet.com/archive/200711/screen_readers_sometimes_ignore_displaynone/ */
-
+@use "sass:color";
 .hidden,
 .is--hidden {
   display: none;
@@ -456,12 +456,12 @@ body:hover .visually-hidden button {
    ========================================================================== */
 
 .footnote {
-  color: mix(#fff, $gray, 25%);
+  color: color.mix(#fff, $gray, 25%);
   text-decoration: none;
 }
 
 .footnotes {
-  color: mix(#fff, $gray, 25%);
+  color: color.mix(#fff, $gray, 25%);
 
   ol,
   li,
