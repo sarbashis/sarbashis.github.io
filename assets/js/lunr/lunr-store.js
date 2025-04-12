@@ -73,4 +73,9 @@ var store = [{
         "excerpt":"Summary DeepSeek R1 is an advanced model architecture designed for natural language processing (NLP) tasks, distinguished by its implementation of a Mixture of Experts (MoE) architecture that enhances computational efficiency and accuracy. Building upon the foundational DeepSeek-V3-Base, DeepSeek R1 strategically activates a subset of specialized experts to optimize processing times...","categories": ["AI"],
         "tags": ["DeepSeek"],
         "url": "https://sarbashis.github.io/ai/2025/deepseek-r1/",
+        "teaser":null},{
+        "title": "The Model Context Protocol: Standardizing AI Integration with External Systems",
+        "excerpt":"The Model Context Protocol (MCP) has emerged as a transformative open standard in the AI industry, fundamentally changing how AI models connect to external data sources and tools. Introduced by Anthropic in November 2024, MCP addresses a critical industry challenge: how to efficiently and securely connect AI assistants to the...","categories": ["AI"],
+        "tags": ["MCP"],
+        "url": "https://sarbashis.github.io/ai/2025/model-context-protocol/",
         "teaser":null}]

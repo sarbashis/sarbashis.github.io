@@ -1,0 +1,690 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.13.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>The Model Context Protocol: Standardizing AI Integration with External Systems - Sarbashis Das, PhD.</title>
+<meta name="description" content="The Model Context Protocol (MCP) has emerged as a transformative open standard in the AI industry, fundamentally changing how AI models connect to external data sources and tools. Introduced by Anthropic in November 2024, MCP addresses a critical industry challenge: how to efficiently and securely connect AI assistants to the systems where data resides. Since its introduction, MCP has gained rapid adoption across the AI ecosystem. This protocol enables seamless integration between AI models and external systems through a standardized approach, effectively serving as a universal connector that eliminates the need for custom implementations for each data source or tool integration.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Sarbashis Das, PhD.">
+<meta property="og:title" content="The Model Context Protocol: Standardizing AI Integration with External Systems">
+<meta property="og:url" content="https://sarbashis.github.io/ai/2025/model-context-protocol/">
+
+
+  <meta property="og:description" content="The Model Context Protocol (MCP) has emerged as a transformative open standard in the AI industry, fundamentally changing how AI models connect to external data sources and tools. Introduced by Anthropic in November 2024, MCP addresses a critical industry challenge: how to efficiently and securely connect AI assistants to the systems where data resides. Since its introduction, MCP has gained rapid adoption across the AI ecosystem. This protocol enables seamless integration between AI models and external systems through a standardized approach, effectively serving as a universal connector that eliminates the need for custom implementations for each data source or tool integration.">
+
+
+
+
+
+  <meta name="twitter:site" content="@Sarbashis_Das">
+  <meta name="twitter:title" content="The Model Context Protocol: Standardizing AI Integration with External Systems">
+  <meta name="twitter:description" content="The Model Context Protocol (MCP) has emerged as a transformative open standard in the AI industry, fundamentally changing how AI models connect to external data sources and tools. Introduced by Anthropic in November 2024, MCP addresses a critical industry challenge: how to efficiently and securely connect AI assistants to the systems where data resides. Since its introduction, MCP has gained rapid adoption across the AI ecosystem. This protocol enables seamless integration between AI models and external systems through a standardized approach, effectively serving as a universal connector that eliminates the need for custom implementations for each data source or tool integration.">
+  <meta name="twitter:url" content="https://sarbashis.github.io/ai/2025/model-context-protocol/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2025-03-28T00:00:00+00:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://sarbashis.github.io/ai/2025/model-context-protocol/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Sarbashis",
+      "url": "https://sarbashis.github.io",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Sarbashis Das, PhD. Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Sarbashis Das, PhD.</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/projects/" >Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/CV/" >Resume</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/" >Blog Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/contact/" >Contact Me</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/MPS_2806.jpg" alt="Sarbashis Das" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Sarbashis Das</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Pricipal Data Scientist| GenAI Tech Lead | Machine Learning |
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Stockholm, Sweden</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/sarbashis"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/sarbashis/"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+          
+        
+          
+            <li><a href="https://scholar.google.com/citations?user=MDDoPX0AAAAJ&hl=en"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Google Scholar</a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:dsarbashis@gmail.com">
+            <meta itemprop="email" content="dsarbashis@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="The Model Context Protocol: Standardizing AI Integration with External Systems">
+    <meta itemprop="description" content="The Model Context Protocol (MCP) has emerged as a transformative open standard in the AI industry, fundamentally changing how AI models connect to external data sources and tools. Introduced by Anthropic in November 2024, MCP addresses a critical industry challenge: how to efficiently and securely connect AI assistants to the systems where data resides. Since its introduction, MCP has gained rapid adoption across the AI ecosystem. This protocol enables seamless integration between AI models and external systems through a standardized approach, effectively serving as a universal connector that eliminates the need for custom implementations for each data source or tool integration.">
+    <meta itemprop="datePublished" content="March 28, 2025">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">The Model Context Protocol: Standardizing AI Integration with External Systems
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>The Model Context Protocol (MCP) has emerged as a transformative open standard in the AI industry, fundamentally changing how AI models connect to external data sources and tools. Introduced by Anthropic in November 2024, MCP addresses a critical industry challenge: how to efficiently and securely connect AI assistants to the systems where data resides. Since its introduction, MCP has gained rapid adoption across the AI ecosystem. This protocol enables seamless integration between AI models and external systems through a standardized approach, effectively serving as a universal connector that eliminates the need for custom implementations for each data source or tool integration.</p>
+
+<h1 id="challenge">Challenge</h1>
+
+<p>Before the Model Context Protocol, AI assistants faced significant limitations in accessing external information. Even the most advanced models were constrained by their isolation from real-world data, trapped behind information silos and legacy systems. This isolation created a substantial gap between AI capabilities and practical applications, particularly for enterprise use cases where access to proprietary data is essential. The traditional approach required custom integrations for each new data source, making truly connected systems difficult to scale. This fragmentation resulted in inconsistent experiences, substantial development overhead, and a lack of interoperability between different AI implementations.</p>
+
+<h1 id="what-is-the-model-context-protocol-mcp">What is the Model Context Protocol (MCP)?</h1>
+
+<p>At its core, the Model Context Protocol (MCP) is an open standard that establishes a consistent method for applications to supply contextual information to Large Language Models. Functioning as a universal connector, MCP enables LLMs to engage dynamically with a wide range of external resources, including APIs, databases, and various business applications  2 . This protocol was initially developed by Anthropic and subsequently made available as an open-source project in early 2024. This strategic decision was driven by the aim of fostering widespread adoption across the industry, with the ultimate goal of creating a standardized framework for communication between AI models and external tools</p>
+
+<h1 id="general-architecture">General architecture</h1>
+
+<p>At its core, MCP follows a client-server architecture where a host application can connect to multiple servers:</p>
+
+<p><img src="/assets/images/mcp.png" alt="image" />
+Reproduced based on <a href="https://modelcontextprotocol.io/introduction#general-architecture">Model Context Protocol</a></p>
+
+<p><strong>MCP Hosts</strong>: Programs like Claude Desktop, IDEs, or AI tools* that want to access data through MCP</p>
+
+<p><strong>MCP Clients</strong>: Protocol clients that maintain 1:1 connections with servers</p>
+
+<p><strong>MCP Servers</strong>: Lightweight programs that each expose specific capabilities through the standardized Model Context Protocol</p>
+
+<p><strong>Local Data Sources</strong>: Your computer’s files, databases, and services that MCP servers can securely access</p>
+
+<p><strong>Remote Services</strong>: External systems available over the internet (e.g., through APIs) that MCP servers can connect to</p>
+
+<h1 id="mcp-vs-related-technologies">MCP vs. Related Technologies:</h1>
+
+<p>Understanding the unique position of the Model Context Protocol requires a comparison with other technologies that address similar challenges in the realm of LLM integration .  </p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Technology</th>
+      <th>Key Features</th>
+      <th>Main Purpose</th>
+      <th>Unique Aspects</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Traditional APIs</td>
+      <td>Request-response, often stateless, custom implementations</td>
+      <td>Connect different software systems</td>
+      <td>Well-established, but often lacks statefulness for complex AI interactions.</td>
+    </tr>
+    <tr>
+      <td>Function Calling</td>
+      <td>LLM-driven generation of structured commands</td>
+      <td>Translate user prompts into actionable instructions for external systems</td>
+      <td>Vendor-specific formats, focuses on instruction generation rather than standardized execution.</td>
+    </tr>
+    <tr>
+      <td>LangChain</td>
+      <td>Comprehensive toolkit for building LLM applications, offers various modules</td>
+      <td>Facilitate the development and deployment of diverse LLM-powered applications</td>
+      <td>Provides high-level abstractions and tools; can integrate with MCP for standardized tool access.</td>
+    </tr>
+    <tr>
+      <td>Model Context Protocol (MCP)</td>
+      <td>Standardized interface, stateful, client-server architecture, supports various transports</td>
+      <td>Provide a universal and open standard for connecting AI systems with data sources and tools</td>
+      <td>Standardized AI integration, context preservation, vendor-agnostic execution framework for LLM-generated commands.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="getting-started-with-mcp">Getting Started with MCP:</h1>
+
+<p>For developers interested in exploring and implementing the Model Context Protocol, several resources are available</p>
+
+<p>1 . The official MCP specification and SDKs are publicly accessible, providing the necessary tools and documentation to begin building MCP connectors</p>
+
+<p>2 . An open-source repository of MCP servers is also being actively developed, offering pre-built integrations for common enterprise systems and providing examples for developers to learn from</p>
+
+<p>3 . The official MCP website (modelcontextprotocol.io) serves as a central hub for information, offering comprehensive documentation, conceptual overviews, and quick start guides specifically tailored for both server and client developers</p>
+
+<p>4 . Furthermore, practical examples, such as the aforementioned PR review server, can serve as valuable learning tools, demonstrating real-world implementations of MCP in action</p>
+
+<p>5 . By leveraging these resources, developers can begin to harness the power of MCP to create more connected, intelligent, and versatile AI applications.  </p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>The Model Context Protocol represents a significant advancement in addressing one of the most challenging aspects of AI deployment: connecting models to the data and tools they need to be useful. By providing a standardized approach to integration, MCP eliminates much of the complexity and fragmentation that previously characterized AI connections to external systems. Its open, model-agnostic design has facilitated rapid adoption across the industry, including by major competitors like OpenAI.</p>
+
+<p>As the MCP ecosystem continues to grow, with thousands of community-built servers and integration with popular AI frameworks, it is positioned to become an essential component of the AI infrastructure. The protocol’s ability to bridge the gap between sophisticated AI models and real-world data sources addresses a critical need in the industry, enabling more powerful, context-aware, and practical AI applications. With continued development and adoption, MCP may well become as fundamental to AI integration as standards like USB are to hardware connectivity.</p>
+
+<h1 id="references">References:</h1>
+
+<p>[1]. https://docs.anthropic.com/en/docs/agents-and-tools/mcp#:~:text=MCP%20is%20an%20open%20protocol,applications%20provide%20context%20to%20LLMs.</p>
+
+<p>[2]. https://www.anthropic.com/news/model-context-protocol</p>
+
+<p>[3]. https://www.datacamp.com/tutorial/mcp-model-context-protocol</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#mcp" class="page__taxonomy-item" rel="tag">MCP</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#ai" class="page__taxonomy-item" rel="tag">AI</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2025-03-28T00:00:00+00:00">March 28, 2025</time></p>
+        
+      </footer>
+
+      <!-- <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?via=Sarbashis_Das&text=The+Model+Context+Protocol%3A+Standardizing+AI+Integration+with+External+Systems%20https%3A%2F%2Fsarbashis.github.io%2Fai%2F2025%2Fmodel-context-protocol%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsarbashis.github.io%2Fai%2F2025%2Fmodel-context-protocol%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fsarbashis.github.io%2Fai%2F2025%2Fmodel-context-protocol%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section> -->
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/ai/2025/deepseek-r1/" class="pagination--pager" title="Exploring DeepSeek R1 model
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/ai/2025/deepseek-r1/" rel="permalink">Exploring DeepSeek R1 model
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  11 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Summary
+DeepSeek R1 is an advanced model architecture designed for natural language processing (NLP) tasks, distinguished by its implementation of a Mixture ...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/genai/2025/Cache-Augmented-Generation/" rel="permalink">Exploring Cache-Augmented Generation (CAG): A New Frontier in Language Model Enhancement
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">In the ever-evolving landscape of language models, Retrieval-Augmented Generation (RAG) has stood out as a formidable approach, enhancing models by integrati...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/ml/2023/generative-ai/" rel="permalink">Generative AI
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Generative AI is a rapidly evolving field of artificial intelligence that involves creating new data or content based on existing data. The process involves ...</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/diagram/2022/Mermaid-diagram/" rel="permalink">Generate Diagram as Code using Mermaid
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">I this tutorial, I am going to show how diagram can be drawn using code. The program I am going to use is called Mermaid
+</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+  
+</div>
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/sarbashis"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 Sarbashis. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+
+
+
+
+
+
+    
+<div class="page__comments">
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+
+var disqus_config = function () {
+this.page.url = "https://sarbashis.github.io/ai/2025/model-context-protocol/" ;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = /ai/2025/model-context-protocol; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://sarbashis.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+
+  
+
+
+   <script id="dsq-count-scr" src="//sarbashis.disqus.com/count.js" async></script>
+  </body>
+</html>
