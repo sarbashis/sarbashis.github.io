@@ -1,17 +1,16 @@
 ---
 title: "Git Tutorial"
+date: 2020-02-06 00:00:00 +0100
 comments: true
-categories:
-  - classfication
-tags:
-  - ML
+categories: [classfication]
+tags: [ml]
 ---
 
 # Step 1: Create a local git repository
 
     git init
 
-<img src="/assets/images/git_init.png" alt="git Init" width="1000"/>
+<img src="/assets/img/posts/git_init.png" alt="git Init" width="1000"/>
 
 
 # Step 2: Add a new file to the repository

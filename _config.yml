@@ -1,368 +1,136 @@
-# @Author: sarbashis
-# @Date:   2018-11-28T13:37:01+01:00
-# @Email:  dsarbashis@gmail.com
-# @Project: HeartFailurePipeline
-# @Last modified by:   sarbashis
-# @Last modified time: 2019-03-11T16:12:05+01:00
+# Chirpy theme configuration
+# https://github.com/cotes2020/jekyll-theme-chirpy
 
+theme: jekyll-theme-chirpy
 
-
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
-
-# Theme Settings
-#
-# Review documentation to determine if you should use `theme` or `remote_theme`
-# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
-
-#theme                  : "minimal-mistakes-jekyll"
-#remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+lang: en
+timezone: Europe/Stockholm
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Sarbashis Das, PhD."
-title_separator          : "-"
-name                     : "Sarbashis"
-description              : "My Personal Website."
-url                      : https://sarbashis.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  :  # the subpath of your site, e.g. "/blog"
-repository               :  sarbashis #GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
-comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
-  disqus:
-    shortname            : "sarbashis" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : # ['name', 'email', 'url', 'message']
-  branch                 : # "master"
-  commitMessage          : # "New comment by {fields.name}"
-  filename               : # comment-{@timestamp}
-  format                 : # "yml"
-  moderation             : # true
-  path                   : # "/_data/comments/{options.slug}" (default)
-  requiredFields         : # ['name', 'email', 'message']
-  transforms:
-    email                : # "md5"
-  generatedFields:
-    date:
-      type               : # "date"
-      options:
-        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-reCaptcha:
-  siteKey                :
-  secret                 :
-atom_feed:
-  path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          :  # lunr (default), algolia, google
-algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
-google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-yandex_site_verification :
-naver_site_verification  :
+title: Sarbashis Das, PhD.
+tagline: "Principal Data Scientist | GenAI Tech Lead\nStockholm, Sweden"
+description: >-
+  Personal blog covering Generative AI, Machine Learning, LLMs, and AI Leadership.
+url: "https://sarbashis.github.io"
+baseurl: ""
 
-# Social Sharing
-twitter:
-  username               : Sarbashis_Das
-facebook:
-  username               : Sarbashis
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
+github:
+  username: sarbashis
+
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  name: Sarbashis Das
+  email: dsarbashis@gmail.com
+  links:
+    - https://github.com/sarbashis
+    - https://www.linkedin.com/in/sarbashis/
+    - https://scholar.google.com/citations?user=MDDoPX0AAAAJ&hl=en
+
+# Theme mode: auto | light | dark
+mode: auto
+
+# Avatar
+avatar: /assets/img/avatar.jpg
+
+# Comments
+comments:
+  # Available: disqus, giscus, utterances
+  provider: giscus
+  giscus:
+    repo: sarbashis/sarbashis.github.io
+    repo_id: # TODO: Get from https://giscus.app
+    category: General
+    category_id: # TODO: Get from https://giscus.app
+    mapping: pathname
+    strict: 0
+    reactions_enabled: 1
+    emit_metadata: 0
+    input_position: bottom
+    theme: preferred_color_scheme
+    lang: en
+    lazy: true
 
 # Analytics
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : UA-126790509-1
-    anonymize_ip         : false # true, false (default)
+    id: UA-126790509-1 # TODO: Migrate to GA4 (G-XXXXXXX)
 
+# Pagination
+paginate: 10
 
-# Site Author
-author:
-  name             : "Sarbashis Das"
-  avatar           : "/assets/images/MPS_2806.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Pricipal Data Scientist| GenAI Tech Lead | Machine Learning |"
-  location         : "Stockholm, Sweden"
-  email            : "dsarbashis@gmail.com"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-       #url: "mailto:dsarbashis@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    #- label: "Twitter"
-    #  icon: "fab fa-fw fa-twitter-square"
-    #url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/sarbashis"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/sarbashis/"
-    - label: "Google Scholar"
-      icon: "fas fa-fw fa-link"
-      url: "https://scholar.google.com/citations?user=MDDoPX0AAAAJ&hl=en"
+# Permalink
+permalink: /:categories/:year/:title/
 
-    #- label: "ResearchGate"
-    #  icon: "fab fa-researchgate"
-    #  url: "https://www.researchgate.net/profile/Sarbashis_Das"
-    #- label: "Pubmed"
-    #  icon: "fas fa-fw fa-link"
-    #  url: "https://www.ncbi.nlm.nih.gov/pubmed/?term=sarbashis+das%5BAuthor%5D"
-
-# Site Footer
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/sarbashis"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
-
-
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - node_modules
-  - package.json
-  - Rakefile
-  - README
-  - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-
-# Markdown Processing
+# Markdown
 kramdown:
   input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-  quiet_deps: true
-
-
-# Outputting
-permalink: /:categories/:year/:title/
-#paginate: 5 # amount of posts to show
-#paginate_path: /page:num/
-#timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-future: true
-
-# Plugins (previously gems:)
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-scholar
-  - jekyll-include-cache
-
-
-scholar:
-  style: apa
-  locale: en
-  source: ./_bibliography
-  bibliograpy:  references.bib
-  repository: ./Publications
-  #sort_by: year
-
-  #### sort by year
-  group_by: year, type
-  sort_by: year
-  order: descending
-  group_order: descending
-
-  #### sort by type
-  #sort_by: type
-  #group_by: type, year
-  #group_order: accending,descending
-  #order: descending
-
-  #bibliography_template: "{{ reference | replace_first: 'Das, S.', '<b>Das, S.</b>' }}"
-  bibliography_template: bib
-  type_order: [article,unpublished,techreport,phdthesis, mastersthesis]
-  type_names:
-    unpublished: Unpublished Articles
-    techreport: Under Review
-    mastersthesis: Master\'s Thesis
-
-
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-
-tag_archive:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-#jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /:categories/:title/
-#     tag: /tags/:name/
-
-
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
 
 # Collections
 collections:
-  myposts:
+  tabs:
     output: true
-    permalink: /:collection/:path/
+    sort_by: order
 
-  drafts:
-    output: true
+# Build
+future: true
 
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+# Jekyll Archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
+
+# Exclude
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - vendor
+  - .bundle
+  - .sass-cache
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CLAUDE.md
+  - LICENSE.txt
+  - run.sh
+  - deploy_script.sh
 
 # Defaults
 defaults:
-  # _posts
-  - scope:
-      path: "_posts"
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true # true
-      share: true
-      related: true
-
-  # _pages
   - scope:
       path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: false
-      share:
-
-  # _drafts
-  - scope:
-      path: "_drafts"
       type: posts
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true # true
-      share: true
-      related: true
+      layout: post
+      comments: true
+      toc: true
+      pin: false
+  - scope:
+      path: _drafts
+    values:
+      layout: post
+      comments: true
+      toc: true
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/

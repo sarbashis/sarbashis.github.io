@@ -1,10 +1,9 @@
 ---
 title: "Generative AI"
+date: 2023-04-17 00:00:00 +0100
 comments: true
-categories:
-  - ML
-tags:
-  - genarative-ai
+categories: [ML]
+tags: [genarative-ai]
 ---
 **Generative AI** is a rapidly evolving field of artificial intelligence that involves creating new data or content based on existing data. The process involves using machine learning algorithms to generate new, unique data that has similar properties to the original data.
 

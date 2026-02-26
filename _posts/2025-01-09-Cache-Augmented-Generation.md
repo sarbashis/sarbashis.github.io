@@ -1,11 +1,9 @@
 ---
 title: "Exploring Cache-Augmented Generation (CAG): A New Frontier in Language Model Enhancement"
+date: 2025-01-09 00:00:00 +0100
 comments: true
-categories:
-  - GenAI
-tags:
-  - RAG
-  - CAG
+categories: [GenAI]
+tags: [rag, cag]
 ---
 
 In the ever-evolving landscape of language models, Retrieval-Augmented Generation (RAG) has stood out as a formidable approach, enhancing models by integrating external knowledge sources. However, RAG is not without its challenges, including retrieval latency, retrieval errors, and increased system complexity. Enter Cache-Augmented Generation (CAG), a promising alternative that seeks to overcome these hurdles by eliminating the need for real-time retrieval.
@@ -15,7 +13,7 @@ In the ever-evolving landscape of language models, Retrieval-Augmented Generatio
 CAG leverages the extended context windows of modern large language models (LLMs) by preloading all relevant resources into the model’s context and caching its runtime parameters. This innovative approach allows the model to generate responses directly during inference, bypassing the need for real-time retrieval.
 
 
-![CAG](/assets/images/CAG.png)
+![CAG](/assets/img/posts/CAG.png)
 Source: https://arxiv.org/html/2412.15605v1
 
 **The Advantages of CAG**

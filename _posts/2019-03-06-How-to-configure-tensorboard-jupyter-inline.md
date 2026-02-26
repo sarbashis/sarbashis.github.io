@@ -1,11 +1,10 @@
 ---
 title: "How to configure tensorboard jupyter inline"
+date: 2019-03-06 00:00:00 +0100
 comments: true
 toc: true
-categories:
-  - installation
-tags:
-  - ML
+categories: [installation]
+tags: [ml]
 ---
 
 <!-- TOC -->
@@ -119,4 +118,4 @@ model.fit(x=x_train,
 ```python
 %tensorboard --logdir Tblogs/
 ```
-![Tensorboard](/assets/images/tensorboard.png)
+![Tensorboard](/assets/img/posts/tensorboard.png)

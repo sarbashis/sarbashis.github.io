@@ -1,8 +1,9 @@
 _site
 .sass-cache
 .jekyll-metadata
-deploy_script.sh
-.DS_Store
-.idea/workspace.xml
-.idea
 .jekyll-cache
+.DS_Store
+.idea
+node_modules
+Gemfile.lock
+vendor

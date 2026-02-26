@@ -1,9 +1,0 @@
----
----
-{% if link  %}
-    "{{ reference | replace_first: 'Das, S.', '<b>Das, S.</b>' }}" [<a href="{{links.pdf}}" target="_blank">Pdf</a>]
-{% else %}
-  {{ reference | replace_first: 'Das, S.', '<b>Das, S.</b>' }}
-{% endif %}
-
-

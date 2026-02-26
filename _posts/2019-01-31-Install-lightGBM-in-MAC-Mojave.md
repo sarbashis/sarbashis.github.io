@@ -1,11 +1,10 @@
 ---
 title: "Installing LightGBM on MacOS Mojave"
+date: 2019-01-31 00:00:00 +0100
 comments: true
 toc: true
-categories:
-  - installation
-tags:
-  - ML
+categories: [installation]
+tags: [ml]
 ---
 
 __Content__

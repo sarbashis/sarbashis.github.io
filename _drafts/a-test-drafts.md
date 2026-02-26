@@ -1,10 +1,8 @@
 ---
 title: "Test Tutorial"
 comments: true
-categories:
-  - installation
-tags:
-  - keras
+categories: [installation]
+tags: [keras]
 ---
 <!-- TOC -->
 

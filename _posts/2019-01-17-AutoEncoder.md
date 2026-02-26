@@ -1,10 +1,9 @@
 ---
 title: "Autoencoder Tutorial"
+date: 2019-01-17 00:00:00 +0100
 comments: true
-categories:
-  - installation
-tags:
-  - keras
+categories: [installation]
+tags: [keras]
 ---
 
 
@@ -441,5 +440,5 @@ plt.show()
 ```
 
 
-![png](/assets/images/output_20_0.png)
+![png](/assets/img/posts/output_20_0.png)
 

@@ -2,50 +2,30 @@ name: Jekyll site CI
 
 on:
   push:
-    branches: [ develop ]
+    branches: [develop]
   pull_request:
-    branches: [ develop ]
+    branches: [develop]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 3.3.4
-        bundler-cache: true
+      - uses: actions/checkout@v4
 
-    - name: Clean Jekyll Cache and Site
-      run: |
-        rm -rf _site .sass-cache
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
 
-    - name: Check ruby version
-      run: |
-        ruby -v
+      - name: Build site
+        run: bundle exec jekyll build --future --trace
 
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        -w /srv/jekyll \
-        ruby:3.3.4 /bin/bash -c "
-        gem install jekyll bundler && \
-        bundle install && \
-        rm -rf .sass-cache && \
-        rm -rf /srv/jekyll/_site/* &&
-        bundle exec jekyll build --future --trace
-        "
-
-    - name: deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
-          # if the repo you are deploying to is <username>.github.io, uncomment the line below.
-          # if you are including the line below, make sure your source files are NOT in the "main" branch:
-        publish_branch: gh-pages
-
+      - name: Deploy
+        if: github.event_name == 'push'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages

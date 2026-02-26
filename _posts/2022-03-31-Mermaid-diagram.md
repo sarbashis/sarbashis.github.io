@@ -1,10 +1,9 @@
 ---
 title: "Generate Diagram as Code using Mermaid"
+date: 2022-03-31 00:00:00 +0100
 comments: true
-categories:
-  - diagram
-tags:
-  - markdown
+categories: [diagram]
+tags: [markdown]
 ---
 
 I this tutorial, I am going to show how diagram can be drawn using code. The program I am going to use is called `Mermaid`

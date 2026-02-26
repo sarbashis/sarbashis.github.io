@@ -1,10 +1,9 @@
 ---
 title: "The Model Context Protocol: Standardizing AI Integration with External Systems"
+date: 2025-03-28 00:00:00 +0100
 comments: true
-categories:
-  - AI
-tags:
-  - MCP
+categories: [AI]
+tags: [mcp]
 ---
 The Model Context Protocol (MCP) has emerged as a transformative open standard in the AI industry, fundamentally changing how AI models connect to external data sources and tools. Introduced by Anthropic in November 2024, MCP addresses a critical industry challenge: how to efficiently and securely connect AI assistants to the systems where data resides. Since its introduction, MCP has gained rapid adoption across the AI ecosystem. This protocol enables seamless integration between AI models and external systems through a standardized approach, effectively serving as a universal connector that eliminates the need for custom implementations for each data source or tool integration.
 
@@ -22,7 +21,7 @@ At its core, the Model Context Protocol (MCP) is an open standard that establish
 
 At its core, MCP follows a client-server architecture where a host application can connect to multiple servers:
 
-![image](/assets/images/mcp.png)
+![image](/assets/img/posts/mcp.png)
 Reproduced based on [Model Context Protocol](https://modelcontextprotocol.io/introduction#general-architecture)
 
 

@@ -1,9 +1,8 @@
 ---
-layouts: post
 comments: true
 title: "How to Setup Parallel in Mac"
-categories:
-  - mac
+date: 2018-09-25 00:00:00 +0100
+categories: [mac]
 ---
 
 Parallel is a perl script that allow user to run same job

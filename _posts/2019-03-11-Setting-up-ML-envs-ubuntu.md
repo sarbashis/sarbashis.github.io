@@ -1,10 +1,9 @@
 ---
 title: "Setting up Machine Learning Environment in Ubuntu/Linux"
+date: 2019-03-11 00:00:00 +0100
 comments: true
-categories:
-  - installation
-tags:
-  - ML
+categories: [installation]
+tags: [ml]
 ---
 This post is for setting up a Machine Learning environment for your Machine Projects in Linux/Ubuntu. Also important to keep in mind that you should keep tract of your environment which help in reproducibility of the project. Here I am showing how easy to set up Machine Learning Environment with anaconda. 
 <!-- TOC -->
