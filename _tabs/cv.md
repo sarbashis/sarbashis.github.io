@@ -4,124 +4,348 @@ icon: fas fa-file-alt
 order: 3
 ---
 
-# Sarbashis Das, PhD
+<style>
+/* --- CV Page Styles --- */
+.cv-page { max-width: 800px; }
 
-**Principal Data Scientist & Technical Lead — Ericsson, Sweden**
+/* Download button */
+.cv-download {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--btn-border-color, #e9ecef);
+  border-radius: 0.375rem;
+  color: var(--link-color, #0056b2);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.cv-download:hover {
+  background-color: var(--link-color, #0056b2);
+  color: #fff;
+  text-decoration: none;
+}
+.cv-download i { margin-right: 0.4rem; }
 
-With over 10 years in AI/ML, I currently serve as a Principal Data Scientist & Technical Lead at Ericsson, Sweden. I have been pivotal in designing the software architecture of different AI-based products. My journey reflects a passion for Generative AI and a focus on developing innovative AI/ML products and tools. I lead cross-functional teams, mentor junior data scientists, and drive the adoption of advanced AI technologies.
+/* Metrics bar */
+.metrics-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.metric {
+  flex: 1 1 120px;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  border: 1px solid var(--main-border-color, #f3f3f3);
+  border-radius: 0.5rem;
+  background-color: var(--card-bg, #fff);
+}
+.metric-number {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--link-color, #0056b2);
+  line-height: 1.2;
+}
+.metric-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted-color, #757575);
+  margin-top: 0.25rem;
+}
 
----
+/* Section headings with icons */
+.cv-section-title i {
+  margin-right: 0.5rem;
+  color: var(--link-color, #0056b2);
+}
 
-## Professional Skills
+/* Skill badges */
+.skill-category { margin-bottom: 1rem; }
+.skill-category strong {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--heading-color, #2a2a2a);
+}
+.skill-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  margin: 0.15rem 0.2rem;
+  border-radius: 1rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+.cat-leadership  { background: rgba(59,130,246,0.12); color: #3b82f6; }
+.cat-pm          { background: rgba(34,197,94,0.12);  color: #22c55e; }
+.cat-genai       { background: rgba(168,85,247,0.12); color: #a855f7; }
+.cat-frameworks  { background: rgba(249,115,22,0.12); color: #f97316; }
+.cat-ir          { background: rgba(20,184,166,0.12); color: #14b8a6; }
+.cat-cloud       { background: rgba(99,102,241,0.12); color: #6366f1; }
+.cat-viz         { background: rgba(236,72,153,0.12); color: #ec4899; }
+.cat-programming { background: rgba(107,114,128,0.15); color: #6b7280; }
 
-**Data Science Leadership**
-`Strategic Planning` `Cross-functional Team Management` `Collaboration` `Decision-Making` `Mentorship`
+/* Dark mode badge adjustments */
+[data-mode="dark"] .cat-leadership  { background: rgba(59,130,246,0.2);  color: #93bbfd; }
+[data-mode="dark"] .cat-pm          { background: rgba(34,197,94,0.2);   color: #86efac; }
+[data-mode="dark"] .cat-genai       { background: rgba(168,85,247,0.2);  color: #d8b4fe; }
+[data-mode="dark"] .cat-frameworks  { background: rgba(249,115,22,0.2);  color: #fdba74; }
+[data-mode="dark"] .cat-ir          { background: rgba(20,184,166,0.2);  color: #5eead4; }
+[data-mode="dark"] .cat-cloud       { background: rgba(99,102,241,0.2);  color: #a5b4fc; }
+[data-mode="dark"] .cat-viz         { background: rgba(236,72,153,0.2);  color: #f9a8d4; }
+[data-mode="dark"] .cat-programming { background: rgba(107,114,128,0.25); color: #9ca3af; }
 
-**Project Management**
-`Agile Methodologies` `JIRA & Confluence` `Risk Management` `Resource Allocation` `Stakeholder Communication`
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--link-color, #0056b2);
+}
+.timeline-item {
+  position: relative;
+  padding-bottom: 1.75rem;
+}
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.75rem;
+  top: 0.35rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--link-color, #0056b2);
+  border: 2px solid var(--card-bg, #fff);
+}
+.timeline-item h3 {
+  margin: 0 0 0.2rem 0;
+  font-size: 1.05rem;
+  color: var(--heading-color, #2a2a2a);
+}
+.timeline-meta {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--text-muted-color, #757575);
+  margin-bottom: 0.5rem;
+}
+.timeline-item ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+.timeline-item li {
+  font-size: 0.92rem;
+  margin-bottom: 0.25rem;
+}
+</style>
 
-**Generative AI**
-`RAG Techniques` `Prompt Engineering` `Agentic AI` `Model Evaluation` `AI Workflow Optimization`
+<div class="cv-page" markdown="0">
 
-**GenAI Frameworks**
-`LangChain` `RAGAS` `LangGraph` `Haystack` `CREW AI`
+<h1>Sarbashis Das, PhD</h1>
+<p><strong>Principal Data Scientist &amp; Technical Lead — Ericsson, Sweden</strong></p>
+<p>With over 10 years in AI/ML, I currently serve as a Principal Data Scientist &amp; Technical Lead at Ericsson, Sweden. I have been pivotal in designing the software architecture of different AI-based products. My journey reflects a passion for Generative AI and a focus on developing innovative AI/ML products and tools. I lead cross-functional teams, mentor junior data scientists, and drive the adoption of advanced AI technologies.</p>
 
-**Information Retrieval**
-`Semantic Search` `Vector Search` `Data Preprocessing` `Knowledge Graphs` `Query Understanding`
+<!-- <a class="cv-download" href="/assets/docs/cv.pdf" target="_blank"><i class="fas fa-download"></i>Download PDF</a> -->
 
-**Cloud Platforms**
-`Azure ML` `AWS Bedrock` `Vertex AI` `Google Cloud AI` `Amazon SageMaker`
+<div class="metrics-bar">
+  <div class="metric"><span class="metric-number">10+</span><span class="metric-label">Years in AI/ML</span></div>
+  <div class="metric"><span class="metric-number">15</span><span class="metric-label">Team Members Led</span></div>
+  <div class="metric"><span class="metric-number">35</span><span class="metric-label">Microservices Managed</span></div>
+  <div class="metric"><span class="metric-number">16</span><span class="metric-label">Quarterly Releases</span></div>
+</div>
 
-**Visualization**
-`Kibana` `Grafana` `Tableau` `Power BI`
+<hr>
 
-**Programming**
-`Python` `R` `SQL` `Bash` `C`
+<h2 class="cv-section-title"><i class="fas fa-tools"></i> Professional Skills</h2>
 
----
+<div class="skill-category">
+  <strong>Data Science Leadership</strong>
+  <span class="skill-badge cat-leadership">Strategic Planning</span>
+  <span class="skill-badge cat-leadership">Cross-functional Team Management</span>
+  <span class="skill-badge cat-leadership">Collaboration</span>
+  <span class="skill-badge cat-leadership">Decision-Making</span>
+  <span class="skill-badge cat-leadership">Mentorship</span>
+</div>
 
-## Experience
+<div class="skill-category">
+  <strong>Project Management</strong>
+  <span class="skill-badge cat-pm">Agile Methodologies</span>
+  <span class="skill-badge cat-pm">JIRA &amp; Confluence</span>
+  <span class="skill-badge cat-pm">Risk Management</span>
+  <span class="skill-badge cat-pm">Resource Allocation</span>
+  <span class="skill-badge cat-pm">Stakeholder Communication</span>
+</div>
 
-### Principal Data Scientist & Technical Lead — Industrialization of Agentic RAG Assistant
-**Ericsson, AI Hub** | 2024 – Present
+<div class="skill-category">
+  <strong>Generative AI</strong>
+  <span class="skill-badge cat-genai">RAG Techniques</span>
+  <span class="skill-badge cat-genai">Prompt Engineering</span>
+  <span class="skill-badge cat-genai">Agentic AI</span>
+  <span class="skill-badge cat-genai">Model Evaluation</span>
+  <span class="skill-badge cat-genai">AI Workflow Optimization</span>
+</div>
 
-- Leading industrialization of the Agentic RAG-based Chatbot
-- Designed and implemented the overall architecture of the solution, ensuring scalability, reliability, and efficiency
-- Driving adoption of different AI use-cases across the organization
+<div class="skill-category">
+  <strong>GenAI Frameworks</strong>
+  <span class="skill-badge cat-frameworks">LangChain</span>
+  <span class="skill-badge cat-frameworks">RAGAS</span>
+  <span class="skill-badge cat-frameworks">LangGraph</span>
+  <span class="skill-badge cat-frameworks">Haystack</span>
+  <span class="skill-badge cat-frameworks">CREW AI</span>
+</div>
 
-### AI Architect & Technical Lead — Ericsson Product Information Assistant
-**Ericsson, AI Hub** | 2020 – 2024
+<div class="skill-category">
+  <strong>Information Retrieval</strong>
+  <span class="skill-badge cat-ir">Semantic Search</span>
+  <span class="skill-badge cat-ir">Vector Search</span>
+  <span class="skill-badge cat-ir">Data Preprocessing</span>
+  <span class="skill-badge cat-ir">Knowledge Graphs</span>
+  <span class="skill-badge cat-ir">Query Understanding</span>
+</div>
 
-- Led a diverse team of 15 professionals, including Data Scientists, Data Engineers, Software Developers, and Domain Experts
-- Conducted Proof-of-Concept (POC) for new technologies and led collaboration with teams across different organizations
-- Collaborated with Operative Product Owner and Strategic Product Manager to shape the Product Roadmap and facilitate feature development
-- Implemented Agile Methodologies, resulting in 16 successful quarterly releases
-- Held responsibility for the comprehensive architecture of the Assistant, overseeing 35 microservices
+<div class="skill-category">
+  <strong>Cloud Platforms</strong>
+  <span class="skill-badge cat-cloud">Azure ML</span>
+  <span class="skill-badge cat-cloud">AWS Bedrock</span>
+  <span class="skill-badge cat-cloud">Vertex AI</span>
+  <span class="skill-badge cat-cloud">Google Cloud AI</span>
+  <span class="skill-badge cat-cloud">Amazon SageMaker</span>
+</div>
 
-### Senior Data Scientist — Global AI Accelerator (GAIA)
-**Ericsson** | 2021 – 2023
+<div class="skill-category">
+  <strong>Visualization</strong>
+  <span class="skill-badge cat-viz">Kibana</span>
+  <span class="skill-badge cat-viz">Grafana</span>
+  <span class="skill-badge cat-viz">Tableau</span>
+  <span class="skill-badge cat-viz">Power BI</span>
+</div>
 
-- Proposed and drove the implementation of Retrieval Augmented Generation (RAG) using vector embedding and Large Language Models
-- Evaluated different vector stores for RAG architecture
-- Proposed architectural improvements and Prompt Engineering for system efficiency and answer quality
+<div class="skill-category">
+  <strong>Programming</strong>
+  <span class="skill-badge cat-programming">Python</span>
+  <span class="skill-badge cat-programming">R</span>
+  <span class="skill-badge cat-programming">SQL</span>
+  <span class="skill-badge cat-programming">Bash</span>
+  <span class="skill-badge cat-programming">C</span>
+</div>
 
-### Leaders Core Curriculum Program (LCC)
-**Ericsson** | Sept 2022 – March 2023
+<hr>
 
-- Completed Ericsson's 15-week foundation-level leadership development program
-- Developed self-awareness and learned to influence and collaborate effectively across organizations
-- Learned different leadership styles, understanding what drives and motivates a team
+<h2 class="cv-section-title"><i class="fas fa-briefcase"></i> Experience</h2>
 
-### Data Scientist — Global AI Accelerator (GAIA)
-**Ericsson** | 2019 – 2021
+<div class="timeline">
 
-- Developed pipeline for document processing and Knowledge Graph generation using open-source tools
-- Trained ML model for named-entity recognition for Ericsson product names
-- Designed SPARQL queries to fetch information from Knowledge Graph
+  <div class="timeline-item">
+    <h3>Principal Data Scientist &amp; Technical Lead — Industrialization of Agentic RAG Assistant</h3>
+    <span class="timeline-meta"><strong>Ericsson, AI Hub</strong> · 2024 – Present</span>
+    <ul>
+      <li>Leading industrialization of the Agentic RAG-based Chatbot</li>
+      <li>Designed and implemented the overall architecture of the solution, ensuring scalability, reliability, and efficiency</li>
+      <li>Driving adoption of different AI use-cases across the organization</li>
+    </ul>
+  </div>
 
-### Researcher / Senior Researcher
-**SciLifeLab, Uppsala University** | 2014 – 2019
+  <div class="timeline-item">
+    <h3>AI Architect &amp; Technical Lead — Ericsson Product Information Assistant</h3>
+    <span class="timeline-meta"><strong>Ericsson, AI Hub</strong> · 2020 – 2024</span>
+    <ul>
+      <li>Led a diverse team of 15 professionals, including Data Scientists, Data Engineers, Software Developers, and Domain Experts</li>
+      <li>Conducted Proof-of-Concept (POC) for new technologies and led collaboration with teams across different organizations</li>
+      <li>Collaborated with Operative Product Owner and Strategic Product Manager to shape the Product Roadmap and facilitate feature development</li>
+      <li>Implemented Agile Methodologies, resulting in 16 successful quarterly releases</li>
+      <li>Held responsibility for the comprehensive architecture of the Assistant, overseeing 35 microservices</li>
+    </ul>
+  </div>
 
-- Studied gene regulation in different types of heart failures using Machine Learning
-- Applied dimension reduction and unsupervised clustering to identify 743 dysregulated genes
+  <div class="timeline-item">
+    <h3>Senior Data Scientist — Global AI Accelerator (GAIA)</h3>
+    <span class="timeline-meta"><strong>Ericsson</strong> · 2021 – 2023</span>
+    <ul>
+      <li>Proposed and drove the implementation of Retrieval Augmented Generation (RAG) using vector embedding and Large Language Models</li>
+      <li>Evaluated different vector stores for RAG architecture</li>
+      <li>Proposed architectural improvements and Prompt Engineering for system efficiency and answer quality</li>
+    </ul>
+  </div>
 
----
+  <div class="timeline-item">
+    <h3>Leaders Core Curriculum Program (LCC)</h3>
+    <span class="timeline-meta"><strong>Ericsson</strong> · Sept 2022 – March 2023</span>
+    <ul>
+      <li>Completed Ericsson's 15-week foundation-level leadership development program</li>
+      <li>Developed self-awareness and learned to influence and collaborate effectively across organizations</li>
+      <li>Learned different leadership styles, understanding what drives and motivates a team</li>
+    </ul>
+  </div>
 
-## Education
+  <div class="timeline-item">
+    <h3>Data Scientist — Global AI Accelerator (GAIA)</h3>
+    <span class="timeline-meta"><strong>Ericsson</strong> · 2019 – 2021</span>
+    <ul>
+      <li>Developed pipeline for document processing and Knowledge Graph generation using open-source tools</li>
+      <li>Trained ML model for named-entity recognition for Ericsson product names</li>
+      <li>Designed SPARQL queries to fetch information from Knowledge Graph</li>
+    </ul>
+  </div>
 
-- **Ph.D.** in Computational & System Science
-- **M.Tech** in Computational & System Science
+  <div class="timeline-item">
+    <h3>Researcher / Senior Researcher</h3>
+    <span class="timeline-meta"><strong>SciLifeLab, Uppsala University</strong> · 2014 – 2019</span>
+    <ul>
+      <li>Studied gene regulation in different types of heart failures using Machine Learning</li>
+      <li>Applied dimension reduction and unsupervised clustering to identify 743 dysregulated genes</li>
+    </ul>
+  </div>
 
----
+</div>
 
-## Certifications
+<hr>
 
-- Generative AI and Large Language Model
-- Specialization in Machine Learning Engineering for Production (MLOps)
-- Specialization in Deep Learning
-- Architecting with Google Kubernetes Engine: Workloads
-- Architecting with Google Kubernetes Engine: Foundations
-- Machine Learning A-Z — Hands-On Python & R in Data Science
-- Machine Learning, Stanford University
-- Introduction to Data Science in Python, University of Michigan
+<h2 class="cv-section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
 
----
+<ul>
+  <li><strong>Ph.D.</strong> in Computational &amp; System Science</li>
+  <li><strong>M.Tech</strong> in Computational &amp; System Science</li>
+</ul>
 
-## Awards
+<hr>
 
-- **2024** — Ericsson Key Contributor Award. Recognizes potential to drive Ericsson's long-term strategic priorities.
-- **2021** — Ericsson Impact Award. Given for contributions with great impact to Ericsson business value.
-- **2017** — Research Grant (co-applicant). *Dynamics of gene regulatory networks in response to different stresses in Mycobacteria.* Funded by FORMAS.
-- **2016** — Research Grant (co-applicant). *Non-coding and regulatory RNAs in Mycobacteria.* Funded by Swedish Research Council (VR).
-- **2012** — Wennergren Postdoc Fellowship. Funded by Wennergren Foundations. Grant offered but gracefully declined.
-- **2010** — Senior Research Fellowship. Funded by CSIR, Government of India.
-- **2006** — Scholarship for Master of Technology. Funded by DBT, Government of India.
+<h2 class="cv-section-title"><i class="fas fa-certificate"></i> Certifications</h2>
 
----
+<ul>
+  <li>Generative AI and Large Language Model</li>
+  <li>Specialization in Machine Learning Engineering for Production (MLOps)</li>
+  <li>Specialization in Deep Learning</li>
+  <li>Architecting with Google Kubernetes Engine: Workloads</li>
+  <li>Architecting with Google Kubernetes Engine: Foundations</li>
+  <li>Machine Learning A-Z — Hands-On Python &amp; R in Data Science</li>
+  <li>Machine Learning, Stanford University</li>
+  <li>Introduction to Data Science in Python, University of Michigan</li>
+</ul>
 
-## Talks & Presentations
+<hr>
 
-- **2024** — Ericsson Developer Conference. Presented Ericsson Product Information Assistant with Generative AI.
-- **2024** — Uppsala University. Invited talk on Generative AI & LLM to Master Program students.
-- **2023** — Multiple Ericsson organizations. Presented & demoed Retrieval Augmented Generation (RAG) Architecture in PIA.
-- **2022** — Ericsson Developer Conference, Stockholm. Presented & demoed Ericsson Product Information Assistant.
+<h2 class="cv-section-title"><i class="fas fa-trophy"></i> Awards</h2>
+
+<ul>
+  <li><strong>2024</strong> — Ericsson Key Contributor Award. Recognizes potential to drive Ericsson's long-term strategic priorities.</li>
+  <li><strong>2021</strong> — Ericsson Impact Award. Given for contributions with great impact to Ericsson business value.</li>
+  <li><strong>2017</strong> — Research Grant (co-applicant). <em>Dynamics of gene regulatory networks in response to different stresses in Mycobacteria.</em> Funded by FORMAS.</li>
+  <li><strong>2016</strong> — Research Grant (co-applicant). <em>Non-coding and regulatory RNAs in Mycobacteria.</em> Funded by Swedish Research Council (VR).</li>
+  <li><strong>2012</strong> — Wennergren Postdoc Fellowship. Funded by Wennergren Foundations. Grant offered but gracefully declined.</li>
+  <li><strong>2010</strong> — Senior Research Fellowship. Funded by CSIR, Government of India.</li>
+  <li><strong>2006</strong> — Scholarship for Master of Technology. Funded by DBT, Government of India.</li>
+</ul>
+
+<hr>
+
+<h2 class="cv-section-title"><i class="fas fa-microphone-alt"></i> Talks &amp; Presentations</h2>
+
+<ul>
+  <li><strong>2024</strong> — Ericsson Developer Conference. Presented Ericsson Product Information Assistant with Generative AI.</li>
+  <li><strong>2024</strong> — Uppsala University. Invited talk on Generative AI &amp; LLM to Master Program students.</li>
+  <li><strong>2023</strong> — Multiple Ericsson organizations. Presented &amp; demoed Retrieval Augmented Generation (RAG) Architecture in PIA.</li>
+  <li><strong>2022</strong> — Ericsson Developer Conference, Stockholm. Presented &amp; demoed Ericsson Product Information Assistant.</li>
+</ul>
+
+</div>
