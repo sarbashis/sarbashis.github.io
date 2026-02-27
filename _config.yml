@@ -37,9 +37,9 @@ comments:
   provider: giscus
   giscus:
     repo: sarbashis/sarbashis.github.io
-    repo_id: # TODO: Get from https://giscus.app
+    repo_id: MDEwOlJlcG9zaXRvcnkxMzY2MTk1NTI=
     category: General
-    category_id: # TODO: Get from https://giscus.app
+    category_id: DIC_kwDOCCSmIM4C3UjZ
     mapping: pathname
     strict: 0
     reactions_enabled: 1
@@ -52,7 +52,7 @@ comments:
 # Analytics
 analytics:
   google:
-    id: UA-126790509-1 # TODO: Migrate to GA4 (G-XXXXXXX)
+    id: G-2Y9WEKN94G
 
 # Pagination
 paginate: 10
