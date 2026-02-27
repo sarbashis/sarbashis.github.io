@@ -4,6 +4,9 @@ date: 2025-01-09 00:00:00 +0100
 comments: true
 categories: [GenAI]
 tags: [rag, cag]
+image:
+  path: /assets/img/posts/CAG.png
+  alt: Cache-Augmented Generation architecture
 ---
 
 In the ever-evolving landscape of language models, Retrieval-Augmented Generation (RAG) has stood out as a formidable approach, enhancing models by integrating external knowledge sources. However, RAG is not without its challenges, including retrieval latency, retrieval errors, and increased system complexity. Enter Cache-Augmented Generation (CAG), a promising alternative that seeks to overcome these hurdles by eliminating the need for real-time retrieval.
