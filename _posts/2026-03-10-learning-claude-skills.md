@@ -1,6 +1,6 @@
 ---
 title: "Learning Claude Skills: A Roadmap to Extending Claude Code"
-date: 2025-06-15 00:00:00 +0100
+date: 2026-03-10 00:00:00 +0100
 comments: true
 categories: [AI]
 tags: [claude, agentic-ai, mcp, skills]
