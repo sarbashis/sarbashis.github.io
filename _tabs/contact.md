@@ -1,7 +1,7 @@
 ---
 title: Contact
 icon: fas fa-envelope
-order: 4
+order: 5
 ---
 
 Have a question, collaboration idea, or just want to say hello? Feel free to reach out using the form below and I'll get back to you as soon as possible.
