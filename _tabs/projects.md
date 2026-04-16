@@ -83,9 +83,21 @@ order: 2
 .project-tag-pink { background: rgba(236,72,153,0.12); color: #ec4899; }
 [data-mode="dark"] .project-tag-pink { background: rgba(236,72,153,0.2); color: #f9a8d4; }
 
+.projects-section-title {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--main-border-color, #f3f3f3);
+}
 .projects-section-title i {
   margin-right: 0.5rem;
   color: var(--link-color, #0056b2);
+}
+
+.section-divider {
+  margin: 2.5rem 0 0.5rem;
+  border: none;
+  border-top: 2px solid var(--main-border-color, #f3f3f3);
 }
 </style>
 
@@ -93,7 +105,35 @@ order: 2
 
 <p>A selection of AI architecture work and technical explorations I've built — from enterprise RAG systems to developer tool comparisons.</p>
 
-<hr>
+<h2 class="projects-section-title"><i class="fas fa-flask"></i> Research &amp; Concepts</h2>
+
+<div class="project-card">
+  <div class="project-body">
+    <h3><i class="fas fa-project-diagram"></i> Context Graph for AI Agents</h3>
+    <p>Exploring how context graphs give AI agents structured memory, relationships, and reasoning. Covers knowledge representation, graph construction, context retrieval, agent reasoning, persistence, and evaluation — a mind map of the key concepts behind intelligent context management.</p>
+    <div class="project-tags">
+      <span class="project-tag project-tag-teal">Knowledge Graphs</span>
+      <span class="project-tag project-tag-teal">Agent Memory</span>
+      <span class="project-tag project-tag-teal">Graph Reasoning</span>
+      <span class="project-tag project-tag-teal">Observability</span>
+    </div>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="project-body">
+    <h3><i class="fas fa-database"></i> Virtual Assistant with Knowledge Graph</h3>
+    <p>A next-generation virtual assistant powered by a knowledge graph to deliver highly accurate and context-rich product information. Uses natural language processing and structured data relationships to provide precise answers about product features, specifications, and availability.</p>
+    <div class="project-tags">
+      <span class="project-tag">Knowledge Graph</span>
+      <span class="project-tag">NLP</span>
+      <span class="project-tag">SPARQL</span>
+      <span class="project-tag">NER</span>
+    </div>
+  </div>
+</div>
+
+<hr class="section-divider">
 
 <h2 class="projects-section-title"><i class="fas fa-rocket"></i> Featured Projects</h2>
 
@@ -150,36 +190,6 @@ order: 2
       <span class="project-tag project-tag-pink">Kiro</span>
       <span class="project-tag project-tag-pink">AI Coding Tools</span>
       <span class="project-tag project-tag-pink">Developer Workflow</span>
-    </div>
-  </div>
-</div>
-
-<hr>
-
-<h2 class="projects-section-title"><i class="fas fa-flask"></i> Research &amp; Concepts</h2>
-
-<div class="project-card">
-  <div class="project-body">
-    <h3><i class="fas fa-project-diagram"></i> Context Graph for AI Agents</h3>
-    <p>Exploring how context graphs give AI agents structured memory, relationships, and reasoning. Covers knowledge representation, graph construction, context retrieval, agent reasoning, persistence, and evaluation — a mind map of the key concepts behind intelligent context management.</p>
-    <div class="project-tags">
-      <span class="project-tag project-tag-teal">Knowledge Graphs</span>
-      <span class="project-tag project-tag-teal">Agent Memory</span>
-      <span class="project-tag project-tag-teal">Graph Reasoning</span>
-      <span class="project-tag project-tag-teal">Observability</span>
-    </div>
-  </div>
-</div>
-
-<div class="project-card">
-  <div class="project-body">
-    <h3><i class="fas fa-database"></i> Virtual Assistant with Knowledge Graph</h3>
-    <p>A next-generation virtual assistant powered by a knowledge graph to deliver highly accurate and context-rich product information. Uses natural language processing and structured data relationships to provide precise answers about product features, specifications, and availability.</p>
-    <div class="project-tags">
-      <span class="project-tag">Knowledge Graph</span>
-      <span class="project-tag">NLP</span>
-      <span class="project-tag">SPARQL</span>
-      <span class="project-tag">NER</span>
     </div>
   </div>
 </div>
