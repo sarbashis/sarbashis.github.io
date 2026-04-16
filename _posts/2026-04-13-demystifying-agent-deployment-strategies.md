@@ -4,6 +4,9 @@ date: 2026-04-13 00:00:00 +0100
 comments: true
 categories: [AI]
 tags: [agentic-ai, claude, deployment, llm]
+image:
+  path: /assets/img/posts/agent-deployment/decision-framework.png
+  alt: Agent deployment decision framework flowchart
 ---
 
 The AI agent ecosystem has matured rapidly. What started as simple chatbot wrappers has evolved into sophisticated systems capable of autonomous reasoning, tool use, and multi-step task execution. But as organizations move from prototype to production, a critical architectural question emerges: **where should your agent run?**
