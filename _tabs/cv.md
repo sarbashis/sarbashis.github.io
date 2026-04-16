@@ -144,15 +144,15 @@ order: 3
 
 <h1>Sarbashis Das, PhD</h1>
 <p><strong>Principal Data Scientist &amp; Technical Lead — Ericsson, Sweden</strong></p>
-<p>With over 10 years in AI/ML, I currently serve as a Principal Data Scientist &amp; Technical Lead at Ericsson, Sweden. I have been pivotal in designing the software architecture of different AI-based products. My journey reflects a passion for Generative AI and a focus on developing innovative AI/ML products and tools. I lead cross-functional teams, mentor junior data scientists, and drive the adoption of advanced AI technologies.</p>
+<p>With over 15 years spanning academic research and enterprise AI, I drive the strategy, architecture, and delivery of AI-powered products at Ericsson. From building an enterprise-grade MCP Gateway and Agentic RAG systems to designing AI agent frameworks adopted across the organization, I operate at the intersection of technical depth and business impact. I set technical direction for cross-functional teams, align AI initiatives with product strategy, and champion the adoption of emerging technologies — including Claude Skills, AI Agents, and Model Context Protocol — to transform how teams build and ship intelligent systems.</p>
 
 <!-- <a class="cv-download" href="/assets/docs/cv.pdf" target="_blank"><i class="fas fa-download"></i>Download PDF</a> -->
 
 <div class="metrics-bar">
-  <div class="metric"><span class="metric-number">10+</span><span class="metric-label">Years in AI/ML</span></div>
+  <div class="metric"><span class="metric-number">15+</span><span class="metric-label">Years in AI/ML</span></div>
   <div class="metric"><span class="metric-number">15</span><span class="metric-label">Team Members Led</span></div>
-  <div class="metric"><span class="metric-number">35</span><span class="metric-label">Microservices Managed</span></div>
   <div class="metric"><span class="metric-number">16</span><span class="metric-label">Quarterly Releases</span></div>
+  <div class="metric"><span class="metric-number">1</span><span class="metric-label">AWS re:Invent Speaker</span></div>
 </div>
 
 <hr>
@@ -160,12 +160,13 @@ order: 3
 <h2 class="cv-section-title"><i class="fas fa-tools"></i> Professional Skills</h2>
 
 <div class="skill-category">
-  <strong>Data Science Leadership</strong>
-  <span class="skill-badge cat-leadership">Strategic Planning</span>
-  <span class="skill-badge cat-leadership">Cross-functional Team Management</span>
-  <span class="skill-badge cat-leadership">Collaboration</span>
-  <span class="skill-badge cat-leadership">Decision-Making</span>
-  <span class="skill-badge cat-leadership">Mentorship</span>
+  <strong>AI &amp; Technical Leadership</strong>
+  <span class="skill-badge cat-leadership">Technical Vision &amp; Strategy</span>
+  <span class="skill-badge cat-leadership">Cross-functional Team Leadership</span>
+  <span class="skill-badge cat-leadership">Architecture Decision-Making</span>
+  <span class="skill-badge cat-leadership">Stakeholder Alignment</span>
+  <span class="skill-badge cat-leadership">Mentorship &amp; Talent Development</span>
+  <span class="skill-badge cat-leadership">Build vs Buy Evaluation</span>
 </div>
 
 <div class="skill-category">
@@ -178,21 +179,25 @@ order: 3
 </div>
 
 <div class="skill-category">
-  <strong>Generative AI</strong>
-  <span class="skill-badge cat-genai">RAG Techniques</span>
+  <strong>Generative AI &amp; Agents</strong>
+  <span class="skill-badge cat-genai">Agentic RAG</span>
+  <span class="skill-badge cat-genai">AI Agents</span>
+  <span class="skill-badge cat-genai">MCP Gateway</span>
+  <span class="skill-badge cat-genai">Claude Skills</span>
   <span class="skill-badge cat-genai">Prompt Engineering</span>
-  <span class="skill-badge cat-genai">Agentic AI</span>
   <span class="skill-badge cat-genai">Model Evaluation</span>
-  <span class="skill-badge cat-genai">AI Workflow Optimization</span>
+  <span class="skill-badge cat-genai">Agent Orchestration</span>
 </div>
 
 <div class="skill-category">
-  <strong>GenAI Frameworks</strong>
+  <strong>GenAI Frameworks &amp; Platforms</strong>
   <span class="skill-badge cat-frameworks">LangChain</span>
-  <span class="skill-badge cat-frameworks">RAGAS</span>
   <span class="skill-badge cat-frameworks">LangGraph</span>
+  <span class="skill-badge cat-frameworks">CrewAI</span>
+  <span class="skill-badge cat-frameworks">AWS Bedrock AgentCore</span>
+  <span class="skill-badge cat-frameworks">Model Context Protocol</span>
+  <span class="skill-badge cat-frameworks">RAGAS</span>
   <span class="skill-badge cat-frameworks">Haystack</span>
-  <span class="skill-badge cat-frameworks">CREW AI</span>
 </div>
 
 <div class="skill-category">
@@ -237,12 +242,14 @@ order: 3
 <div class="timeline">
 
   <div class="timeline-item">
-    <h3>Principal Data Scientist &amp; Technical Lead — Industrialization of Agentic RAG Assistant</h3>
+    <h3>Principal Data Scientist &amp; Technical Lead — AI Agent Platform &amp; Agentic RAG</h3>
     <span class="timeline-meta"><strong>Ericsson, AI Hub</strong> · 2024 – Present</span>
     <ul>
-      <li>Leading industrialization of the Agentic RAG-based Chatbot</li>
-      <li>Designed and implemented the overall architecture of the solution, ensuring scalability, reliability, and efficiency</li>
-      <li>Driving adoption of different AI use-cases across the organization</li>
+      <li>Defining and executing the technical vision for Ericsson's AI agent platform, from Agentic RAG architecture to enterprise-grade MCP Gateway with OAuth and multi-server orchestration</li>
+      <li>Architected and delivered an MCP Gateway integrating Microsoft Entra ID authentication, enabling secure, scalable tool access across AI agents organization-wide</li>
+      <li>Pioneered adoption of Claude Skills and AI agent workflows, establishing reusable patterns for developer productivity across teams</li>
+      <li>Presented at <strong>AWS re:Invent 2025</strong>, showcasing how Ericsson leverages AgentCore to build specialized AI agents that eliminate knowledge silos</li>
+      <li>Driving the strategic roadmap for AI-powered products, aligning technical capabilities with business outcomes across multiple stakeholder groups</li>
     </ul>
   </div>
 
@@ -250,11 +257,11 @@ order: 3
     <h3>AI Architect &amp; Technical Lead — Ericsson Product Information Assistant</h3>
     <span class="timeline-meta"><strong>Ericsson, AI Hub</strong> · 2020 – 2024</span>
     <ul>
-      <li>Led a diverse team of 15 professionals, including Data Scientists, Data Engineers, Software Developers, and Domain Experts</li>
-      <li>Conducted Proof-of-Concept (POC) for new technologies and led collaboration with teams across different organizations</li>
-      <li>Collaborated with Operative Product Owner and Strategic Product Manager to shape the Product Roadmap and facilitate feature development</li>
-      <li>Implemented Agile Methodologies, resulting in 16 successful quarterly releases</li>
-      <li>Held responsibility for the comprehensive architecture of the Assistant, overseeing 35 microservices</li>
+      <li>Owned the end-to-end architecture and technical direction for a flagship AI product, leading a cross-functional team of 15 across Data Science, Engineering, and Domain expertise</li>
+      <li>Shaped the product roadmap in partnership with Product Owners and Strategic Product Managers, translating business needs into technical initiatives</li>
+      <li>Delivered 16 successful quarterly releases through disciplined Agile execution, establishing a cadence that became a model for other AI teams</li>
+      <li>Drove build-vs-buy decisions and technology evaluations, ensuring the architecture scaled with evolving business requirements</li>
+      <li>Established engineering standards, code review practices, and technical mentorship programs that accelerated team velocity</li>
     </ul>
   </div>
 
@@ -262,9 +269,9 @@ order: 3
     <h3>Senior Data Scientist — Global AI Accelerator (GAIA)</h3>
     <span class="timeline-meta"><strong>Ericsson</strong> · 2021 – 2023</span>
     <ul>
-      <li>Proposed and drove the implementation of Retrieval Augmented Generation (RAG) using vector embedding and Large Language Models</li>
-      <li>Evaluated different vector stores for RAG architecture</li>
-      <li>Proposed architectural improvements and Prompt Engineering for system efficiency and answer quality</li>
+      <li>Identified and championed Retrieval Augmented Generation (RAG) as a strategic capability, driving the organization's first production RAG implementation</li>
+      <li>Evaluated and benchmarked vector stores, embedding models, and retrieval strategies to establish the reference architecture for RAG at Ericsson</li>
+      <li>Designed prompt engineering frameworks and architectural patterns that became the foundation for subsequent Agentic RAG systems</li>
     </ul>
   </div>
 
@@ -272,9 +279,8 @@ order: 3
     <h3>Leaders Core Curriculum Program (LCC)</h3>
     <span class="timeline-meta"><strong>Ericsson</strong> · Sept 2022 – March 2023</span>
     <ul>
-      <li>Completed Ericsson's 15-week foundation-level leadership development program</li>
-      <li>Developed self-awareness and learned to influence and collaborate effectively across organizations</li>
-      <li>Learned different leadership styles, understanding what drives and motivates a team</li>
+      <li>Completed Ericsson's 15-week leadership development program focused on executive influence, organizational dynamics, and strategic thinking</li>
+      <li>Developed leadership toolkit for driving alignment across distributed teams and influencing without authority</li>
     </ul>
   </div>
 
@@ -282,18 +288,19 @@ order: 3
     <h3>Data Scientist — Global AI Accelerator (GAIA)</h3>
     <span class="timeline-meta"><strong>Ericsson</strong> · 2019 – 2021</span>
     <ul>
-      <li>Developed pipeline for document processing and Knowledge Graph generation using open-source tools</li>
-      <li>Trained ML model for named-entity recognition for Ericsson product names</li>
-      <li>Designed SPARQL queries to fetch information from Knowledge Graph</li>
+      <li>Built end-to-end NLP pipelines for document processing and Knowledge Graph construction, establishing foundational data infrastructure</li>
+      <li>Developed custom NER models for Ericsson product domain, improving entity recognition accuracy for downstream search and retrieval</li>
+      <li>Designed SPARQL-based query interfaces enabling structured knowledge access across product documentation</li>
     </ul>
   </div>
 
   <div class="timeline-item">
     <h3>Researcher / Senior Researcher</h3>
-    <span class="timeline-meta"><strong>SciLifeLab, Uppsala University</strong> · 2014 – 2019</span>
+    <span class="timeline-meta"><strong>SciLifeLab, Uppsala University</strong> · 2011 – 2019</span>
     <ul>
-      <li>Studied gene regulation in different types of heart failures using Machine Learning</li>
-      <li>Applied dimension reduction and unsupervised clustering to identify 743 dysregulated genes</li>
+      <li>Led computational biology research applying ML to gene regulation in cardiac disease, publishing in peer-reviewed journals</li>
+      <li>Developed unsupervised clustering and dimensionality reduction pipelines identifying 743 dysregulated genes across heart failure subtypes</li>
+      <li>Built the analytical foundation and scientific rigor that underpins a data-driven approach to complex systems</li>
     </ul>
   </div>
 
@@ -342,6 +349,7 @@ order: 3
 <h2 class="cv-section-title"><i class="fas fa-microphone-alt"></i> Talks &amp; Presentations</h2>
 
 <ul>
+  <li><strong>2025</strong> — <strong>AWS re:Invent</strong>, Las Vegas. Showcased how Ericsson leverages AgentCore to build specialized AI agents and domain-focused models.</li>
   <li><strong>2024</strong> — Ericsson Developer Conference. Presented Ericsson Product Information Assistant with Generative AI.</li>
   <li><strong>2024</strong> — Uppsala University. Invited talk on Generative AI &amp; LLM to Master Program students.</li>
   <li><strong>2023</strong> — Multiple Ericsson organizations. Presented &amp; demoed Retrieval Augmented Generation (RAG) Architecture in PIA.</li>
