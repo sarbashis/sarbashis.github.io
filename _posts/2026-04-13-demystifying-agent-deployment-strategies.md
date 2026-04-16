@@ -45,7 +45,7 @@ Remote agents are deployed as services — typically on cloud infrastructure —
 
 - **LangGraph** — stateful, graph-based agent orchestration from LangChain
 - **CrewAI** — role-based multi-agent framework for collaborative task execution
-- **AutoGen** — Microsoft's framework for multi-agent conversations
+- **Microsoft Agent Framework** — Microsoft's enterprise-ready framework for multi-agent orchestration
 - **Amazon Bedrock AgentCore** — managed agent service with built-in tool use and knowledge bases
 - **Google Vertex AI Agent Builder** — end-to-end agent development and deployment on GCP
 - **OpenAI Agents SDK** — OpenAI's framework for building and deploying production agents
@@ -107,7 +107,7 @@ Chatbots, virtual assistants, support agents, and conversational interfaces that
 
 ### 2. Multi-Agent Workflows
 
-Complex tasks that benefit from decomposition — where specialized agents collaborate (a researcher, a writer, a reviewer, a fact-checker) — require orchestration infrastructure. Frameworks like CrewAI, LangGraph, and AutoGen provide the coordination layer.
+Complex tasks that benefit from decomposition — where specialized agents collaborate (a researcher, a writer, a reviewer, a fact-checker) — require orchestration infrastructure. Frameworks like CrewAI, LangGraph, and Microsoft Agent Framework provide the coordination layer.
 
 **Why remote wins:** Multi-agent systems need shared state, message passing, and orchestration logic that goes beyond what a single local process can manage.
 
@@ -158,7 +158,9 @@ _Three hybrid patterns that combine local and remote agents_
 
 ### Local Agent with Remote Tool Access
 
-A local agent like Claude Code can invoke remote APIs, query cloud databases via MCP servers, or trigger CI/CD pipelines — combining the interactive local experience with access to remote infrastructure. The agent runs locally but its tools reach into the cloud.
+A local agent like Claude Code can invoke remote APIs, query cloud databases via [MCP (Model Context Protocol)](/posts/model-context-protocol/) servers, or trigger CI/CD pipelines — combining the interactive local experience with access to remote infrastructure. The agent runs locally but its tools reach into the cloud.
+
+MCP is an open standard that provides a universal interface between AI agents and external tools or data sources. Instead of building custom integrations for every service, an agent connects to MCP servers that expose a standardized set of capabilities — reading from databases, calling APIs, accessing file systems, or interacting with SaaS platforms. This makes MCP a natural bridge layer in hybrid architectures: a local agent gains cloud reach without sacrificing its local execution model, and a remote agent can expose its capabilities as MCP tools that other agents consume.
 
 ### Remote Orchestrator with Local Execution
 
