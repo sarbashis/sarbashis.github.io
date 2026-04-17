@@ -127,6 +127,19 @@ order: 4
   font-size: 0.95rem;
   font-style: italic;
 }
+
+.event-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--main-border-color, #f3f3f3);
+}
+.event-gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: top;
+}
 </style>
 
 <div class="speaking-page" markdown="0">
@@ -157,6 +170,33 @@ order: 4
       <span class="event-tag event-tag-blue">AI Agents</span>
       <span class="event-tag event-tag-purple">Ericsson</span>
       <span class="event-tag event-tag-teal">Innovation</span>
+    </div>
+  </div>
+</div>
+
+<div class="event-card">
+  <div class="event-gallery">
+    <img src="/assets/img/mwc-1.png" alt="MWC 2025 - System Comprehension Lab Demo">
+    <img src="/assets/img/mwc-2.png" alt="MWC 2025 - Ericsson Booth">
+  </div>
+  <div class="event-body">
+    <h3><i class="fas fa-broadcast-tower"></i> AI Agents for RAN Developer Productivity</h3>
+    <div class="event-meta">
+      <span><i class="fas fa-calendar-alt"></i> March 2025</span>
+      <span><i class="fas fa-map-marker-alt"></i> Barcelona, Spain</span>
+      <span><i class="fas fa-ticket-alt"></i> MWC 2025</span>
+    </div>
+    <p>Showcased the work from the System Comprehension Lab at Ericsson — exploring the challenges RAN developers face due to comprehension limits and how AI agents can help overcome these obstacles, enhancing productivity.</p>
+    <div class="event-people">
+      <strong>In collaboration with:</strong> AWS
+    </div>
+    <div class="event-tags">
+      <span class="event-tag event-tag-orange">MWC 2025</span>
+      <span class="event-tag event-tag-blue">AI Agents</span>
+      <span class="event-tag event-tag-purple">Ericsson</span>
+      <span class="event-tag event-tag-purple">System Comprehension</span>
+      <span class="event-tag event-tag-teal">RAN</span>
+      <span class="event-tag event-tag-teal">Developer Productivity</span>
     </div>
   </div>
 </div>
