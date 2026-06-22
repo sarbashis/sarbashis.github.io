@@ -1,0 +1,155 @@
+<mxfile host="app.diagrams.net" type="device">
+  <diagram name="hooks-demo-flow" id="hooks-demo-flow">
+    <mxGraphModel dx="1500" dy="1000" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1360" pageHeight="1020" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Inside claude-code-hooks-demo: how the hooks wire together" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=28;fontStyle=1;fontColor=#1A1A2E;" vertex="1" parent="1">
+          <mxGeometry x="180" y="20" width="1000" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="Every hook reads a JSON event on STDIN → does its job → signals back with an exit code" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=16;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="180" y="62" width="1000" height="28" as="geometry" />
+        </mxCell>
+
+        <!-- ===== Lane 1: Agent (left) ===== -->
+        <mxCell id="agentBg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBE9E3;strokeColor=#D97757;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="110" width="280" height="820" as="geometry" />
+        </mxCell>
+        <mxCell id="agentTitle" value="Claude Code session" style="text;html=1;align=center;fontSize=18;fontStyle=1;fontColor=#7A2E1A;" vertex="1" parent="1">
+          <mxGeometry x="50" y="124" width="260" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ev1" value="① SessionStart" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D97757;strokeColor=none;fontColor=#FFFFFF;fontSize=15;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="170" width="220" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="ev2" value="② UserPromptSubmit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D97757;strokeColor=none;fontColor=#FFFFFF;fontSize=15;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="300" width="220" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="ev3" value="③ PreToolUse&#10;(before a tool runs)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D97757;strokeColor=none;fontColor=#FFFFFF;fontSize=15;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="430" width="220" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="ev4" value="④ PostToolUse&#10;(after Edit / Write)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D97757;strokeColor=none;fontColor=#FFFFFF;fontSize=15;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="640" width="220" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="ev5" value="⑤ Stop&#10;(turn ends)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D97757;strokeColor=none;fontColor=#FFFFFF;fontSize=15;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="770" width="220" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- vertical flow arrow inside agent lane (back layer) -->
+        <mxCell id="agentflow" style="endArrow=classic;html=1;strokeWidth=3;strokeColor=#D97757;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="216" as="sourcePoint" />
+            <mxPoint x="180" y="826" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ===== Lane 2: Hook scripts (middle) ===== -->
+        <mxCell id="hookTitle" value=".claude/hooks/*.sh" style="text;html=1;align=center;fontSize=18;fontStyle=1;fontColor=#1A1A2E;" vertex="1" parent="1">
+          <mxGeometry x="470" y="124" width="360" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="h1" value="session-start.sh&#10;reads branch + git status,&#10;echoes context block" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D97757;strokeWidth=2;fontSize=13;fontColor=#1A1A2E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="470" y="166" width="360" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="h2" value="inject-context.sh&#10;logs the prompt, echoes current&#10;time + a test reminder" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D97757;strokeWidth=2;fontSize=13;fontColor=#1A1A2E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="470" y="296" width="360" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="h3a" value="block-dangerous.sh&#10;matches deny-list (rm -rf /, curl | sh …)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#B00020;strokeWidth=2;fontSize=13;fontColor=#1A1A2E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="470" y="420" width="360" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="h3b" value="audit-log.sh&#10;appends one JSON line per tool call" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D97757;strokeWidth=2;fontSize=13;fontColor=#1A1A2E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="470" y="476" width="360" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="h4" value="format-on-edit.sh&#10;runs black / prettier / shfmt&#10;on the edited file" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D97757;strokeWidth=2;fontSize=13;fontColor=#1A1A2E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="470" y="636" width="360" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="h5" value="notify-stop.sh&#10;desktop notification + systemMessage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D97757;strokeWidth=2;fontSize=13;fontColor=#1A1A2E;align=center;" vertex="1" parent="1">
+          <mxGeometry x="470" y="772" width="360" height="52" as="geometry" />
+        </mxCell>
+
+        <!-- STDIN arrows: agent event -> script -->
+        <mxCell id="a1" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#888888;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="290" y="193" as="sourcePoint" /><mxPoint x="470" y="194" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="a1l" value="JSON&#10;via STDIN" style="text;html=1;align=center;fontSize=11;fontColor=#888888;" vertex="1" parent="1">
+          <mxGeometry x="320" y="150" width="120" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#888888;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="290" y="323" as="sourcePoint" /><mxPoint x="470" y="324" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="a3" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#888888;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="290" y="458" as="sourcePoint" /><mxPoint x="470" y="443" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="a3b" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#888888;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="290" y="462" as="sourcePoint" /><mxPoint x="470" y="499" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="a4" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#888888;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="290" y="668" as="sourcePoint" /><mxPoint x="470" y="664" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="a5" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#888888;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="290" y="798" as="sourcePoint" /><mxPoint x="470" y="798" as="targetPoint" /></mxGeometry>
+        </mxCell>
+
+        <!-- ===== Lane 3: Outcomes (right) ===== -->
+        <mxCell id="outTitle" value="Effect" style="text;html=1;align=center;fontSize=18;fontStyle=1;fontColor=#1A1A2E;" vertex="1" parent="1">
+          <mxGeometry x="980" y="124" width="340" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="o1" value="exit 0 → stdout injected into context" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F4EA;strokeColor=#1E7E34;fontSize=13;fontColor=#14532D;align=center;" vertex="1" parent="1">
+          <mxGeometry x="980" y="170" width="340" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="o2" value="exit 0 → context + logs/prompts.log" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F4EA;strokeColor=#1E7E34;fontSize=13;fontColor=#14532D;align=center;" vertex="1" parent="1">
+          <mxGeometry x="980" y="300" width="340" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="o3a" value="⚠ exit 2 → VETO the tool&#10;(stderr fed back to Claude)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDE7E9;strokeColor=#B00020;fontSize=13;fontColor=#7A0012;align=center;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="412" width="340" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="o3b" value="exit 0 → logs/audit.jsonl (one line / call)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F4EA;strokeColor=#1E7E34;fontSize=13;fontColor=#14532D;align=center;" vertex="1" parent="1">
+          <mxGeometry x="980" y="476" width="340" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="o4" value="exit 0 → file reformatted in place" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F4EA;strokeColor=#1E7E34;fontSize=13;fontColor=#14532D;align=center;" vertex="1" parent="1">
+          <mxGeometry x="980" y="640" width="340" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="o5" value="exit 0 → notification + logs/session.log" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F4EA;strokeColor=#1E7E34;fontSize=13;fontColor=#14532D;align=center;" vertex="1" parent="1">
+          <mxGeometry x="980" y="772" width="340" height="46" as="geometry" />
+        </mxCell>
+
+        <!-- exit-code arrows: script -> outcome -->
+        <mxCell id="b1" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#1E7E34;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="830" y="194" as="sourcePoint" /><mxPoint x="980" y="193" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="b1l" value="exit code" style="text;html=1;align=center;fontSize=11;fontColor=#888888;" vertex="1" parent="1">
+          <mxGeometry x="840" y="150" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#1E7E34;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="830" y="324" as="sourcePoint" /><mxPoint x="980" y="323" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="b3a" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#B00020;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="830" y="443" as="sourcePoint" /><mxPoint x="980" y="437" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="b3b" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#1E7E34;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="830" y="499" as="sourcePoint" /><mxPoint x="980" y="499" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="b4" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#1E7E34;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="830" y="664" as="sourcePoint" /><mxPoint x="980" y="663" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="b5" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#1E7E34;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="830" y="798" as="sourcePoint" /><mxPoint x="980" y="798" as="targetPoint" /></mxGeometry>
+        </mxCell>
+
+        <!-- ===== Bottom: test harness + logs ===== -->
+        <mxCell id="testBox" value="🧪  ./test-hooks.sh  —  pipes a sample JSON event into each script and asserts the exit code, so you can validate every hook WITHOUT launching Claude Code  (7 passed, 0 failed)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1A1A2E;strokeColor=none;fontColor=#FFFFFF;fontSize=14;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="40" y="868" width="1280" height="54" as="geometry" />
+        </mxCell>
+
+        <!-- Footer -->
+        <mxCell id="footer" value="Repo: github.com/sarbashis/claude-code-hooks-demo" style="text;html=1;align=center;fontSize=12;fontColor=#888888;" vertex="1" parent="1">
+          <mxGeometry x="430" y="936" width="500" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

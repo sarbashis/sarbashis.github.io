@@ -1,0 +1,149 @@
+<mxfile host="app.diagrams.net" type="device">
+  <diagram name="hooks-lifecycle" id="hooks-lifecycle">
+    <mxGraphModel dx="1400" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1400" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Where Hooks Fire in the Agent Lifecycle" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=30;fontStyle=1;fontColor=#1A1A2E;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="800" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="Both agents expose the same five lifecycle moments — only the names differ" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=17;fontColor=#555555;" vertex="1" parent="1">
+          <mxGeometry x="300" y="68" width="800" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Spine arrow (back layer) -->
+        <mxCell id="spine" style="endArrow=classic;html=1;strokeWidth=4;strokeColor=#9AA0A6;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="290" as="sourcePoint" />
+            <mxPoint x="1300" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Stage labels along spine -->
+        <mxCell id="st1" value="Session&#10;starts" style="text;html=1;align=center;fontSize=15;fontStyle=1;fontColor=#1A1A2E;" vertex="1" parent="1">
+          <mxGeometry x="120" y="250" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="st2" value="User submits&#10;a prompt" style="text;html=1;align=center;fontSize=15;fontStyle=1;fontColor=#1A1A2E;" vertex="1" parent="1">
+          <mxGeometry x="340" y="250" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="st3" value="Before a&#10;tool runs" style="text;html=1;align=center;fontSize=15;fontStyle=1;fontColor=#1A1A2E;" vertex="1" parent="1">
+          <mxGeometry x="580" y="250" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="st4" value="After a&#10;tool runs" style="text;html=1;align=center;fontSize=15;fontStyle=1;fontColor=#1A1A2E;" vertex="1" parent="1">
+          <mxGeometry x="800" y="250" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="st5" value="Agent finishes&#10;responding" style="text;html=1;align=center;fontSize=15;fontStyle=1;fontColor=#1A1A2E;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="250" width="150" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Tick dots on spine -->
+        <mxCell id="d1" style="ellipse;html=1;fillColor=#9AA0A6;strokeColor=#9AA0A6;" vertex="1" parent="1">
+          <mxGeometry x="172" y="282" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" style="ellipse;html=1;fillColor=#9AA0A6;strokeColor=#9AA0A6;" vertex="1" parent="1">
+          <mxGeometry x="402" y="282" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" style="ellipse;html=1;fillColor=#9AA0A6;strokeColor=#9AA0A6;" vertex="1" parent="1">
+          <mxGeometry x="632" y="282" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="d4" style="ellipse;html=1;fillColor=#9AA0A6;strokeColor=#9AA0A6;" vertex="1" parent="1">
+          <mxGeometry x="852" y="282" width="16" height="16" as="geometry" />
+        </mxCell>
+        <mxCell id="d5" style="ellipse;html=1;fillColor=#9AA0A6;strokeColor=#9AA0A6;" vertex="1" parent="1">
+          <mxGeometry x="1102" y="282" width="16" height="16" as="geometry" />
+        </mxCell>
+
+        <!-- Claude Code lane label -->
+        <mxCell id="cclabel" value="Claude Code" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D97757;strokeColor=none;fontColor=#FFFFFF;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="120" width="90" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Kiro CLI lane label -->
+        <mxCell id="kclabel" value="Kiro CLI&#10;(2.x)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=none;fontColor=#FFFFFF;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="400" width="90" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Claude Code event boxes (top lane) -->
+        <mxCell id="cc1" value="SessionStart" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBE9E3;strokeColor=#D97757;fontSize=15;fontStyle=1;fontColor=#7A2E1A;" vertex="1" parent="1">
+          <mxGeometry x="115" y="120" width="130" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="cc2" value="UserPromptSubmit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBE9E3;strokeColor=#D97757;fontSize=15;fontStyle=1;fontColor=#7A2E1A;" vertex="1" parent="1">
+          <mxGeometry x="335" y="120" width="150" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="cc3" value="PreToolUse&#10;(can block)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBE9E3;strokeColor=#D97757;fontSize=15;fontStyle=1;fontColor=#7A2E1A;" vertex="1" parent="1">
+          <mxGeometry x="567" y="113" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cc4" value="PostToolUse" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBE9E3;strokeColor=#D97757;fontSize=15;fontStyle=1;fontColor=#7A2E1A;" vertex="1" parent="1">
+          <mxGeometry x="797" y="120" width="130" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="cc5" value="Stop&#10;(+ SubagentStop)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBE9E3;strokeColor=#D97757;fontSize=15;fontStyle=1;fontColor=#7A2E1A;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="113" width="150" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Kiro CLI event boxes (bottom lane) -->
+        <mxCell id="kc1" value="agentSpawn" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EDF3;strokeColor=#232F3E;fontSize=15;fontStyle=1;fontColor=#232F3E;" vertex="1" parent="1">
+          <mxGeometry x="115" y="410" width="130" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="kc2" value="userPromptSubmit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EDF3;strokeColor=#232F3E;fontSize=15;fontStyle=1;fontColor=#232F3E;" vertex="1" parent="1">
+          <mxGeometry x="335" y="410" width="150" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="kc3" value="preToolUse&#10;(can block)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EDF3;strokeColor=#232F3E;fontSize=15;fontStyle=1;fontColor=#232F3E;" vertex="1" parent="1">
+          <mxGeometry x="567" y="403" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kc4" value="postToolUse" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EDF3;strokeColor=#232F3E;fontSize=15;fontStyle=1;fontColor=#232F3E;" vertex="1" parent="1">
+          <mxGeometry x="797" y="410" width="130" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="kc5" value="stop" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EDF3;strokeColor=#232F3E;fontSize=15;fontStyle=1;fontColor=#232F3E;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="410" width="150" height="46" as="geometry" />
+        </mxCell>
+
+        <!-- connectors Claude boxes to spine -->
+        <mxCell id="lcc1" style="endArrow=none;html=1;strokeColor=#D97757;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="180" y="166" as="sourcePoint" /><mxPoint x="180" y="282" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="lcc2" style="endArrow=none;html=1;strokeColor=#D97757;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="410" y="166" as="sourcePoint" /><mxPoint x="410" y="282" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="lcc3" style="endArrow=none;html=1;strokeColor=#D97757;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="640" y="173" as="sourcePoint" /><mxPoint x="640" y="282" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="lcc4" style="endArrow=none;html=1;strokeColor=#D97757;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="860" y="166" as="sourcePoint" /><mxPoint x="860" y="282" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="lcc5" style="endArrow=none;html=1;strokeColor=#D97757;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="1110" y="173" as="sourcePoint" /><mxPoint x="1110" y="282" as="targetPoint" /></mxGeometry>
+        </mxCell>
+
+        <!-- connectors Kiro boxes to spine -->
+        <mxCell id="lkc1" style="endArrow=none;html=1;strokeColor=#232F3E;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="180" y="410" as="sourcePoint" /><mxPoint x="180" y="298" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="lkc2" style="endArrow=none;html=1;strokeColor=#232F3E;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="410" y="410" as="sourcePoint" /><mxPoint x="410" y="298" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="lkc3" style="endArrow=none;html=1;strokeColor=#232F3E;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="640" y="403" as="sourcePoint" /><mxPoint x="640" y="298" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="lkc4" style="endArrow=none;html=1;strokeColor=#232F3E;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="860" y="410" as="sourcePoint" /><mxPoint x="860" y="298" as="targetPoint" /></mxGeometry>
+        </mxCell>
+        <mxCell id="lkc5" style="endArrow=none;html=1;strokeColor=#232F3E;strokeWidth=2;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="1110" y="410" as="sourcePoint" /><mxPoint x="1110" y="298" as="targetPoint" /></mxGeometry>
+        </mxCell>
+
+        <!-- Block annotation -->
+        <mxCell id="blocknote" value="&#9888; PreToolUse / preToolUse can VETO a tool call (exit code 2) before it ever executes" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;fontColor=#B00020;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="430" y="520" width="560" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Footer -->
+        <mxCell id="footer" value="Sources: code.claude.com/docs/en/hooks  •  kiro.dev/docs/cli/hooks" style="text;html=1;align=center;fontSize=12;fontColor=#888888;" vertex="1" parent="1">
+          <mxGeometry x="400" y="600" width="600" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
