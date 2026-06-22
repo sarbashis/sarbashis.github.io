@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net" type="device">
+  <diagram name="hooks-infographic" id="hooks-infographic">
+    <mxGraphModel dx="1400" dy="1000" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1320" pageHeight="980" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="Claude Code vs Kiro CLI Hooks — at a glance" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=30;fontStyle=1;fontColor=#1A1A2E;" vertex="1" parent="1">
+          <mxGeometry x="160" y="20" width="1000" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- ===== Left column: Claude Code header ===== -->
+        <mxCell id="ccHead" value="Claude Code" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D97757;strokeColor=none;fontColor=#FFFFFF;fontSize=22;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="90" width="580" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- Right column: Kiro CLI header -->
+        <mxCell id="kcHead" value="Kiro CLI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#232F3E;strokeColor=none;fontColor=#FFFFFF;fontSize=22;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="90" width="580" height="56" as="geometry" />
+        </mxCell>
+
+        <!-- Row 1: Where config lives -->
+        <mxCell id="r1l" value="&lt;b&gt;Where config lives&lt;/b&gt;&lt;br&gt;&lt;br&gt;JSON in &lt;b&gt;settings.json&lt;/b&gt; (user / project / local).&lt;br&gt;Three-level nesting: event &#8594; matcher group &#8594; handlers." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBE9E3;strokeColor=#D97757;fontSize=15;fontColor=#3A1B12;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="160" width="580" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="r1r" value="&lt;b&gt;Where config lives&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;2.x:&lt;/b&gt; a &lt;b&gt;hooks&lt;/b&gt; field inside the agent config JSON.&lt;br&gt;&lt;b&gt;v3:&lt;/b&gt; standalone versioned files in &lt;b&gt;.kiro/hooks/&lt;/b&gt;, applied across all workspace agents." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EDF3;strokeColor=#232F3E;fontSize=15;fontColor=#1A2330;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="680" y="160" width="580" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- Row 2: Handler / action types -->
+        <mxCell id="r2l" value="&lt;b&gt;Handler types&lt;/b&gt;&lt;br&gt;&lt;br&gt;command (shell) &#8226; http &#8226; mcp_tool &#8226; prompt &#8226; agent&lt;br&gt;&lt;i&gt;(prompt &amp; agent invoke a model; agent is experimental)&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBE9E3;strokeColor=#D97757;fontSize=15;fontColor=#3A1B12;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="294" width="580" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="r2r" value="&lt;b&gt;Action types&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;command&lt;/b&gt; — run a shell command with JSON on stdin&lt;br&gt;&lt;b&gt;agent&lt;/b&gt; (v3) — append a prompt to context, no subprocess" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EDF3;strokeColor=#232F3E;fontSize=15;fontColor=#1A2330;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="680" y="294" width="580" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- Row 3: Tool matcher -->
+        <mxCell id="r3l" value="&lt;b&gt;Tool matcher (Pre/PostToolUse)&lt;/b&gt;&lt;br&gt;&lt;br&gt;Exact string, pipe list (&lt;b&gt;Edit|Write&lt;/b&gt;) or JS regex,&lt;br&gt;matched on tool_name. Matcher is optional." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBE9E3;strokeColor=#D97757;fontSize=15;fontColor=#3A1B12;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="418" width="580" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="r3r" value="&lt;b&gt;Tool matcher (pre/postToolUse)&lt;/b&gt;&lt;br&gt;&lt;br&gt;Canonical names + aliases (&lt;b&gt;fs_write&lt;/b&gt;/write, &lt;b&gt;execute_bash&lt;/b&gt;/shell, &lt;b&gt;use_aws&lt;/b&gt;/aws),&lt;br&gt;MCP namespacing (&lt;b&gt;@server&lt;/b&gt; or server/tool), &lt;b&gt;*&lt;/b&gt; wildcard, &lt;b&gt;builtin&lt;/b&gt;." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EDF3;strokeColor=#232F3E;fontSize=15;fontColor=#1A2330;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="680" y="418" width="580" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- Row 4: Exit codes / blocking -->
+        <mxCell id="r4l" value="&lt;b&gt;Exit codes &amp; blocking&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;0&lt;/b&gt; = OK (stdout &#8594; context for SessionStart / UserPromptSubmit)&lt;br&gt;&lt;b&gt;2&lt;/b&gt; = blocking error; stderr fed back to the model&lt;br&gt;other = non-blocking warning, execution continues" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBE9E3;strokeColor=#D97757;fontSize=15;fontColor=#3A1B12;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="542" width="580" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="r4r" value="&lt;b&gt;Exit codes &amp; blocking&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;0&lt;/b&gt; = OK (stdout &#8594; context for agentSpawn / userPromptSubmit)&lt;br&gt;&lt;b&gt;2&lt;/b&gt; = blocks (preToolUse in 2.x; + userPromptSubmit in v3); stderr &#8594; LLM&lt;br&gt;other = stderr shown as a warning" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EDF3;strokeColor=#232F3E;fontSize=15;fontColor=#1A2330;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="680" y="542" width="580" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- Row 5: Context injection -->
+        <mxCell id="r5l" value="&lt;b&gt;Context injection&lt;/b&gt;&lt;br&gt;&lt;br&gt;Via an &lt;b&gt;additionalContext&lt;/b&gt; field, wrapped in a system reminder (not shown as a chat message). Plain stdout also added for SessionStart / UserPromptSubmit." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBE9E3;strokeColor=#D97757;fontSize=15;fontColor=#3A1B12;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="676" width="580" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="r5r" value="&lt;b&gt;Context injection&lt;/b&gt;&lt;br&gt;&lt;br&gt;Exit-code-gated &lt;b&gt;STDOUT&lt;/b&gt;: a 0-exit hook's stdout is appended to context for agentSpawn / userPromptSubmit. Tunable &lt;b&gt;timeout_ms&lt;/b&gt; (30s) &amp; &lt;b&gt;cache_ttl_seconds&lt;/b&gt;." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EDF3;strokeColor=#232F3E;fontSize=15;fontColor=#1A2330;align=left;verticalAlign=top;spacing=12;" vertex="1" parent="1">
+          <mxGeometry x="680" y="676" width="580" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- Shared banner: use cases -->
+        <mxCell id="ucHead" value="Shared use-cases" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1A1A2E;strokeColor=none;fontColor=#FFFFFF;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="816" width="1200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1" value="&#9999;&#65039;&#160;Auto-format on edit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2F2F4;strokeColor=#1A1A2E;fontSize=14;fontColor=#1A1A2E;" vertex="1" parent="1">
+          <mxGeometry x="60" y="868" width="225" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2" value="&#128737;&#65039;&#160;Block dangerous commands" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2F2F4;strokeColor=#1A1A2E;fontSize=14;fontColor=#1A1A2E;" vertex="1" parent="1">
+          <mxGeometry x="303" y="868" width="225" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3" value="&#128203;&#160;Audit / log every tool call" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2F2F4;strokeColor=#1A1A2E;fontSize=14;fontColor=#1A1A2E;" vertex="1" parent="1">
+          <mxGeometry x="546" y="868" width="225" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4" value="&#129351;&#160;Inject project context" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2F2F4;strokeColor=#1A1A2E;fontSize=14;fontColor=#1A1A2E;" vertex="1" parent="1">
+          <mxGeometry x="789" y="868" width="225" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="uc5" value="&#128276;&#160;Notify / run tests on stop" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2F2F4;strokeColor=#1A1A2E;fontSize=14;fontColor=#1A1A2E;" vertex="1" parent="1">
+          <mxGeometry x="1032" y="868" width="228" height="48" as="geometry" />
+        </mxCell>
+
+        <!-- Footer -->
+        <mxCell id="footer" value="Sources: code.claude.com/docs/en/hooks  •  kiro.dev/docs/cli/hooks  •  kiro.dev/docs/cli/v3/hooks" style="text;html=1;align=center;fontSize=12;fontColor=#888888;" vertex="1" parent="1">
+          <mxGeometry x="360" y="930" width="600" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
